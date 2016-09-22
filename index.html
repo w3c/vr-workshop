@@ -5,181 +5,8 @@
     <title>
       W3C Workshop on Web &amp; Virtual Reality
     </title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <style type="text/css" media="screen">
-      html {background: #005A9C; padding: 1em}
-      body {background: white; color: #333; border-radius: 0.6em; padding: 1em 3em;
-        font: 1.1em/1.3 Helvetica, Arial, Verdana, sans-serif; margin: 0 auto;
-        max-width: 65em; hyphens: none;}
-      h1 {color: #005A9C}
-      h3 {color: #005A9C}
-      .graphic {height: 13em; position: relative; overflow: hidden; margin: 0 -1.5em}
-      .graphic img {width: 100%; position: absolute; bottom: 0; left: 0; height: 100%}
-      /* If you rather clip than squeeze the image, remove 'height: 100%' */
-      .box {float: right; border: 1px solid #CCC; border-radius: 0.6em; color: #666;
-        box-shadow: 0.2em 0.4em 0.5em #888; padding: 0.3em; text-align: center;
-        font-size: smaller; margin: 0 0 1em 0.6em; width: 19em; clear: right}
-      .box h2 {font-size: 120%}
-      footer {clear: both; margin: 1em 0; font-size: smaller; color: #555}
-      .menu {margin: 0 0 2em 0; display: table; table-layout: fixed; width: 100%;
-        border-collapse: collapse; background:#005A9C; border: hidden;
-        font-size: smaller; font-weight: bold}
-      .menu li {display: table-cell; border: 1px solid white; border-top: none;
-        padding: 0.3em 0.2em; text-align:center; vertical-align: middle}
-      .menu a {display: block; color:#eee; text-decoration: none}
-      .menu a:hover {background:#a2b3a1; color: black}
-      ul {margin-left: 0; padding-left: 1em; list-style: square}
-      blockquote {margin-left: 1em}
-      dd {margin: 0 0 0.6em 0}
-      dt {font-weight: bold}
-      img {max-width: 100%}
-      h1, h2, h3, h4 {break-after: avoid}
-
-      address { line-height: 0.25em;}
-
-      @media all and (max-width: 40em) {
-
-      /* The right-floating boxes become normal blocks */
-      body {padding: 1em}
-      .graphic {height: 10em; margin: 0}
-      .box {float: none; width: auto}
-
-      /* The horizontal menu becomes vertical */
-      .menu ul {display: block; margin: 0; padding: 0}
-      .menu li {display: block; border-style: none none solid none}
-
-      }
-
-
-      @page {margin: 2cm 2cm}
-
-      @media print {
-
-      html {background: none; padding: 0}
-      body {background: none; border-radius: 0; padding: 0}
-
-      }
-      
-      a {
-        color: #005A9C;
-      }
-      
-      
-      /* initialize footnote counters */
-      body {
-        counter-reset: footnote_counter footnote-ref_counter;
-      }
-
-      h2.footnote {
-        counter-increment: footnote_counter;
-      }
-
-      a.footnote-ref {
-        counter-increment: footnote-ref_counter;
-        text-decoration: none;
-      }
-
-      h2.footnote:before {
-        content: counter(footnote_counter);
-        font-size: 0.9em;
-        margin-left: -3em;
-        margin-right: 1em;
-      }
-      
-      a.footnote-ref:after {
-        content: counter(footnote-ref_counter);
-        vertical-align: super;
-        font-size: 0.6em;
-        margin-left: 0.25em;
-      }
-      
-      h2.footnote:before, a.footnote-ref:after {
-        padding: 0.1em 0.5em 0.1em 0.5em;
-        border-radius: 1em;
-        color: white;
-        background-color: #005A9C;
-        font-weight: bold;
-      }
-      
-      table.schedule  {
-          border-collapse: separate;
-          border-spacing: 3px;
-      }
-      
-        th {
-          white-space: nowrap;
-          vertical-align: top;
-          color: white;
-          background-color: #005A9C;
-          border-radius: 5px 0 0 5px;
-          padding: 3px 6px 3px 6px;
-          margin-bottom: 5px;
-        }
-      
-        td {
-          border-color: #005A9C;
-          border-radius: 0 5px 5px 0;
-        }
-
-      article.sponsors {
-        border: 1px solid #333; 
-        padding: 0.1em; 
-      }
-      
-      #notification {
-        border: 1px solid #CCC; 
-        border-radius: 0.6em; 
-        color: #666;
-        background-color: yellow;
-        box-shadow: 0.2em 0.4em 0.5em #888; 
-        padding: 0.3em; 
-        text-align: center;
-        font-size: smaller; 
-        margin: 0 0 1em 0em; 
-        font-weight: bold;
-      }
-      
-      .concluded {
-        text-decoration: line-through;
-      }
-      
-    @media print {
-    h1 {
-      color: #000;
-      background: none;
-    }
-
-    nav, aside {
-      display: none;
-    }
-
-    body, article {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    @page {
-      margin: 2cm;
-    }
-
-    h2, h3 {
-    page-break-after: avoid;
-    }
-
-    article {
-    page-break-before: always;
-    }
-
-    ul, img {
-    page-break-inside: avoid;
-    }
-
-    aside#dates {
-    display: none;
-    }
-    }      
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <p>
@@ -298,7 +125,7 @@
         A combination of improvements in hardware and software capabilities has
         resulted in a renewed interest in virtual reality experiences. Many of
         these improved capabilities are supported in modern browsers via the
-        Open Web Platform, and the Web provides a promising pre-existing
+        Open Web Platform, and the Web provides a promising preexisting
         ecosystem for creating, distributing and experiencing virtual reality
         content, applications, and services.
       </p>
@@ -307,7 +134,7 @@
         important because the virtual reality industry is accelerating the
         development of a new generation of gear, tools, and solutions for the
         production, distribution and experiencing of VR. We can leverage the
-        strengths of the the Open Web Platform to provide an interoperable
+        strengths of the Open Web Platform to provide an interoperable
         alternative to avoid fragmentation and duplicated effort.
       </p>
       <p>
@@ -315,7 +142,7 @@
         progressive enhancement at its core, provides the widest pre-existing
         user base, and has a long track record of working successfully with all
         kinds of users, including those with very specific requirements. The
-        Web itself can benefit from the the new possibilities that ubiquitous
+        Web itself can benefit from the new possibilities that ubiquitous
         Virtual Reality brings: from improved core 3D graphics and media
         capabilities to tight integration with immersive sensors, and on to new
         ways of discovering and interacting with information and services.
@@ -373,10 +200,10 @@
       <ul>
         <li>displaying stereoscopic content
         </li>
-        <li>detecting & adapting to characteristics of VR headsets
+        <li>detecting &amp; adapting to characteristics of VR headsets
         </li>
         <li>handling new and heterogeneous input methods for VR (gamepad, hand
-        position, …) and how applications can handle the wide variety expected
+        position, etc.) and how applications can handle the wide variety expected
         on the Web
         </li>
         <li>accessible user interfaces and interoperability considerations
@@ -397,14 +224,14 @@
         </li>
         <li>bringing VR as progressive enhancement to classic Web browsing
         </li>
-        <li>3D video capture (3D camera) and processing (e.g. scene perception)
+        <li>3D video capture (3D camera) and processing (e.g., scene perception)
         </li>
         <li>streaming 3D/360 content, streaming real-time 3D content
         </li>
         <li>obstacles to high framerate rendering of 3D and better support for
         low-latency input, processing, and rendering in the Web context
         </li>
-        <li>intersection of needs for VR & AR in the Web Platform (note that AR
+        <li>intersection of needs for VR &amp; AR in the Web Platform (note that AR
         is not the main focus of the workshop, but the Program Committee will
         consider papers that provide insights on how the two fields overlap in
         the context of the Web Platform)
@@ -438,14 +265,14 @@
       </p>
       <ul>
         <li>Your background in the intersection of Virtual Reality and Web
-        technologies
+        technologies.
         </li>
-        <li>What topic you would like to lead discussion on
+        <li>Which topic you would like to lead discussion on.
         </li>
-        <li>Links to related supporting resources
+        <li>Links to related supporting resources.
         </li>
         <li>Any other topics you think the workshop should cover in order to be
-        effective
+        effective.
         </li>
         <li>A focus on technical issues, not process or platform preference. We
         plan to talk about the <b>what</b>, not the <b>how</b>.
@@ -467,7 +294,7 @@
         attendees from a variety of industries and communities, including:
       </p>
       <ul>
-        <li>VR hardware (headsets, graphic & audio cards, handle, cameras, etc)
+        <li>VR hardware (headsets, graphic &amp; audio cards, handle, cameras, etc.)
         vendors,
         </li>
         <li>VR platform providers,
@@ -520,7 +347,7 @@
         Logistics
       </h2>
       <p>
-        The W3C Workshop on Web & Virtual Reality is located in the Samsung
+        The W3C Workshop on Web &amp; Virtual Reality is located at the Samsung
         Semiconductor facilities in San Jose, CA.
       </p>
       <h3 id="venue">
@@ -545,7 +372,7 @@
       <!-- <div class="event-title"></div> -->
       <!--      <p class="event-date">Wednesday–Thursday, 29–30 June 2016</p>
       <p class="event-time">8:00–17:00</p>-->
-      <!--       
+      <!--
     <h3 id="hotels">Hotels</h3>
       <p>W3C has not negotiated special prices with any hotels, but we have identified these reasonably-priced hotels within walking distance of the venue:</p>
       <ul>
@@ -555,7 +382,7 @@
       <h3 id="transportation">Transportation</h3>
       <p>The nearest airport is the <a href="http://www.flysfo.com/">San Francisco International Airport (SFO)</a>.</p>
       <p><a href="https://maps.google.com/maps?q=37.806164,-122.432071&amp;ll=37.806164,-122.43207&amp;spn=0.001776,0.003256&amp;hnear=0x808581277c4eb1a1:0x55e6588ea60ba92f,37.806164,-122.432071&amp;gl=us&amp;t=m&amp;z=19">Map to venue</a></p>
-      <iframe marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=211283217828138983609.0004f1b1bd006b8f4a930&amp;gl=us&amp;ie=UTF8&amp;t=m&amp;ll=37.806426,-122.432082&amp;spn=0,0&amp;output=embed" frameborder="0" height="300" scrolling="no" width="400"></iframe> 
+      <iframe marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=211283217828138983609.0004f1b1bd006b8f4a930&amp;gl=us&amp;ie=UTF8&amp;t=m&amp;ll=37.806426,-122.432082&amp;spn=0,0&amp;output=embed" frameborder="0" height="300" scrolling="no" width="400"></iframe>
       -->
       <!-- https://www.google.com/search?q=37.806164%2C-122.432071&oq=37.806164%2C-122.432071&aqs=chrome..69i57j69i60.462j0j7&sourceid=chrome&espv=210&es_sm=119&ie=UTF-8 -->
     </section>
@@ -603,7 +430,7 @@
       </ul>
     </section><!--    <section>
       <h3 id="schedule">Tentative Schedule</h3>
-      <p>The workshop will focus around several topics identified by the expressions of interest. Each topic will be introduced by one or more related lightning talks, and will be explored more in-depth by discussion breakouts, conlcuded with joint summaries of the breakouts. The goal of the discussion is not be to resolve the technical issues of the topic, but to determine its relevance and priority to standardization.</p>
+      <p>The workshop will focus around several topics identified by the expressions of interest. Each topic will be introduced by one or more related lightning talks, and will be explored more in-depth by discussion breakouts, concluded with joint summaries of the breakouts. The goal of the discussion is not be to resolve the technical issues of the topic, but to determine its relevance and priority to standardization.</p>
 
       <p><b>This schedule may change based on discussions with the program commitee.</b></p>
       <h4 id="day1">Day 1: </h4>
@@ -661,8 +488,8 @@
         <p>
           If you're interested in being a sponsor of the W3C Web &amp; Virtual
           Reality Workshop, please contact J. Alan Bird, Global Business
-          Development Leader, at <a href=
-          "mailto:abird@w3.org">&lt;abird@w3.org&gt;</a> or +1 617 253 7823.
+          Development Leader, at &lt;<a href=
+          "mailto:abird@w3.org">abird@w3.org</a>&gt; or +1 617 253 7823.
         </p>
         <p>
           For details on the available sponsorship opportunities for this
@@ -684,13 +511,12 @@
         "mailto:dom@w3.org">dom@w3.org</a>&gt;.
       </p>
       <p>
-        Suggestions for improving this workshop page, such fixing typos or
-        adding specific topics, can be made by <a href=
-        "https://github.com/w3c/vr-workshop/">pull request on Github</a>, or by
+        Suggestions for improving this workshop page, such as fixing typos or
+        adding specific topics, can be made by opening a <a href=
+        "https://github.com/w3c/vr-workshop/">pull request on GitHub</a>, or by
         emailing Dominique Hazael-Massieux &lt;<a href=
         "mailto:dom@w3.org">dom@w3.org</a>&gt;.
       </p>
-      <p></p>
     </footer>
   </body>
 </html>
