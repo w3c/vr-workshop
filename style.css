@@ -91,6 +91,12 @@ footer {
   color: #000;
 }
 
+.menu a.active-tab {
+    background: white;
+    outline: #a2b3a1;
+    color: #005A9C;
+}
+
 ul {
   list-style: square;
   margin-left: 0;
