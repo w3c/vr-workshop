@@ -42,14 +42,38 @@ a, h1, h2 {
   color: #666;
   float: right;
   font-size: smaller;
-  margin: 0 0 1em .6em;
-  padding: .3em;
-  text-align: center;
+  margin: 0 0 1em 3em;
+  padding: 1em;
   width: 19em;
 }
 
 .box h2 {
   font-size: 120%;
+  line-height: 1.4;
+  margin-top: 0;
+}
+
+.box *:last-child {
+  margin-bottom: 0;
+}
+
+.image-paragraph-host {
+  margin-bottom: .75em;
+}
+
+.image-paragraph {
+  margin: 0;
+}
+
+.image-link {
+  display: block;
+}
+
+.image-link img {
+  margin: 0 auto;
+  max-width: 225px;
+  padding: 2.5vmin 0;
+  width: 100%;
 }
 
 footer {
@@ -92,9 +116,9 @@ footer {
 }
 
 .menu a.active-tab {
-    background: white;
-    outline: #a2b3a1;
-    color: #005A9C;
+  background: #fff;
+  color: #005a9c;
+  outline: #a2b3a1;
 }
 
 ul {
@@ -116,6 +140,7 @@ dt {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -140,7 +165,12 @@ address {
 
   .box {
     float: none;
+    margin-left: 0;
     width: auto;
+  }
+
+  section h2 {
+    margin-top: 1.5em;
   }
 
   /* The horizontal menu becomes vertical. */
@@ -189,9 +219,18 @@ a.footnote-ref {
 
 h2.footnote:before {
   content: counter(footnote_counter);
+  display: block;
+  float: left;
   font-size: .9em;
-  margin-left: -3em;
-  margin-right: 1em;
+  margin-right: 1.25ch;
+  padding: 2em 4em;
+  vertical-align: top;
+}
+
+h2.footnote:after {
+  clear: both;
+  content: "";
+  display: block;
 }
 
 a.footnote-ref:after {
@@ -204,7 +243,7 @@ a.footnote-ref:after {
 h2.footnote:before,
 a.footnote-ref:after {
   background-color: #005A9C;
-  border-radius: 1em;
+  border-radius: 50%;
   color: #fff;
   font-weight: 700;
   padding: .1em .5em;
@@ -230,9 +269,13 @@ td {
   border-radius: 0 5px 5px 0;
 }
 
-article.sponsors {
-  border: 1px solid #333;
-  padding: .1em;
+.sponsors {
+  border: 1px solid #eee;
+  padding: 1em;
+}
+
+.sponsors h3 {
+  margin-top: 0;
 }
 
 #notification {
@@ -284,7 +327,7 @@ article.sponsors {
     page-break-inside: avoid;
   }
 
-  aside#dates {
+  #dates {
     display: none;
   }
 }
