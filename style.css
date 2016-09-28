@@ -1,3 +1,20 @@
+*[id] {
+    margin-left: -1em;
+    padding-left: 1em;
+    position:relative;
+}
+a.ref {
+    color: #aaa;
+    display: none;
+    font-size: 1rem;
+    position: absolute;
+}
+
+a.ref.show {
+    display: block;
+    left: 0;
+}
+
 html {
   background: #005A9C;
   padding: 1em;
