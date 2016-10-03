@@ -281,6 +281,11 @@ th {
   white-space: nowrap;
 }
 
+th.break {
+  background-color: #000;
+  color: #fff;
+}
+
 td {
   border-color: #005A9C;
   border-radius: 0 5px 5px 0;
