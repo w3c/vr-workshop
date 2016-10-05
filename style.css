@@ -271,6 +271,10 @@ table.schedule {
   border-spacing: 3px;
 }
 
+table.schedule span {
+  font-size: 67%;
+}
+
 th {
   background-color: #005A9C;
   border-radius: 5px 0 0 5px;
