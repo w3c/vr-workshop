@@ -9,36 +9,40 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p>
-      <a href="https://www.w3.org/"><img alt="W3C" src=
-      "https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
-    </p>
-    <h1 id="top">
-      W3C Workshop on Web &amp; Virtual Reality
-    </h1>
-    <p>
-      October 19-20, 2016; San Jose, CA, USA
-    </p>
-    <ul class="menu">
-      <li>
-        <a href="./#goals">Goals</a>
-      </li>
-      <li>
-        <a href="./#attend">How to Attend</a>
-      </li>
-      <li>
-        <a href="./#location">Location</a>
-      </li>
-      <li>
-        <a href="./#program">Program Committee</a>
-      </li>
-      <li>
-        <a href="papers.html">Position Statements</a>
-      </li>
-      <li>
-        <a class="active-tab">Workshop Schedule</a>
-      </li>
-    </ul>
+    <header class="header">
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" src=
+        "https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
+      </p>
+      <h1 id="top">
+        W3C Workshop on Web &amp; Virtual Reality
+      </h1>
+      <p>
+        October 19-20, 2016; San Jose, CA, USA
+      </p>
+      <nav class="menu" id="menu">
+        <ul>
+          <li>
+            <a href="#goals">Goals</a>
+          </li>
+          <li>
+            <a href="#attend">How to Attend</a>
+          </li>
+          <li>
+            <a href="#location">Location</a>
+          </li>
+          <li>
+            <a href="#program">Program Committee</a>
+          </li>
+          <li>
+            <a href="papers.html">Position Statements</a>
+          </li>
+          <li>
+            <a class="active-tab" href="schedule.html">Workshop Schedule</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <aside class="box" id="host">
       <h2 class="footnote">
         Host
@@ -50,26 +54,34 @@
         <a href="http://samsung.com/"><img src="samsung.svg" alt="Samsung"></a>
       </p>
     </aside>
-    <aside class="box" id="sponsor">
+    <aside class="box" id="sponsors">
       <h2 class="footnote">
         Sponsors
       </h2>
       <article class="sponsors">
-        <h3 id="platinum-sidebar">
-          Platinum Sponsors
-        </h3>
-        <p>
-          <a href="https://www.google.com/"><img src="google.svg" alt=
-          "Google"></a><br>
-          <a href="https://www.mozilla.org/"><img src="mozilla.svg" alt=
-          "Mozilla"></a>
-        </p>
-        <h3 id="silver-sidebar">
-          Silver Sponsor
-        </h3>
-        <p>
-          <a href="http://khronos.org/">The Khronos Group</a>
-        </p>
+        <section class="sponsors-section sponsors-section--platinum">
+          <h3 id="platinum-sidebar">
+            Platinum Sponsors
+          </h3>
+          <p class="image-paragraph">
+            <a href="https://www.google.com/" class="image-link">
+              <img src="google.svg" alt="Google">
+            </a>
+          </p>
+          <p class="image-paragraph">
+            <a href="https://www.mozilla.org/" class="image-link">
+              <img src="mozilla.svg" alt="Mozilla">
+            </a>
+          </p>
+        </section>
+        <section class="sponsors-section sponsors-section--silver">
+          <h3 id="silver-sidebar">
+          Silver Sponsors
+          </h3>
+          <p>
+            <a href="http://khronos.org/">The Khronos Group</a>
+          </p>
+        </section>
       </article>
       <p>
         <a href="./#sponsorship">Become a sponsor!</a>
@@ -78,7 +90,7 @@
         <a href="sponsorship.html">Sponsorship package info.</a>
       </p>
     </aside>
-    <main>
+    <main id="main" class="main">
       <h2 id="schedule">
         Tentative Schedule
       </h2>
@@ -304,8 +316,7 @@
         </tbody>
       </table>
     </main>
-    <footer>
-      <hr>
+    <footer class="footer" id="footer">
       <p>
         W3C is proud to be an open and inclusive organization, focused on
         productive discussions and actions. Our <a href=
