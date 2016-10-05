@@ -9,37 +9,40 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p>
-      <a href="https://www.w3.org/"><img alt="W3C" src=
-      "https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
-    </p>
-    <h1 id="top">
-      Position Statements for the W3C Workshop on Web &amp; Virtual Reality
-    </h1>
-    <p>
-      October 19-20, 2016; San Jose, CA, USA
-    </p>
-    <ul class="menu">
-      <li>
-        <a href="./#goals">Goals</a>
-      </li>
-      <li>
-        <a href="./#attend">How to Attend</a>
-      </li>
-      <li>
-        <a href="./#location">Location</a>
-      </li>
-      <li>
-        <a href="./#program">Program Committee</a>
-      </li>
-      <li>
-        <a class="active-tab">Position Statements</a>
-      </li>
-      <li>
-        <a href="schedule.html">Workshop Schedule</a>
-      </li>
-    </ul>
-
+    <header class="header">
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" src=
+        "https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
+      </p>
+      <h1 id="top">
+        Position Statements for the W3C Workshop on Web &amp; Virtual Reality
+      </h1>
+      <p>
+        October 19-20, 2016; San Jose, CA, USA
+      </p>
+      <nav class="menu" id="menu">
+        <ul>
+          <li>
+            <a href="./#goals">Goals</a>
+          </li>
+          <li>
+            <a href="./#attend">How to Attend</a>
+          </li>
+          <li>
+            <a href="./#location">Location</a>
+          </li>
+          <li>
+            <a href="./#program">Program Committee</a>
+          </li>
+          <li>
+            <a class="active-tab">Position Statements</a>
+          </li>
+          <li>
+            <a href="schedule.html">Workshop Schedule</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <aside class="box" id="host">
       <h2 class="footnote">
         Host
@@ -51,38 +54,41 @@
         <a href="http://samsung.com/"><img src="samsung.svg" alt="Samsung"></a>
       </p>
     </aside>
-    <aside class="box" id="sponsor">
+    <aside class="box" id="sponsors">
       <h2 class="footnote">
         Sponsors
       </h2>
       <article class="sponsors">
-        <h3 id="platinum-sidebar">
-          Platinum Sponsors
-        </h3>
-        <p>
-          <a href="https://www.google.com/"><img src="google.svg" alt=
-                                                 "Google"></a><br>
-          <a href="https://www.mozilla.org/"><img src="mozilla.svg" alt=
-          "Mozilla"></a>
-        </p>
-        <h3 id="silver-sidebar">
-          Silver Sponsor
-        </h3>
-        <p><a href="http://khronos.org/">The Khronos Group</a></p>
-
+        <section class="sponsors-section sponsors-section--platinum">
+          <h3 id="platinum-sidebar">
+            Platinum Sponsors
+          </h3>
+          <p class="image-paragraph">
+            <a href="https://www.google.com/" class="image-link">
+              <img src="google.svg" alt="Google">
+            </a>
+          </p>
+          <p class="image-paragraph">
+            <a href="https://www.mozilla.org/" class="image-link">
+              <img src="mozilla.svg" alt="Mozilla">
+            </a>
+          </p>
+        </section>
+        <section class="sponsors-section sponsors-section--silver">
+          <h3 id="silver-sidebar">
+          Silver Sponsors
+          </h3>
+          <p>
+            <a href="http://khronos.org/">The Khronos Group</a>
+          </p>
+        </section>
       </article>
-      <p>
-        <a href="./#sponsorship">Become a sponsor!</a>
-      </p>
-      <p>
-        <a href="sponsorship.html">Sponsorship package info.</a>
-      </p>
     </aside>
-    <main>
+    <main id="main" class="main">
       <dl>
         <dt><a href="https://www.w3.org/2016/06/vr-workshop/papers/W3C_WebVR_DassaultSystemes_PositionPaper_2016.pdf">WebVR: Facilitating the Development of Multi User Scenarios VR Experiences — Feedback from the Industrial VR Field</a></dt>
         <dd>Geoffrey Subileau, Fivos Doganis, David Nahon, Nathalie Sarrazin (Dassault Systèmes)</dd>
-        <dt><a href="https://www.w3.org/2016/06/vr-workshop/papers/W3C_WebVR_Position_Statement_Mark_Pesce.html">Mark Pesce's Position Statement: Mixed Reality Service</a></dt>
+        <dt><a href="https://www.w3.org/2016/06/vr-workshop/papers/W3C_WebVR_Position_Statement_Mark_Pesce.html">Mark Pesce's Position Statement: Mixed-Reality Service</a></dt>
         <dd>Mark Pesce</dd>
         <dt><a href="https://www.w3.org/2016/06/vr-workshop/papers/glTF.txt">gLTF, the runtime asset format for 3D applications</a></dt>
         <dd>Tony Parisi (Wevr), Amanda Watson (Oculus VR)</dd>
@@ -92,7 +98,7 @@
         <dd>Jeff Sonstein</dd>
         <dt><a href="https://www.w3.org/2016/06/vr-workshop/papers/khronos.txt">
             Aligning Standards Initiatives for VR and AR on the Web</a></dt>
-        <dd>Neil Trevett (NVidia / Khronos)</dd>
+        <dd>Neil Trevett (Nvidia / Khronos)</dd>
         <dt><a href="https://www.w3.org/2016/06/vr-workshop/papers/oculus.html">Role of browser UX in the adoption of VR and Reducing Barriers to Progressive Adoption of VR on existing Web sites</a></dt>
         <dd>Justin Rogers (Oculus VR)</dd>
         <dt><a href="https://medium.com/@robman/how-can-we-ensure-webvr-is-not-an-off-ramp-for-the-web-5c0c0b65a7e8#.inr6v2493">How can we ensure WebVR is not an off-ramp for the web?</a> (<a href="https://www.w3.org/2016/06/vr-workshop/papers/robman.html">archived copy</a>)</dt>
@@ -101,7 +107,7 @@
         <dd>Simon Gunkel (TNO)</dd>
         <dt><a href="https://www.w3.org/2016/06/vr-workshop/papers/webvr-workshop-position-statement-Fraunhofer-FOKUS.txt">High quality 360° Video Rendering and Streaming on the Web</a></dt>
         <dd>Louay Bassbouss (Fraunhofer Institute for Open Communication Systems FOKUS)</dd>
-        <dt><a href="papers/samsung.txt">360 video & control of  the immersive environment around the web content</a></dt>
+        <dt><a href="papers/samsung.txt">360° video &amp; control of the immersive environment around the web content</a></dt>
         <dd>Laszlo Gombos (Samsung)</dd>
         <dt><a href="papers/letsee.html">Webizing Virtual and Augmented Reality Content</a></dt>
         <dd>Sangchul Ahn (Letsee)</dd>
@@ -110,8 +116,7 @@
       </dl>
       <p>See also the list of <a href="participants.html">currently expected participants</a> and <a href="https://www.w3.org/2002/09/wbs/1/vr-workshop/results">participants’ expressions of interests</a>.</p>
     </main>
-    <footer>
-      <hr>
+    <footer class="footer" id="footer">
       <p>
         W3C is proud to be an open and inclusive organization, focused on
         productive discussions and actions. Our <a href=
