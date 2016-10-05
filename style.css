@@ -281,9 +281,14 @@ th {
   white-space: nowrap;
 }
 
-th.break {
-  background-color: #000;
+tr.break > th {
+  background-color: gray;
   color: #fff;
+}
+
+tr.break > td {
+  color: gray;
+  font-style: italic;
 }
 
 td {
