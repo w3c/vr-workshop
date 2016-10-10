@@ -9,37 +9,40 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p>
-      <a href="https://www.w3.org/"><img alt="W3C" src=
-      "https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
-    </p>
-    <h1 id="top">
-      Expected Participants at the W3C Workshop on Web &amp; Virtual Reality
-    </h1>
-    <p>
-      October 19-20, 2016; San Jose, CA, USA
-    </p>
-    <ul class="menu">
-      <li>
-        <a href="./#goals">Goals</a>
-      </li>
-      <li>
-        <a href="./#attend">How to Attend</a>
-      </li>
-      <li>
-        <a href="./#location">Location</a>
-      </li>
-      <li>
-        <a href="./#program">Program Committee</a>
-      </li>
-      <li>
-        <a href="papers.html">Position Statements</a>
-      </li>
-      <li>
-        <a href="schedule.html">Workshop Schedule</a>
-      </li>
-    </ul>
-
+    <header class="header">
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" src=
+        "https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
+      </p>
+      <h1 id="top">
+        Expected Participants at the W3C Workshop on Web &amp; Virtual Reality
+      </h1>
+      <p>
+        October 19-20, 2016; San Jose, CA, USA
+      </p>
+    </header>
+    <nav class="menu" id="menu">
+      <ul>
+        <li>
+          <a href="./#goals">Goals</a>
+        </li>
+        <li>
+          <a href="./#attend">How to Attend</a>
+        </li>
+        <li>
+          <a href="./#location">Location</a>
+        </li>
+        <li>
+          <a href="./#program">Program Committee</a>
+        </li>
+        <li>
+          <a href="papers.html">Position Statements</a>
+        </li>
+        <li>
+          <a href="#schedule">Workshop Schedule</a>
+        </li>
+      </ul>
+    </nav>
     <aside class="box" id="host">
       <h2 class="footnote">
         Host
@@ -51,35 +54,38 @@
         <a href="http://samsung.com/"><img src="samsung.svg" alt="Samsung"></a>
       </p>
     </aside>
-    <aside class="box" id="sponsor">
+    <aside class="box" id="sponsors">
       <h2 class="footnote">
         Sponsors
       </h2>
       <article class="sponsors">
-        <h3 id="platinum-sidebar">
-          Platinum Sponsors
-        </h3>
-        <p>
-          <a href="https://www.google.com/"><img src="google.svg" alt=
-                                                 "Google"></a><br>
-          <a href="https://www.mozilla.org/"><img src="mozilla.svg" alt=
-          "Mozilla"></a>
-        </p>
-        <h3 id="silver-sidebar">
-          Silver Sponsor
-        </h3>
-        <p><a href="http://khronos.org/">The Khronos Group</a></p>
-
+        <section class="sponsors-section sponsors-section--platinum">
+          <h3 id="platinum-sidebar">
+            Platinum Sponsors
+          </h3>
+          <p class="image-paragraph">
+            <a href="https://www.google.com/" class="image-link">
+              <img src="google.svg" alt="Google">
+            </a>
+          </p>
+          <p class="image-paragraph">
+            <a href="https://www.mozilla.org/" class="image-link">
+              <img src="mozilla.svg" alt="Mozilla">
+            </a>
+          </p>
+        </section>
+        <section class="sponsors-section sponsors-section--silver">
+          <h3 id="silver-sidebar">
+          Silver Sponsors
+          </h3>
+          <p>
+            <a href="http://khronos.org/">The Khronos Group</a>
+          </p>
+        </section>
       </article>
-      <p>
-        <a href="./#sponsorship">Become a sponsor!</a>
-      </p>
-      <p>
-        <a href="sponsorship.html">Sponsorship package info.</a>
-      </p>
     </aside>
-    <main>
-      <p>The following persons are expected to participate the W3C Workshop on Web & Virtual Reality:</p>
+    <main id="main" class="main">
+      <p>The following persons are expected to participate the W3C Workshop on Web &amp; Virtual Reality:</p>
       <ul>
 <li>Agrawal , Ashish (Matterport)</li>
 <li>Ahmed, Zohaib (Hipmunk)</li>
@@ -201,8 +207,7 @@
 
       <p>See also the list of <a href="https://www.w3.org/2002/09/wbs/1/vr-workshop/results">participants’ expressions of interests</a>.</p>
     </main>
-    <footer>
-      <hr>
+    <footer class="footer" id="footer">
       <p>
         W3C is proud to be an open and inclusive organization, focused on
         productive discussions and actions. Our <a href=
