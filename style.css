@@ -366,8 +366,60 @@ table.schedule {
   border-spacing: 3px;
 }
 
-table.schedule span {
+table.schedule th span {
   font-size: 67%;
+}
+
+span.lightning, span.plenary, span.breakout, span.panel {
+  display: block;
+  margin: 0 5px 0 0;
+  font-size: 67%;
+  font-weight: normal;
+  padding: 3px 6px;
+  box-shadow: .3em .3em 0 rgba(0,0,0,.1);
+  clear: right;
+}
+
+span.lightning {
+  background-color: #ffe7ba;
+}
+
+span.lightning:before {
+  content: "lightning";
+}
+
+span.plenary {
+  background-color: #b9d3ee;
+}
+
+span.plenary:before {
+  content: "plenary"
+}
+
+span.breakout {
+  background-color: #c0d9af;
+}
+
+span.breakout:before {
+  content: "breakout"
+}
+
+span.panel {
+  background-color: #ffe4e1;
+}
+
+span.panel:before {
+  content: "panel"
+}
+
+dl.format dd {
+  margin: 10px 0 0 10px;
+}
+
+a.format {
+  color: gray;
+  font-size: 75%;
+  text-decoration: none;
 }
 
 th {
