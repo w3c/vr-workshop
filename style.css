@@ -479,7 +479,7 @@ details[open] summary .desc:before {
 }
 
 .schedule details dl {
-    margin-top: 15px;
+    margin-top: 10px;
     border: thin solid #005c9c;
     border-radius:5px;
     position:relative;
@@ -491,7 +491,7 @@ details[open] summary .desc:before {
     content: "";
     position: absolute;
     top: -15px;
-    left: 14em;
+    left: 11.8em;
     border-width: 0 15px 15px;
     border-style: solid;
     border-color:  #005c9c transparent;
