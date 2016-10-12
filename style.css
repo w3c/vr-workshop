@@ -476,6 +476,19 @@ details[open] summary:before {
     content: "▼";
 }
 
+.schedule details dl {
+    margin-top: 0;
+}
+
+.schedule details dt {
+    margin-top: 0;
+    margin-left: 15em;
+}
+
+.schedule details dd {
+    margin-left: 16em;
+}
+
 .sponsors-section {
   border: 1px solid #eee;
   padding: 1rem;
