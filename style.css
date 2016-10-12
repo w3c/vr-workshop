@@ -434,6 +434,40 @@ span.emptytype {
   margin: 0 5px 0 0;
   width:5em;
   font-size: 67%;
+  font-weight: normal;
+  padding: 3px 6px;
+  box-shadow: .3em .3em 0 rgba(0,0,0,.1);
+  clear: right;
+}
+
+dt span.lightning, dt span.plenary, dt span.breakout, dt span.panel {
+    font-size: 100%;
+}
+
+span.lightning {
+  background-color: #ffe7ba;
+}
+
+span.plenary {
+  background-color: #b9d3ee;
+}
+
+span.breakout {
+  background-color: #c0d9af;
+}
+
+span.panel {
+  background-color: #ffe4e1;
+}
+
+dl.format dd {
+  margin: 10px 0 0 10px;
+}
+
+a.format {
+  color: gray;
+  font-size: 75%;
+  text-decoration: none;
 }
 
 span.type {
@@ -507,11 +541,6 @@ details[open] summary .desc:before {
 
 .schedule details dd {
     margin-left: 2em;
-}
-
-.sponsors-section {
-  border: 1px solid #eee;
-  padding: 1rem;
 }
 
 .sponsors-section {
