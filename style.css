@@ -361,14 +361,6 @@ a.footnote-ref:after {
   padding: .1em .5em;
 }
 
-table.schedule {
-  border-collapse: separate;
-  border-spacing: 3px;
-}
-
-table.schedule th span {
-  font-size: 67%;
-}
 
 span.lightning, span.plenary, span.breakout, span.panel {
   display: block;
@@ -410,29 +402,71 @@ a.format {
   text-decoration: none;
 }
 
-th {
-  background-color: #005c9c;
-  border-radius: 5px 0 0 5px;
-  color: #fff;
-  margin-bottom: 5px;
+ol.schedule { list-style: none;}
+
+summary { display: flex;}
+summary .time {
+    background-color: #005c9c;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 3px 6px;
+    vertical-align: top;
+    white-space: nowrap;
+    display: block;
+    font-weight: bold;
+}
+
+.break summary .time {
+    background-color: gray;
+    color: #fff;
+}
+
+summary .time span { font-size: 67%;}
+
+span.emptytype {
+  order:-1;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  width:5em;
+  font-size: 67%;
+}
+
+span.type {
+  order:-1;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  font-size: 67%;
+  font-weight: normal;
   padding: 3px 6px;
-  vertical-align: top;
-  white-space: nowrap;
+  box-shadow: .3em .3em 0 rgba(0,0,0,.1);
+  clear: right;
+  width:5em;
+  height: 15px;
 }
 
-tr.break > th {
-  background-color: gray;
-  color: #fff;
+span.title {
+    display: block; order:1; margin-left: 5px;
 }
 
-tr.break > td {
-  color: gray;
-  font-style: italic;
+summary::-webkit-details-marker {
+    display: none;
 }
 
-td {
-  border-color: #005c9c;
-  border-radius: 0 5px 5px 0;
+details summary:before {
+    order:-2;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    content: "▶";
+}
+
+.break details summary:before, .break details[open] summary:before, details.empty summary:before, details[open].empty summary:before {
+    content: "";                                               }
+
+details[open] summary:before {
+    content: "▼";
 }
 
 .sponsors-section {
