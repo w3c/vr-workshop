@@ -361,14 +361,6 @@ a.footnote-ref:after {
   padding: .1em .5em;
 }
 
-table.schedule {
-  border-collapse: separate;
-  border-spacing: 3px;
-}
-
-table.schedule th span {
-  font-size: 67%;
-}
 
 span.lightning, span.plenary, span.breakout, span.panel {
   display: block;
@@ -410,34 +402,145 @@ a.format {
   text-decoration: none;
 }
 
-th {
-  background-color: #005c9c;
-  border-radius: 5px 0 0 5px;
-  color: #fff;
-  margin-bottom: 5px;
+ol.schedule { list-style: none;}
+
+summary .desc { display: flex;}
+summary .time {
+    background-color: #005c9c;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 3px 6px;
+    vertical-align: top;
+    white-space: nowrap;
+    display: block;
+    font-weight: bold;
+}
+
+.break summary .time {
+    background-color: gray;
+    color: #fff;
+}
+
+.break .title {
+    color: gray;
+    font-style: italic;
+}
+summary .time span { font-size: 67%;}
+
+span.emptytype {
+  order:-1;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  width:5em;
+  font-size: 67%;
+  font-weight: normal;
   padding: 3px 6px;
-  vertical-align: top;
-  white-space: nowrap;
+  box-shadow: .3em .3em 0 rgba(0,0,0,.1);
+  clear: right;
 }
 
-tr.break > th {
-  background-color: gray;
-  color: #fff;
+dt span.lightning, dt span.plenary, dt span.breakout, dt span.panel {
+    font-size: 100%;
 }
 
-tr.break > td {
+span.lightning {
+  background-color: #ffe7ba;
+}
+
+span.plenary {
+  background-color: #b9d3ee;
+}
+
+span.breakout {
+  background-color: #c0d9af;
+}
+
+span.panel {
+  background-color: #ffe4e1;
+}
+
+dl.format dd {
+  margin: 10px 0 0 10px;
+}
+
+a.format {
   color: gray;
-  font-style: italic;
+  font-size: 75%;
+  text-decoration: none;
 }
 
-td {
-  border-color: #005c9c;
-  border-radius: 0 5px 5px 0;
+span.type {
+  order:-1;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  font-size: 67%;
+  font-weight: normal;
+  padding: 3px 6px;
+  box-shadow: .3em .3em 0 rgba(0,0,0,.1);
+  clear: right;
+  width:5em;
+  height: 15px;
 }
 
-.sponsors-section {
-  border: 1px solid #eee;
-  padding: 1rem;
+span.title {
+    display: block;
+    order:1;
+    margin-left: 5px;
+    flex: 1;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::-moz-list-bullet { list-style-type: none;  }
+
+details summary .desc:before {
+    order:-2;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    content: "▶";
+}
+
+.break details summary .desc:before, .break details[open] summary .desc:before, details.empty summary .desc:before, details[open].empty summary .desc:before {
+    content: "";                                               }
+
+details[open] summary .desc:before {
+    content: "▼";
+}
+
+.schedule details dl {
+    margin-top: 9px;
+    border: thin solid #005c9c;
+    border-radius:5px;
+    position:relative;
+    max-width: 40em;
+}
+
+/* from http://nicolasgallagher.com/pure-css-speech-bubbles/demo/ */
+.schedule details dl::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 10em;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color:  #005c9c transparent;
+    display: block;
+    width: 0;
+}
+
+
+.schedule details dt {
+    margin-top: 0;
+    margin-left: 1em;
+}
+
+.schedule details dd {
+    margin-left: 2em;
 }
 
 .sponsors-section {
