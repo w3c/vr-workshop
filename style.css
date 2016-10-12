@@ -479,16 +479,34 @@ details[open] summary .desc:before {
 }
 
 .schedule details dl {
-    margin-top: 0;
+    margin-top: 15px;
+    border: thin solid #005c9c;
+    border-radius:5px;
+    position:relative;
+    max-width: 40em;
 }
+
+/* from http://nicolasgallagher.com/pure-css-speech-bubbles/demo/ */
+.schedule details dl::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 14em;
+    border-width: 0 15px 15px;
+    border-style: solid;
+    border-color:  #005c9c transparent;
+    display: block;
+    width: 0;
+}
+
 
 .schedule details dt {
     margin-top: 0;
-    margin-left: 15em;
+    margin-left: 1em;
 }
 
 .schedule details dd {
-    margin-left: 16em;
+    margin-left: 2em;
 }
 
 .sponsors-section {
