@@ -404,7 +404,7 @@ a.format {
 
 ol.schedule { list-style: none;}
 
-summary { display: flex;}
+summary .desc { display: flex;}
 summary .time {
     background-color: #005c9c;
     border-radius: 5px 0 0 5px;
@@ -460,7 +460,9 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-details summary:before {
+summary::-moz-list-bullet { list-style-type: none;  }
+
+details summary .desc:before {
     order:-2;
     display: inline-block;
     width: 18px;
@@ -469,10 +471,10 @@ details summary:before {
     content: "▶";
 }
 
-.break details summary:before, .break details[open] summary:before, details.empty summary:before, details[open].empty summary:before {
+.break details summary .desc:before, .break details[open] summary .desc:before, details.empty summary .desc:before, details[open].empty summary .desc:before {
     content: "";                                               }
 
-details[open] summary:before {
+details[open] summary .desc:before {
     content: "▼";
 }
 
