@@ -450,7 +450,10 @@ span.type {
 }
 
 span.title {
-    display: block; order:1; margin-left: 5px;
+    display: block;
+    order:1;
+    margin-left: 5px;
+    flex: 1;
 }
 
 summary::-webkit-details-marker {
