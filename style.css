@@ -422,6 +422,10 @@ summary .time {
     color: #fff;
 }
 
+.break .title {
+    color: gray;
+    font-style: italic;
+}
 summary .time span { font-size: 67%;}
 
 span.emptytype {
