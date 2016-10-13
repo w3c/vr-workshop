@@ -505,8 +505,8 @@ details[open] summary {
 }
 
 .schedule details dl {
-  border-radius: 5px;
-  border: 1px solid #005c9c;
+  box-shadow: .3em .3em 0 rgba(0,0,0,.1);
+  border: 1px solid #ccc;
   margin: 9px 0 5px 27px;
   padding: 1rem;
   position: relative;
