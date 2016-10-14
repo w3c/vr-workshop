@@ -533,6 +533,13 @@ details[open] summary {
   margin: 0 0 0 1rem;
 }
 
+.schedule details dd span {
+  font-size: 75%;
+  color: #888;
+  display: block;
+  margin-bottom: .25em;
+}
+
 .schedule details dd + dt {
   margin-top: 1rem;
 }
