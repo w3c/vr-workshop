@@ -90,8 +90,74 @@
     </aside>
     <main id="main" class="main">
       <h1>Minutes of the W3C Workhop on Web & Virual Reality</h1>
-<h3 id="h.gh4dcmufwcz4"><span>Sean White,
-keynote.</span></h3>
+      <ol id=toc>
+        <li><a href='#keynote'>Sean White's keynote</a></li>
+        <li><a href='#h.xdc3u5vglg2w'>WebVR Intro</a>
+          <ol>
+            <li><a href='#h.8txo5caxxo3q'>implementation status, obstacles, future plans</a></li>
+            <li><a href='#h.ublgoxvl4cwz'>Browser updates</a></li>
+        </ol></li>
+        <li><a href='#h.eks43gk1gtm9'>VR user interactions in browsers</a>
+          <ol>
+<li><a href='#h.y1dwoy6x4yo6'>Designing the browser</a></li>
+<li><a href='#h.iaqv49ga1v7d'>Link traversal in WebVR</a></li>
+<li><a href='#h.s5o9r7vifzq1'>Hand tracking and gesture for WebVR</a></li>
+<li><a href='#h.91vx5wt980zx'>Coordinate Systems, Spatial Perception in Windows Holographic</a></li>
+<li><a href='#h.qtzn1hqc4lzf'>Ray Input: default WebVR interaction</a></li>
+<li><a href='#h.bf83sblk6vu'>Samsung VR Browser for GearVR learnings</a></li>
+<li><a href='#h.fa24p912qumu'>Group Discussion / Joint Summary</a></li>
+        </ol></li>
+        <li><a href='#h.bnn5iuwv9rom'>Accessibility of VR experiences</a><ol>
+<li><a href='#h.aflgjnz25o25'>Accessibility Not An After Thought</a></li>
+<li><a href='#h.xzim0fsnc6kl'>Browser UX in VR</a></li>
+<li><a href='#h.kn3ls6wjttzc'>Mixed reality</a></li>
+<li><a href='#accessibility-discussion'>Discussion</a></li>
+        </ol></li>
+        <li><a href='#h.hz1q61m40irp'>Multi-user VR</a><ol>
+<li><a href='#h.1szzsfvcdlmi'>Internet-scale shared VR</a></li>
+<li><a href='#h.lxcvdx41xk6j'>From clickable pages to walkable spaces</a></li>
+<li><a href='#h.luuepe6nlnb'>Multimedia & multi-user VR</a></li>
+<li><a href='#h.1szzsfvcdlmi-1'>Mixed reality service</a></li>
+<li><a href='#h.st9lw0nl2f3g'>Copresence in WebVR</a></li>
+<li><a href='#h.ql979d9btuup'>Discussion</a></li>
+        </ol></li>
+        <li><a href='#h.tmz3gnqee1vz'>Authoring VR experiences on the Web</a><ol>
+<li><a href='#h.5ohbhq5c6kwd'>HTML & CSS</a></li>
+<li><a href='#threejs'>WebVR with Three.js</a></li>
+<li><a href='#aframe'>A-Frame</a></li>
+<li><a href='#reactvr'>React VR</a></li>
+<li><a href='#xml3d'>XML3D</a></li>
+<li><a href='#webizing'>Webizing VR content</a></li>
+<li><a href='#gltf'>gLTF</a></li>
+<li><a href='#vizor'>Vizor - visual authoring of VR in the browser</a></li>
+<li><a href='#authoringdiscussion'>Discussion:</a></li>
+        </ol></li>
+        <li><a href='#h.r7fj2fgnzoxr'>High Performance VR on the Web</a></li>
+        <li><a href='#h.kxdjcn9tywvt'>360° video on the Web</a><ol>
+<li><a href='#h.l9ewa8rq4fwv'>360° video cloud streaming and HTMLVideoElement extensions</a></li>
+<li><a href='#h.m4qmzvj1rjcz'>Encode, tag, control 360° video</a></li>
+<li><a href='#h.mwfefbag9jur'>Path to native 360° video support</a></li>
+<li><a href='#h.k4mpszf7yt91'>Q&amp;A</a></li>
+        </ol></li>
+        <li><a href='#h.w7rv48yo91qv'>Immersive Audio</a><ol>
+<li><a href='#webaudio'>Web Audio API Overview</a></li>
+<li><a href='#spatial'>Spatial Audio Renderer</a></li>
+<li><a href='#object-based'>Object-based Audio for VR</a></li>
+        </ol></li>
+        <li><a href='#h.lxsfcg95aa'>Breakouts</a><ol>
+            <li><a href='#hmd'>Making a HMD WebVR ready</a></li>
+<li><a href='#traversal'>Link traversal, are we there yet?</a></li>
+<li><a href='#multiview'>Halving the draw calls with WEBGL_multiview</a></li>
+<li><a href='#declarative'>Declarative 3D</a></li>
+<li><a href='#a11y'>Accessibility for WebVR</a></li>
+<li><a href='#perf'>High-Performance Processing on the Web</a></li>
+            <li><a href='#depth'>Depth Sensing on the web</a></li>
+        </ol></li>
+        <li><a href='#h.noaj6r6y94de'>Standardization Landscape</a></li>
+      </ol>
+
+      <h2 id="keynote"><span>Sean White,
+keynote.</span></h2>
 <p><span>Reminiscences from the Placeholder Project
 (1993). It was immersive but very expensive. VRML 1994. A-Frame,
 2016.</span></p>
@@ -105,9 +171,9 @@ reality experiences?</span></li>
 world?</span></li>
 <li><span>Move Fast!</span></li>
 </ul>
-<h1 id="h.xdc3u5vglg2w"><span>WebVR Intro</span></h1>
-<h2 id="h.8txo5caxxo3q"><span>implementation status,
-obstacles, future plans</span></h2>
+<h2 id="h.xdc3u5vglg2w"><span>WebVR Intro</span></h2>
+<h3 id="h.8txo5caxxo3q"><span>implementation status,
+obstacles, future plans</span></h3>
 
 <p><span><cite>Megan</cite>: we'll start with an intro from Brandon
 on WebVR status and then go into implementation status from
@@ -189,8 +255,8 @@ want to be for VR yet.</span></p>
 overlap and still keep it functional. This will require lots of
 experimentations and failures, but we will get there.</span></p>
 
-<h2 id="h.ublgoxvl4cwz"><span>Browser
-updates</span></h2>
+<h3 id="h.ublgoxvl4cwz"><span>Browser
+updates</span></h3>
 <p><span><cite>Megan Lindsay</cite> - update on Chrome. We are
 building support for WebVR 1.1 in Chrome for Android, including the
 game extensions. We're targeting M56 for</span> <span class=
@@ -360,8 +426,8 @@ API.</span></p>
 <p><span>Discussing what bringing the latest
 improvements of Web Platform to VR is also quite exciting to me
 (e.g. Progressive Web Apps).</span></p>
-<h1 id="h.eks43gk1gtm9"><span>VR user interactions in
-browsers</span></h1>
+<h2 id="h.eks43gk1gtm9"><span>VR user interactions in
+browsers</span></h2>
 <h3 id="h.y1dwoy6x4yo6"><span>Designing the browser
 (Josh Carpenter, Google)</span></h3>
 <p><span><cite>Josh</cite>: been working on figuring out how we want
@@ -677,8 +743,8 @@ design wayfinding mechanisms.</span></p>
 
 <p><span><cite>Poch</cite>: good segue into accessibility set of
 lightning talks.</span></p>
-<h1 id="h.bnn5iuwv9rom"><span>Accessibility of VR
-experiences</span></h1>
+<h2 id="h.bnn5iuwv9rom"><span>Accessibility of VR
+experiences</span></h2>
 <h3 id="h.aflgjnz25o25"><span>Accessibility Not An
 After Thought (Charles LaPierre, Benetech)</span></h3>
 <p><span><a href=
@@ -775,6 +841,7 @@ Objects i the real-world that exist beyond “far” How can we
 bring depth in?</span></p>
 <p><span>Orientation and position.</span></p>
 
+<h3 id="accessibility-discussion">Discussion</h3>
 <p><span><cite>Question</cite>: what about
 color-blindness?</span></p>
 <p><span><cite>Charles LaPierre</cite>: We want to be able to allow
@@ -877,8 +944,8 @@ down to the hardware. Accessibility works well when device devs can
 experiment with serving user needs.</span></p>
 
 
-<h1 id="h.hz1q61m40irp"><span>Multi-user VR
-experiences</span></h1>
+<h2 id="h.hz1q61m40irp"><span>Multi-user VR
+experiences</span></h2>
 <h3 id="h.1szzsfvcdlmi"><span>Internet-scale shared
 VR (Philip Rosedale, High Fidelity)</span></h3>
 <p><span><cite>Philip</cite>: We’re working on an open source license
@@ -910,7 +977,6 @@ that things are what they say they are</span></p>
 DNS</span></p>
 
 
-<h3 id="h.twzpllbzsuia"></h3>
 <h3 id="h.lxcvdx41xk6j"><span>From clickable pages to
 walkable spaces (Luc Courchesne, Society for Arts and
 Technology)</span></h3>
@@ -1114,8 +1180,8 @@ to impose restrictions on the character model.</span></p>
 needs to be considered as well.</span></p>
 
 
-<h1 id="h.tmz3gnqee1vz"><span>Authoring VR
-experiences on the Web</span></h1>
+<h2 id="h.tmz3gnqee1vz"><span>Authoring VR
+experiences on the Web</span></h2>
 
 <h3 id="h.5ohbhq5c6kwd"><span>HTML & CSS,
 (Josh Carpenter, Google)</span></h3>
@@ -1129,7 +1195,7 @@ drop-shadow of VR.</span></p>
 <p><span>Permissions model for depth, akin to
 full-screen, permission to come closer.</span></p>
 
-<h3>WebVR with Three.js (Ricardo
+<h3 id="threejs">WebVR with Three.js (Ricardo
 Cabello, Three.js)</h3>
 <p><span>JS 3D rendering library, open
 source</span></p>
@@ -1138,7 +1204,7 @@ source</span></p>
 emulator, interact with 3D environment without HMD</span></p>
 <p><span>(Slides showing JS code)</span></p>
 
-<h3><span>A-Frame (Kevin Ngo,
+<h3 id="aframe"><span>A-Frame (Kevin Ngo,
 Mozilla)</span></h3>
 <p><span>aframe.io</span></p>
 <p><span>Web framework for building VR
@@ -1160,7 +1226,7 @@ components</span></p>
 <p><span>A-painter: Paint in VR in the
 browser</span></p>
 
-<h3>React VR (Amber Roy, Oculus
+<h3 id="reactvr">React VR (Amber Roy, Oculus
 VR)</h3>
 
 <p><span>ReactVR: Bridge needs of web
@@ -1178,7 +1244,7 @@ apps</span></p>
 <p><span>Demo: developer.oculus.com/webvr
 (Hotel Tour)</span></p>
 
-<h3>XML3D (Philipp Slusallek,
+<h3 id="xml3d">XML3D (Philipp Slusallek,
 DFKI)</h3>
 <p><span>XML3D: declarative 3D framework
 extending HTML5</span></p>
@@ -1206,7 +1272,7 @@ elements</span></p>
 Station (did not work)</span></p>
 
 
-<h3>Webizing VR content (Sangchul
+<h3 id="webizing">Webizing VR content (Sangchul
 Ahn, LetSee)</h3>
 <p><span>Some experiences with current VR/AR
 approaches</span></p>
@@ -1230,7 +1296,7 @@ VR/AR</span></li>
 AR game prototype, LetseeBeer</span></p>
 
 
-<h3>gLTF (Tony Parisi, Wevr / Amanda
+<h3 id="gltf">gLTF (Tony Parisi, Wevr / Amanda
   Watson, Oculus VR)</h3>
 <p><a
 href=
@@ -1253,7 +1319,7 @@ github</span></p>
 <p><span>“The JPG for 3D” !</span></p>
 
 
-<h3>Vizor - visual authoring of VR in
+<h3 id="vizor">Vizor - visual authoring of VR in
 the browser (Jaakko Manninen, Pixelface)</h3>
 
 <p><span>Publishing platform for VR content on the web
@@ -1266,7 +1332,7 @@ programming</span></p>
 web</span></p>
 
 
-<h3>Discussion:</h3>
+<h3 id="authoringdiscussion">Discussion:</h3>
 
 <p><span><cite>Q</cite>: Relationship between gLTF and
 a-frame?</span></p>
@@ -1295,8 +1361,8 @@ no intention of mandating gLTF for WebGL.</span></p>
 
 
 
-<h1 id="h.r7fj2fgnzoxr"><span>High Performance VR on
-the Web</span></h1>
+<h2 id="h.r7fj2fgnzoxr"><span>High Performance VR on
+the Web</span></h2>
 <p><span>Chrome Android learnings & pitfalls to
 avoid</span></p>
 <p><span class=
@@ -1452,11 +1518,11 @@ find them hard to use.</span></p>
 improvement for WebGL - we have a proposed breakout session for
 tomorrow. Are there other acceleration extensions we would need for
 VR?</span></p>
-<h1 id="h.kxdjcn9tywvt"><span>360° video on the
-Web</span></h1>
-<h2 id="h.l9ewa8rq4fwv"><span>Louay Bassbouss,
+<h2 id="h.kxdjcn9tywvt"><span>360° video on the
+Web</span></h2>
+<h3 id="h.l9ewa8rq4fwv"><span>Louay Bassbouss,
 Fraunhofer, 360° video cloud streaming and HTMLVideoElement
-extensions</span></h2>
+extensions</span></h3>
 
 <p><span><a href=
 "https://docs.google.com/presentation/d/1-stapAqJr5ICQcXEC7z-PYnTYY1T3fA3E4lgdBmy9Lc/edit?usp=sharing">
@@ -1485,8 +1551,8 @@ getting URLs, can show 360 video.</span></p>
 <p><span>Slide9,10. HTML VideoElement
 Extensions. Shows buffering switch between two views.</span></p>
 
-<h2 id="h.m4qmzvj1rjcz"><span>Laszlo Gombos, Samsung,
-Encode, tag, control 360° video</span></h2>
+<h3 id="h.m4qmzvj1rjcz"><span>Laszlo Gombos, Samsung,
+Encode, tag, control 360° video</span></h3>
 <p><span><a href=
 "https://pres.webvr.io/video.html">
 https://pres.webvr.io/video.html</a></span></p>
@@ -1504,8 +1570,8 @@ we found out there on the web]</span></p>
 <p><span>This is how we’ve extended the web,
 let’s discuss.</span></p>
 
-<h2 id="h.mwfefbag9jur"><span>David Dorwin, Google,
-Path to native 360° video support</span></h2>
+<h3 id="h.mwfefbag9jur"><span>David Dorwin, Google,
+Path to native 360° video support</span></h3>
 <p><span><a href=
 "https://docs.google.com/presentation/d/1FYbOKq_CyUjoCztLPvzk49oRc9P6zsjGDgyo1aTrXHw/">
 https://docs.google.com/presentation/d/1FYbOKq_CyUjoCztLPvzk49oRc9P6zsjGDgyo1aTrXHw/</a></span> </p>
@@ -1530,7 +1596,7 @@ difficult.</span></p>
 <p><span>Media Capabilities API on github, in
 WICG</span></p>
 
-<h2 id="h.k4mpszf7yt91"><span>Q&amp;A</span></h2>
+<h3 id="h.k4mpszf7yt91"><span>Q&amp;A</span></h3>
 <p><span><br>
 <cite>Kfarr</cite>: Another question, there have been a number of creative (yet
 competing) concepts for mixture of compression and projection
@@ -1676,8 +1742,8 @@ mesh; include rendering state?</span></li>
 accessibility features?</span></li>
 <li><span>Ad XML (video ad placement)</span></li>
 </ul>
-<h1 id="h.w7rv48yo91qv"><span>Immersive
-Audio</span></h1>
+<h2 id="h.w7rv48yo91qv"><span>Immersive
+Audio</span></h2>
 <p><span>Moderator, Olivier Théreaux, BBC; Panelists,
 Hongchan Choi, Google; Mike Assenti, Dolby; Raymond Toy,
 Google</span></p>
@@ -1694,7 +1760,7 @@ bring input on the next version of the specification. We'll have
 short presentations from each panelists, each followed by a short
 Q&amp;A, but we'll also get more time after
 presentations.</span></p>
-<h3>Web Audio API Overview</h3>
+<h3 id="webaudio">Web Audio API Overview</h3>
 <p><span><cite>Raymond</cite>: This is a brief overview of the Web
 Audio API. In the beginning, the Web was silent; you needed flash
 or a plugin to play audio. HTML5 added the &lt;audio&gt; tag, which
@@ -1748,7 +1814,7 @@ that.</span></p>
 supported in &lt;audio&gt; but not in Web Audio.</span></p>
 <p><span><cite>Raymond</cite>: that's something I'm working on
 fixing.</span></p>
-<h3>Spatial Audio Renderer</h3>
+<h3 id="spatial">Spatial Audio Renderer</h3>
 <p><span><cite>Olivier</cite>: next Hongchan Choi also part of the
 Chrome Team and member of the Web Audio Working Group, and
 describes himself as a Web Music evangelist. You wanted to talk
@@ -1829,7 +1895,7 @@ issues</span></p>
 <p><span><cite>Jason</cite>: I've done professional projects with Web
 Audio - great stuff. Being able to set the drop off rate would be
 useful.</span></p>
-<h3>Object-based Audio for VR</h3>
+<h3 id="object-based">Object-based Audio for VR</h3>
 <p><span><cite>Olivier</cite>: Mike Assenti from Dolby Labs will be
 looking at a different angle, on how to use object based audio for
 linear based VR experiences</span></p>
@@ -1961,10 +2027,10 @@ decoder</span></li>
 A11Y</span></li>
 </ul>
 
-<h1 id="h.lxsfcg95aa"><span>Breakouts</span></h1>
-<h3>Making a HMD WebVR ready</h3>
+<h2 id="h.lxsfcg95aa"><span>Breakouts</span></h2>
+<h3 id="hmd">Making a HMD WebVR ready</h3>
 
-<h3>Link traversal, are we there yet?</h3>
+<h3 id="traversal">Link traversal, are we there yet?</h3>
 
 <p><span>Proposer(s): Fabien Benetou</span></p>
 <p><span>Summary: Identify what is missing to enable the
@@ -2234,7 +2300,7 @@ have to be. Example of transitions in JanusVR.</span></p>
 <p><span>Missing concept of seamless portal,
 `&lt;iframe&gt;`s.</span></p>
 
-<h3>Halving the draw calls with WEBGL_multiview</h3>
+<h3 id="multiview">Halving the draw calls with WEBGL_multiview</h3>
 
 <p><span>Proposer(s): Olli Etuaho</span></p>
 <p><span>Summary: Accelerating stereo rendering with a
@@ -2357,7 +2423,7 @@ required to determine performance impact, and should inform further
 work on the specs.</span></p>
 
 
-<h3>Declarative 3D</h3>
+<h3 id="declarative">Declarative 3D</h3>
 
 <p><span>Proposer(s): Tony Parisi</span></p>
 <p><span>Summary: Should we contemplate a 3D equivalent
@@ -2682,7 +2748,7 @@ model “versus” declarative is more yin/yang that a fork in the road
 stability. &nbsp;</span></p>
 
 
-<h3>Accessibility for WebVR</h3>
+<h3 id="a11y">Accessibility for WebVR</h3>
 <p>Participants</p>
 <ul>
 <li>Charles LaPierre</li>
@@ -2849,9 +2915,9 @@ describe</span></p>
 <p><span>3d party services to solve Captchas</span></p>
 <p><span>Uber for web pages.</span></p>
 
-<h3>High-Performance Processing on the Web</h3>
+<h3 id="perf">High-Performance Processing on the Web</h3>
 
-<h3>Depth Sensing on the web</h3>
+<h3 id="depth">Depth Sensing on the web</h3>
 
 <p><span>The Preliminary Use Cases
 (pre-spec)<br></span><span><a href=
@@ -2973,8 +3039,8 @@ href=
 </ul>
 
 
-<h1 id="h.noaj6r6y94de"><span>Standardization
-Landscape</span></h1>
+<h2 id="h.noaj6r6y94de"><span>Standardization
+Landscape</span></h2>
 <p><span><cite>Dom</cite>: We’ll start our last session now. A couple
 announcements; a phone was found.</span></p>
 <p><span>Another thing, we should do a group photo of
