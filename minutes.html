@@ -15,7 +15,7 @@
         "https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
       </p>
       <h1 id="top">
-        W3C Workshop on Web &amp; Virtual Reality
+        Minutes of W3C Workshop on Web &amp; Virtual Reality
       </h1>
       <p>
         October 19-20, 2016; San Jose, CA, USA
@@ -90,1242 +90,1239 @@
     </aside>
     <main id="main" class="main">
       <h1>Minutes of the W3C Workhop on Web & Virual Reality</h1>
-<h3 class="c0 c5" id="h.gh4dcmufwcz4"><span>Sean White,
+<h3 id="h.gh4dcmufwcz4"><span>Sean White,
 keynote.</span></h3>
-<p class="c0"><span>Reminiscences from the Placeholder Project
+<p><span>Reminiscences from the Placeholder Project
 (1993). It was immersive but very expensive. VRML 1994. A-Frame,
 2016.</span></p>
-<p class="c0 c1"></p>
-<ul class="c6 lst-kix_k7qonp40h19g-0 start">
-<li class="c0 c2"><span>The Long Now: how do you enable VR
+
+<ul>
+<li><span>The Long Now: how do you enable VR
 experiences that are unique to the Web?</span></li>
-<li class="c0 c2"><span>&nbsp;Account for the range of future mixed
+<li><span>&nbsp;Account for the range of future mixed
 reality experiences?</span></li>
-<li class="c0 c2"><span>Use VR to make life better in the real
+<li><span>Use VR to make life better in the real
 world?</span></li>
-<li class="c0 c2"><span>Move Fast!</span></li>
+<li><span>Move Fast!</span></li>
 </ul>
-<h1 class="c0 c5" id="h.xdc3u5vglg2w"><span>WebVR Intro</span></h1>
-<h2 class="c0 c5" id="h.8txo5caxxo3q"><span>implementation status,
+<h1 id="h.xdc3u5vglg2w"><span>WebVR Intro</span></h1>
+<h2 id="h.8txo5caxxo3q"><span>implementation status,
 obstacles, future plans</span></h2>
-<p class="c0 c1"></p>
-<p class="c0"><span>Megan: we'll start with an intro from Brandon
+
+<p><span><cite>Megan</cite>: we'll start with an intro from Brandon
 on WebVR status and then go into implementation status from
 implementers</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8 c14">Brandon Jones, Google</span></p>
-<p class="c0"><span>This is a quick intro on what WebVR is and
+
+<p><span><cite>Brandon Jones, Google</cite></span></p>
+<p><span>This is a quick intro on what WebVR is and
 where the different browsers are at.</span></p>
-<p class="c0"><span>A brief history: this whole WebVR thing
+<p><span>A brief history: this whole WebVR thing
 literally started in a Tweet exchange, with Vlad suggesting how to
 plug a browser into the first Oculus kit. It seems so consensually
 Web to me: no funding, no managerial discussion - just two guys
 doing it in their free time. And look where we're at - that's the
 kind of innovation the Web enables.</span></p>
-<p class="c0"><span>The initial version of the spec was very
+<p><span>The initial version of the spec was very
 different from what we see today - it was based on the hardware
 available then, built around DK1 (DK2 was not available
 yet).</span></p>
-<p class="c0"><span>The API has been changing a lot, with lots of
+<p><span>The API has been changing a lot, with lots of
 cooperation between vendors. It's getting better and better. What
 we've called 1.0 has been revised to get up to par with the latest
 hardware. Microsoft has jumped in to contribute to the spec, Oculus
 announced WebVR support.</span></p>
-<p class="c0"><span>The state of the art is what we call WebVR 1.1
+<p><span>The state of the art is what we call WebVR 1.1
 - which is likely the last version to be numbered - it will just be
 WebVR after that. This new version is based on great feedback from
 Microsoft to make sure WebVR can work with their platform, removing
 guess work for the developers and tightening up
 behaviors.</span></p>
-<p class="c0"><span>There are more non-backwards compatible changes
+<p><span>There are more non-backwards compatible changes
 that are upcoming - but we have to do them now. We're getting
 feedback from lots of people doing VR, feedback to make sure we
 have the right set of capabilities for the long term.</span></p>
-<p class="c0"><span>We are working on bringing Web Worker
+<p><span>We are working on bringing Web Worker
 compatibility which is quite important - the main thread in
 JavaScript is a big mess, and workers allow to remove some of that
 constraint, even to the cost of backwards compat. We're also
 getting feedback from a Web-platform perspective, making sure we
 get the right model.</span></p>
-<p class="c0"><span>What's next? At a mundane level, we want to
+<p><span>What's next? At a mundane level, we want to
 keep extending the API - VR layers; we want to allow more WebGL
 extensions targeted for VR (e.g. multiviews). WebGL 2 is going to
 come out reasonably around the same time of WebVR. And likewise, we
 want to get ready for WebGL next.</span></p>
-<p class="c0"><span>We also need to keep track of evolutions in the
+<p><span>We also need to keep track of evolutions in the
 VR hardware.</span></p>
-<p class="c0"><span>We also need to focus on tooling - there were
+<p><span>We also need to focus on tooling - there were
 great announcements from Oculus recently. Some people were asking
 about this as being a competition to what I've beeqn working on -
 but it's a non-issue, it's actually great - nobody is trying to get
 control or take over the ecosystem. We need more tools, more
 browsers, more support for people who want to build content. There
 is no bad side to doing that.</span></p>
-<p class="c0"><span>We have decades experience in the browser which
+<p><span>We have decades experience in the browser which
 we have been ignoring - we need to bring Web & VR to get
 closer.</span></p>
-<p class="c0"><span>We need to look into support new media formats
+<p><span>We need to look into support new media formats
 that are VR native - gltf (not specific to VR, but better support
 in browsers would be fantastic). New media formats for video and
 audio that are very spatially aware with lots of info on the
 environment - we don't want every single developers to reinvent how
 to get that on the screen.</span></p>
-<p class="c0"><span>We need to make sure audio is a first class
+<p><span>We need to make sure audio is a first class
 citizen in VR - there is lots of interesting innovation on the
 audio side. Good VR without audio is missing half the point - it
 should not be an afterthought.</span></p>
-<p class="c0"><span>We want to make sure the Web enables AR
+<p><span>We want to make sure the Web enables AR
 scenarios. [screenshot of hololens user]. WE want to enable full
 use of capabilities of Hololens or Tango capabilities.</span></p>
-<p class="c0"><span>In the end, we really need to think about how
+<p><span>In the end, we really need to think about how
 to move past this of the current VR experience of a modal app - VR
 is a very exclusive thing where you launch an app, you use it for a
 while, and then you move to something else. If we want VR to be a
 general computing platform, we need to move beyond that. It's
 extremely important, especially for the Web.</span></p>
-<p class="c0"><span>Most people here would agree we're not where we
+<p><span>Most people here would agree we're not where we
 want to be for VR yet.</span></p>
-<p class="c0"><span>How do enable composition of activities, allow
+<p><span>How do enable composition of activities, allow
 overlap and still keep it functional. This will require lots of
 experimentations and failures, but we will get there.</span></p>
-<p class="c0 c1"></p>
-<h2 class="c0 c5" id="h.ublgoxvl4cwz"><span>Browser
+
+<h2 id="h.ublgoxvl4cwz"><span>Browser
 updates</span></h2>
-<p class="c0"><span>Megan Lindsay - update on Chrome. &nbsp;We are
+<p><span><cite>Megan Lindsay</cite> - update on Chrome. We are
 building support for WebVR 1.1 in Chrome for Android, including the
 game extensions. We're targeting M56 for</span> <span class=
-"c9"><a class="c4" href=
-"https://www.google.com/url?q=https://vr.google.com/daydream/&amp;sa=D&amp;ust=1477062934647000&amp;usg=AFQjCNH_QGr-lDN1doGi6NjUxU-Mg7vf0Q">
+"c9"><a href=
+"https://vr.google.com/daydream/">
 daydream</a></span><span>, should be in beta in December, and
 stable release in January. We will first release as an origin trial
 - web sites need to request a (free) token to get access to the
-API.</span> <span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=https://www.chromestatus.com/feature/6331324939894784&amp;sa=D&amp;ust=1477062934647000&amp;usg=AFQjCNHqmyXwQYtFC7SnN5MdPcpFi4reXA">
-Origin trials:</a></span><span>&nbsp;</span></p>
-<p class="c0"><span>The API is still changing quite a bit, so this
+API.</span> <span><a href=
+"https://www.chromestatus.com/feature/6331324939894784">
+Origin trials:</a></span> </p>
+<p><span>The API is still changing quite a bit, so this
 enables us to get feedback from developers before a stable
 release.</span></p>
-<p class="c0"><span>There will also be cardboard support coming
+<p><span>There will also be cardboard support coming
 soon.</span></p>
-<p class="c0"><span>We're also working on WebVR in Chrome for
+<p><span>We're also working on WebVR in Chrome for
 Windows desktop, with plans to support both Rift and Vive - not
 sure if we're targeting M56 or 57, as origin trial.</span></p>
-<p class="c0"><span>Beyond WebVR, we're working on a version of
+<p><span>Beyond WebVR, we're working on a version of
 Chrome that supports browsing in VR for regular 2D sites. Timeline
 towards first half of 2017 for daydream, with later support for
 desktop.</span></p>
-<p class="c0"><span>We're also interested in standardization on
+<p><span>We're also interested in standardization on
 360° videos, and we also want to look beyond WebGL with declarative
 VR. We want to enable existing web sites to add VR features without
 a complete rewrite.</span></p>
-<p class="c0"><span>We also want to look at AR but we're not sure
+<p><span>We also want to look at AR but we're not sure
 what this would entail yet.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8 c14">Frank Olivier,
-Microsoft</span></p>
-<p class="c0"><span>WebVR is in development for Microsoft Edge, it
+
+<p><span><cite>Frank Olivier,
+Microsoft</cite></span></p>
+<p><span>WebVR is in development for Microsoft Edge, it
 will be coming up in an insider release at some point. It's built
 on Windows holographic APIs. We are also very interested in
 advancing the specifications - we think there will be needs in this
 space for years to come.</span></p>
-<p class="c0"><span>If you maintain WebVR content, we're definitely
+<p><span>If you maintain WebVR content, we're definitely
 interested in running it in our browser, to test it beyond our test
 suite.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Justin Rogers, Oculus</span></p>
-<p class="c0"><span>Carmel Developer Preview based on chromium m55
+
+<p><cite>Justin Rogers, Oculus</cite></p>
+<p><span>Carmel Developer Preview based on chromium m55
 should come pretty soon, with support for WebVR 1.1, and limited
 support for Gamepad. Target Gear VR and Touch controler. No 3D
 motion integration.</span></p>
-<p class="c0"><span>In Nov 2016, developer release of Carmel, and
+<p><span>In Nov 2016, developer release of Carmel, and
 of React VR.</span></p>
-<p class="c0"><span>We'll do another update with M56 in Jan/Feb
+<p><span>We'll do another update with M56 in Jan/Feb
 2017</span></p>
-<p class="c0"><span>We will work with other partners also work in
+<p><span>We will work with other partners also work in
 other browsers.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Chris Van Wiemeersch, Mozilla<br>
+
+<p><cite>Chris Van Wiemeersch, Mozilla</cite><br>
 We started in 2014 as an experimental project based on Brandon and
 Vlad's work, who is also involved in WebGL. We had an API and
 wanted to see if we could render content in a browser.</span></p>
-<p class="c0"><span>The workflow is: you go to a Web site, you
+<p><span>The workflow is: you go to a Web site, you
 click on a VR button and you switch to a stereopscopic
 view.</span></p>
-<p class="c0"><span>This was a demonstration that this was
+<p><span>This was a demonstration that this was
 possible.</span></p>
-<p class="c0"><span>It wasn't until Justin Rogers did a hackathon
+<p><span>It wasn't until Justin Rogers did a hackathon
 with a deep dive on the PoC API, and made lots of great suggestions
 to improve performance, developers ergonomics and API.</span>
-<span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=http://www.justrog.com/search/label/WebVR&amp;sa=D&amp;ust=1477062934652000&amp;usg=AFQjCNGcVCjVNChfyNIwZTct-7XsN1tVXA">
-http://www.justrog.com/search/label/WebVR</a></span><span>&nbsp;</span></p>
-<p class="c0"><span>We started a</span> <span class="c9"><a class=
+<span><a href=
+"http://www.justrog.com/search/label/WebVR">
+http://www.justrog.com/search/label/WebVR</a></span> </p>
+<p><span>We started a</span> <span><a class=
 "c4" href=
-"https://www.google.com/url?q=https://www.w3.org/community/webvr/&amp;sa=D&amp;ust=1477062934653000&amp;usg=AFQjCNEcfkHbvbmTBfoNfz1HmsS0ULmAHw">
+"https://www.w3.org/community/webvr/">
 WebVR Community Group</a></span> <span>- it has 100+ participants,
 it's free, chaired by Brandon and myself.</span></p>
-<p class="c0"><span>As we introduced more hardware support, we had
+<p><span>As we introduced more hardware support, we had
 to update a number of our assumption in the APIs.</span></p>
-<p class="c0"><span>WebVR is getting a lot of legitimacy with
+<p><span>WebVR is getting a lot of legitimacy with
 "native" VR developers.</span></p>
-<p class="c0"><span>Casey and @@@ worked on a prototype of what a
+<p><span>Casey and @@@ worked on a prototype of what a
 VR browser would look like, demonstrating e.g. how to click on a
 link, transitioning to a new view.</span></p>
-<p class="c0"><span>This is built around iframes - we don't have
+<p><span>This is built around iframes - we don't have
 hooks for handling navigation transitions.</span></p>
-<p class="c0"><span>We created a backwards-compatible VR browser to
+<p><span>We created a backwards-compatible VR browser to
 find deficiencies in the WebVR API.</span></p>
-<p class="c0"><span>In the demo, we navigate in regular 2D pages,
+<p><span>In the demo, we navigate in regular 2D pages,
 controlled by Xbox; when moving to a 3D page, it switches to
 immersive 3D view. This made us realize of some deficiencies in the
 tooling - that's where a-frame came in: it catalyzes the creation
 of content and also helped us assess the API is viable.</span></p>
-<p class="c0"><span>[these examples show VR doesn't have to be
+<p><span>[these examples show VR doesn't have to be
 gaming or action oriented - it can be meditative]</span></p>
-<p class="c0"><span>[this demo illustrates the performance and
+<p><span>[this demo illustrates the performance and
 interactivity you can get in Web browsers for high end
 VR]</span></p>
-<p class="c0"><span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=https://iswebvrready.org/&amp;sa=D&amp;ust=1477062934655000&amp;usg=AFQjCNFB9quTNn9aqvShgAUDz9aAgz-0jA">
-https://iswebvrready.org/</a></span><span>&nbsp;shows interested
+<p><span><a href=
+"https://iswebvrready.org/">
+https://iswebvrready.org/</a></span><span>shows interested
 browsers, support for the various APIs - it's collaboratively
 maintained, including by other browser vendors.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Casey Yee, Mozilla</span></p>
-<p class="c0"><span>It's crazy to see all the work that has been
+
+<p><cite>Casey Yee, Mozilla</cite></p>
+<p><span>It's crazy to see all the work that has been
 happening for past couple of years. The platform work is headed up
 by Kip @@@ who couldn't make it today - I'm speaking on his
 behalf.</span></p>
-<p class="c0"><span>A lot of the focus has been around getting the
+<p><span>A lot of the focus has been around getting the
 API implemented, making it work in our browser. The APIs are
 available in Nightly, with support for HTC5, Oculus Rift, and
 working on OSVR(?) support.</span></p>
-<p class="c0"><span>As we continue with implementation, we are
+<p><span>As we continue with implementation, we are
 trying to get a pipeline and process to bring these APIs in
 production form. We have 1.0 API support, and we're planning to
 have these APIs available in the stable browser for Firefox 51,
 available in Q12017.</span></p>
-<p class="c0"><span>It will be available in a production browser,
+<p><span>It will be available in a production browser,
 so available to lots of developers - which is very
 exciting.</span></p>
-<p class="c0"><span>It's going through our beta API
+<p><span>It's going through our beta API
 program.</span></p>
-<p class="c0"><span>Beside performances, we have been working with
+<p><span>Beside performances, we have been working with
 other teams needed for VR: audio, gamepad, WebRTC for co-presence -
 lots of exciting things coming up.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Laszlo Gombos, Samsung</span></p>
-<p class="c0"><span>I'm going to talk mostly about mobile VR - as
+
+<p><cite>Laszlo Gombos, Samsung</cite></p>
+<p><span>I'm going to talk mostly about mobile VR - as
 enabled by Gear VR.</span></p>
-<p class="c0"><span>The Gear VR has an external touch pad, and an
+<p><span>The Gear VR has an external touch pad, and an
 external usb port which enables to plug more input
 devices.</span></p>
-<p class="c0"><span>Gear VR has pretty large field of view, it has
+<p><span>Gear VR has pretty large field of view, it has
 improved tracking - when docked, it doesn't use the mobile device
 sensors but its own IMU.</span></p>
-<p class="c0"><span>We built a VR-first browser - it not only
+<p><span>We built a VR-first browser - it not only
 supports WebVR, but it also enables browsing the regular Web in VR.
 For instance, to consume existing medias in VR - kind of the TV use
 case.</span></p>
-<p class="c0"><span>This is good way to get people hooked up on VR
+<p><span>This is good way to get people hooked up on VR
 content.</span></p>
-<p class="c0"><span>We try to take advantage of the space around
+<p><span>We try to take advantage of the space around
 you for interactions.</span></p>
-<p class="c0"><span>This shipped in Dec 2015, 10 months ago. We got
+<p><span>This shipped in Dec 2015, 10 months ago. We got
 pretty positive feedback.</span></p>
-<p class="c0"><span>First stable release in March 2016, with WebVR
+<p><span>First stable release in March 2016, with WebVR
 support based on M44 Chromium. The WebVR support has to be enabled
 specifically though.</span></p>
-<p class="c0"><span>We are 1.0 since April, and our latest release
+<p><span>We are 1.0 since April, and our latest release
 was in August.</span></p>
-<p class="c0"><span>This is a VR-only product that users have to
+<p><span>This is a VR-only product that users have to
 download - we reached over 1M downloads!</span></p>
-<p class="c0"><span>If you are in mobile and in the samsung
+<p><span>If you are in mobile and in the samsung
 browser, watching content/video, and dock the mobile in the
 headset, we will switch you seamlessly to the VR
 browser.</span></p>
-<p class="c0"><span>We support voice input for text. We have
+<p><span>We support voice input for text. We have
 curated content.</span></p>
-<p class="c0"><span>We have an extension of HTML video
+<p><span>We have an extension of HTML video
 support.</span></p>
-<p class="c0"><span>We allow the Web page itself ot change the
+<p><span>We allow the Web page itself ot change the
 environment (e.g. show a background scene image around the browser
 window in immersive view) - this is already shipping, the skybox
 JavaScript API. “Progressive enhancement” from 2d Web.</span></p>
-<p class="c0"><span>[showing demo of Skybox API]</span></p>
-<p class="c0"><span>What's next: we want to enable WebVR by
+<p><span>[showing demo of Skybox API]</span></p>
+<p><span>What's next: we want to enable WebVR by
 default, which requires improving performance; we want to bring
 more control to the VR environment e.G. with the Skybox
 API.</span></p>
-<p class="c0"><span>Discussing what bringing the latest
+<p><span>Discussing what bringing the latest
 improvements of Web Platform to VR is also quite exciting to me
 (e.g. Progressive Web Apps).</span></p>
-<h1 class="c0 c5" id="h.eks43gk1gtm9"><span>VR user interactions in
+<h1 id="h.eks43gk1gtm9"><span>VR user interactions in
 browsers</span></h1>
-<h3 class="c0 c5" id="h.y1dwoy6x4yo6"><span>Designing the browser
+<h3 id="h.y1dwoy6x4yo6"><span>Designing the browser
 (Josh Carpenter, Google)</span></h3>
-<p class="c0"><span>Josh - been working on figuring out how we want
+<p><span><cite>Josh</cite>: been working on figuring out how we want
 the experience of surfing the web with a VR headset. As designer,
 want to create possibilities - create the conditions so others can
 make experiences.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>By the way - that (demoed on screen) is all
+
+<p><span>By the way - that (demoed on screen) is all
 CSS.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>“Cambrian explosion” of browsers. For years
+
+<p><span>“Cambrian explosion” of browsers. For years
 we’ve been trying to cram browsers in those tiny screens. In
 comparison - VR is an infinite canvas! We are about to see an
 explosion in browsers.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>What are the things we think all browsers
+
+<p><span>What are the things we think all browsers
 should do consistently? Somewhere between pure freedom and a few
 guard rails:</span></p>
-<ul class="c6 lst-kix_ci5td4zaubdl-0 start">
-<li class="c0 c2"><span>Avoid dead zones - give developers freedom
+<ul>
+<li><span>Avoid dead zones - give developers freedom
 to design</span></li>
-<li class="c0 c2"><span>Facilitate speed - this is where the web
+<li><span>Facilitate speed - this is where the web
 can compete (not necessarily graphics but speed, especially speed
 of loading). Show demos of transitions.</span></li>
-<li class="c0 c2"><span>Big paws and oil tankers - obligation to
+<li><span>Big paws and oil tankers - obligation to
 learn from nimble VR-first projects</span></li>
 </ul>
-<h3 class="c0 c5" id="h.iaqv49ga1v7d"><span>Link traversal in WebVR
+<h3 id="h.iaqv49ga1v7d"><span>Link traversal in WebVR
 (Chris Van Wiemeersch, Casey Yee, Mozilla)</span></h3>
-<p class="c0"><span>Casey and Chris. Colleagues at Mozilla. Always
+<p><span>Casey and Chris. Colleagues at Mozilla. Always
 wanted to move between content in VR. Hyperlink is a fundamental
 portion of what we think the web should be, want to port that to
 Web VR.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Web evolution. Move from Page to
+
+<p><span>Web evolution. Move from Page to
 World.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Our responsibility, what we have to do to
+
+<p><span>Our responsibility, what we have to do to
 preserve future of the web as we know it:</span></p>
-<ul class="c6 lst-kix_hgrss6dlgoht-0 start">
-<li class="c0 c2"><span>User Control - choice of where to go and
+<ul>
+<li><span>User Control - choice of where to go and
 how to get there</span></li>
-<li class="c0 c2"><span>Security - no surprises. Protect the user
+<li><span>Security - no surprises. Protect the user
 from bad surprises, cross scripting etc</span></li>
-<li class="c0 c2"><span>Openness - enforces interop. Make sure
+<li><span>Openness - enforces interop. Make sure
 these aspects of navigation remain</span></li>
 </ul>
-<p class="c0 c1"></p>
-<p class="c0"><span>Demo (maybe??). OK, no demo. Videos.</span></p>
-<ul class="c6 lst-kix_4a3w3qp8kij7-0 start">
-<li class="c0 c2"><span>Representation of the link as some kind of
+
+<p><span>Demo (maybe??). OK, no demo. Videos.</span></p>
+<ul>
+<li><span>Representation of the link as some kind of
 orb in space</span></li>
 </ul>
-<p class="c0 c1"></p>
-<p class="c0"><span>Note this is not something discussed in depth
+
+<p><span>Note this is not something discussed in depth
 in the webVR community. This is an invitation to come and discuss
 the how - this was only the why.</span></p>
-<h3 class="c0 c5" id="h.s5o9r7vifzq1"><span>Hand tracking and
+<h3 id="h.s5o9r7vifzq1"><span>Hand tracking and
 gesture for WebVR (Ningxin Hu, Intel)</span></h3>
-<p class="c0"><span>Slides:</span> <span class="c9"><a class="c4"
+<p><span>Slides:</span> <span><a
 href=
-"https://www.google.com/url?q=https://huningxin.github.io/webvr-hand/%23/&amp;sa=D&amp;ust=1477062934665000&amp;usg=AFQjCNGphyuqo_DIMksZaJqa1AB8n9nQxA">
+"https://huningxin.github.io/webvr-hand/#/">
 https://huningxin.github.io/webvr-hand/#/</a></span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Want to talk about hand tracking and
+
+<p><span>Want to talk about hand tracking and
 interaction.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Quote Brandon Jones: “</span><span class=
+
+<p><span>Quote Brandon Jones: “</span><span class=
 "c13">They watch some demos or play a game and walk away saying how
 impressive it is, but almost everyone makes a remark about how they
 wish they had hands</span><span>.”</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Today’s techniques generally using depth
+
+<p><span>Today’s techniques generally using depth
 camera. Create depth map.</span></p>
-<p class="c0"><span>Two kinds of hand tracking: skeleton tracking
+<p><span>Two kinds of hand tracking: skeleton tracking
 and cursor tracking</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Demo of skeleton hand tracking - for avatar
+
+<p><span>Demo of skeleton hand tracking - for avatar
 hand tracking. More computing intensive, thus challenging for
 mobile devices as it impacts the battery life and may introduce
 latency. No standards for this today, typically using websockets.
 Area for standards?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Cursor tracking models the hand as one pointer
+
+<p><span>Cursor tracking models the hand as one pointer
 in space. Lighter weight, requires less computing, and can be more
 stable and accurate which makes it better for accurate UI
 control.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Another aspect is gesture recognition. This
+
+<p><span>Another aspect is gesture recognition. This
 delivers high level events. Recent trend to use hardware
 acceleration to handle this. This area is quite heavily patented,
 could be problematic.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Quote “</span><span class="c13">So my
+
+<p><span>Quote “</span><span>So my
 prediction is that in five years we'll see good avatar hand
 tracking and gesture-based simple interface control</span><span>”-
 Michael Abrash</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>We need to get open web ready for
+
+<p><span>We need to get open web ready for
 that.</span></p>
-<h3 class="c0 c5" id="h.91vx5wt980zx"><span>Coordinate Systems,
+<h3 id="h.91vx5wt980zx"><span>Coordinate Systems,
 Spatial Perception in Windows Holographic (Nell Waliczek,
 Microsoft)</span></h3>
-<p class="c0"><span>Nell - one of the developers on the Windows
+<p><span><cite>Nell</cite>: one of the developers on the Windows
 Holographic dev platform. Now enabled in mainstream PCs.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Want to talk about spatial
+
+<p><span>Want to talk about spatial
 perception.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Need to know where the user is. Hololens does
+
+<p><span>Need to know where the user is. Hololens does
 that without external HW. But we also need persistence of the world
 around us. “Go anywhere” with hololens (photo in ISS).</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>What’s the catch? No such thing as fixed,
+
+<p><span>What’s the catch? No such thing as fixed,
 global coordinate system. Landmarks may not be where they’re
 expected to be. Other issues sucgh as low lighting, obstruction
 etc.</span></p>
-<p class="c0"><span>Solution? Spatial perception.</span></p>
-<p class="c0 c1"></p>
-<ul class="c6 lst-kix_3uezvfg3xuiv-0 start">
-<li class="c0 c2"><span>Attached frame of reference</span></li>
-<li class="c0 c2"><span>Stationary frame of reference</span></li>
-<li class="c0 c2"><span>Spatial Anchor</span></li>
+<p><span>Solution? Spatial perception.</span></p>
+
+<ul>
+<li><span>Attached frame of reference</span></li>
+<li><span>Stationary frame of reference</span></li>
+<li><span>Spatial Anchor</span></li>
 </ul>
-<p class="c0 c1"></p>
-<p class="c0"><span>Best practices (lots of bullets!) @@ need link
+
+<p><span>Best practices (lots of bullets!) @@ need link
 to slide</span></p>
-<h3 class="c0 c5" id="h.qtzn1hqc4lzf"><span>Ray Input: default
+<h3 id="h.qtzn1hqc4lzf"><span>Ray Input: default
 WebVR interaction (Boris Smus, Google)</span></h3>
-<p class="c0"><span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=https://docs.google.com/presentation/d/1k1dAEKB7axIOum5OiwNTcq4vVpHjSlbQdkjeEDdVKgw/edit%23slide%3Did.p&amp;sa=D&amp;ust=1477062934673000&amp;usg=AFQjCNEKw4-v_T-1RRLRjAw8QqNwNl7fCQ">
+<p><span><a href=
+"https://docs.google.com/presentation/d/1k1dAEKB7axIOum5OiwNTcq4vVpHjSlbQdkjeEDdVKgw/edit#slide=id.p">
 https://docs.google.com/presentation/d/1k1dAEKB7axIOum5OiwNTcq4vVpHjSlbQdkjeEDdVKgw/edit#slide=id.p</a></span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Want to talk about Ray Input. But first, go
+
+<p><span>Want to talk about Ray Input. But first, go
 back to 1998. The web had Pages, scrollbars, blue links etc.
 Imagine if we only had a mouse and no interaction standards to
 start with?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>2016 VR world? Yeah, that. What should the
+
+<p><span>2016 VR world? Yeah, that. What should the
 input patterns be? Currently a lot of experimentation, which is
 both good and frustrating for end users.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Proposing laser-pointer style defaults, and
+
+<p><span>Proposing laser-pointer style defaults, and
 fallbacks for non-VR platforms.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>[Video] shows all the interaction modes,
+
+<p><span>[Video] shows all the interaction modes,
 depending on platforms:</span></p>
-<ul class="c6 lst-kix_ltrsrhbgs7s0-0 start">
-<li class="c0 c2"><span>Mouse interaction. Look around with mouse
+<ul>
+<li><span>Mouse interaction. Look around with mouse
 lock, ...</span></li>
-<li class="c0 c2"><span>Touch interaction. Touch panning,
+<li><span>Touch interaction. Touch panning,
 tapping</span></li>
-<li class="c0 c2"><span>Cardboard mode. Tap anywhere and
+<li><span>Cardboard mode. Tap anywhere and
 interact</span></li>
-<li class="c0 c2"><span>Daydream - ray-based
+<li><span>Daydream - ray-based
 interaction</span></li>
 </ul>
-<p class="c0 c1"></p>
-<p class="c0"><span>Fairly simple API, open source.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Questions: where do you position the daydream
+
+<p><span>Fairly simple API, open source.</span></p>
+
+<p><span>Questions: where do you position the daydream
 controller. Arm model? Give it orientation + position. Built open
 source simulator. Feedback welcome on github. @@ link?</span></p>
-<p class="c0 c1"></p>
-<h3 class="c0 c5" id="h.bf83sblk6vu"><span>Samsung VR Browser for
+
+<h3 id="h.bf83sblk6vu"><span>Samsung VR Browser for
 GearVR learnings (Laszlo Gombos, Samsung)</span></h3>
-<p class="c0"><span>Laszlo continues from earlier talk. Want to
+<p><span>Laszlo continues from earlier talk. Want to
 talk about how to solve issue of tab management in VR. Currently
 feedback is along the lines of “too complicated”, or “have to move
 head too much”.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Came up with another model, but then people
+
+<p><span>Came up with another model, but then people
 started asking for more windows.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Mike Blix takes the floor to talk about Skybox
-API. &nbsp;Goal: easy enhancement for VR. Change skybox environment
+
+<p><span>Mike Blix takes the floor to talk about Skybox
+API. Goal: easy enhancement for VR. Change skybox environment
 in VR web browsing environment. Discussions on how to
 declare.</span></p>
-<p class="c0"><span>&nbsp;</span></p>
-<p class="c0"><span>API is fairly simple. Use case for preview of
+<p> </p>
+<p><span>API is fairly simple. Use case for preview of
 webVR content, for example.</span></p>
-<h3 class="c0 c5" id="h.fa24p912qumu"><span>Group Discussion /
+<h3 id="h.fa24p912qumu"><span>Group Discussion /
 Joint Summary</span></h3>
-<p class="c0"><span>Opening the floor. Potch reads questions from
+<p><span>Opening the floor. Potch reads questions from
 slack.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>1.</span> <span>How do you bridge the gap
+
+<p><span>How do you bridge the gap
 [didn’t get details]</span></p>
-<p class="c0"><span>Nell - tell me more about what you’d like to
+<p><span><cite>Nell</cite>: tell me more about what you’d like to
 see?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>2. Question on raycasting. How do you have arm
+
+<p>Question on raycasting. How do you have arm
 model without extra input?</span></p>
-<p class="c0"><span>Boris: heuristics based on fixed offset between
+<p><span><cite>Boris</cite>: heuristics based on fixed offset between
 head and elbow.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>3. Also on raycasting. How do we borrow more
+
+<p>Also on raycasting. How do we borrow more
 interactions from 3D game developers. Look to huge library of 3d
 games and borrow beyond interaction with basic pointers.</span></p>
-<p class="c0"><span>Boris: still very new</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>4. Philip S - great start, but there are so
+<p><span><cite>Boris</cite>: still very new</span></p>
+
+<p><cite>Philip S</cite>: great start, but there are so
 many other interaction patterns we want to bring in and make
 reusable. Maybe topic for breakout tomorrow.</span></p>
-<p class="c0"><span>(Brandon - there’s a slack channel we just
-created)</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>5. Jim Bricker - question on gesture control:
+<p><span><cite>Brandon</cite>: there’s a slack channel we just
+created</span></p>
+
+<p><cite>Jim Bricker</cite>:  question on gesture control:
 anyone thought of using device everyone already knows
 (smartphone)</span></p>
-<p class="c0"><span>Ningxin: depends on smartphone vendors adding
+<p><span><cite>Ningxin</cite>: depends on smartphone vendors adding
 the right sensors.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>6 Potch: how do we find basic standard set of
+
+<p><cite>Potch</cite>: how do we find basic standard set of
 gesture given cultural variety</span></p>
-<p class="c0"><span>Ningxin: [missed response]</span></p>
-<p class="c0"><span>Philip S: interesting thing we’ve done: hand
+<p><span><cite>Ningxin</cite>: [missed response]</span></p>
+<p><span>Philip S: interesting thing we’ve done: hand
 facing out interacts with the world, looking at palm of your hand
 shows menu</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>7. Sean W: worth thinking on IEEE VR, not to
+
+<p><cite>Sean W</cite>: worth thinking on IEEE VR, not to
 copy them but worth adopting some of their work on e.g.
 click</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>8. Question for Samsung folks on skybox: can
+
+<p><cite>Question for Samsung folks on skybox</cite>: can
 you do things like gradients.</span></p>
-<p class="c0"><span>Mike: you can generate color image dynamically,
+<p><span><cite>Mike</cite>: you can generate color image dynamically,
 etc. Sharing details on slack.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>9. Chris vW: how do you imagine implementation
+
+<p><cite>Chris vW</cite>: how do you imagine implementation
 of [??] (skybox, scribe assumes?)</span></p>
-<p class="c0"><span>Laszlo: you have basically HTTP headers, meta
+<p><span><cite>Laszlo</cite>: you have basically HTTP headers, meta
 tags or js. Discussion on which one you want. Our intent would be
 to standardise.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>10: Nat Brown (Valve): not enough thinking
+
+<p><span><cite>Nat Brown (Valve)</cite>: not enough thinking
 about room scale. Transition important in larger areas.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Potch - leads us to goals of this session -
+
+<p><span><cite>Potch</cite>:  leads us to goals of this session -
 identifying need for basic primitives. Maybe better primitives for
 location and room scale.</span></p>
-<p class="c0"><span>Brandon: reiterates needs for common
+<p><span><cite>Brandon</cite>: reiterates needs for common
 primitives, using the idea of scrollbar as example. This is like
 native apps where they all control differently. There is value to
 that, to having things purpose built. But we want to give the web
 primitives that work in more predictable way.</span></p>
-<p class="c0"><span>Philip S: we also should think about AR at the
+<p><span><cite>Philip S</cite>: we also should think about AR at the
 same time, because it is different - there are objects in the world
 you want to interact with. Need to think about that.</span></p>
-<p class="c0"><span>LucC: unifying by thinking of AR as different
+<p><span><cite>LucC</cite>: unifying by thinking of AR as different
 only in transparency?</span></p>
-<p class="c0"><span>Brandon: main difference is environmental
+<p><span><cite>Brandon</cite>: main difference is environmental
 knowledge.</span></p>
-<p class="c0"><span>Nell: if you’re not trying to bound user to
+<p><span><cite>Nell</cite>: if you’re not trying to bound user to
 where they are in environment, none of this is hard. Transparency
 is only a piece of that. Simultaneous connection to reality of
 place too.</span></p>
-<p class="c0"><span>Chris vW: webVR is the more mature of the
+<p><span><cite>Chris vW</cite>: webVR is the more mature of the
 immersive APIs. But we’re going towards 3D browsers, while
 developers are used to 2D. It’s really about getting the web into
 3rd dimension, not just about VR, AR, MR. 3D web.</span></p>
-<p class="c0"><span>Philip S: want to add to the AR discussion. In
+<p><span><cite>Philip S</cite>: want to add to the AR discussion. In
 a VR world everything is in that world. Different interactive
 distributed simulated environment.</span></p>
-<p class="c0"><span>Diego: 1 to 1 mapping of space to movement for
+<p><span><cite>Diego</cite>: 1 to 1 mapping of space to movement for
 room scale environments. Ability to integrate real objects into the
 VR world. We can explore this.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: tries to summarise things needing
+
+<p><span><cite>Dom</cite>: tries to summarise things needing
 attention from standardisation perspective:</span></p>
-<ul class="c6 lst-kix_h81c3ljt3bmt-0 start">
-<li class="c0 c2"><span>Gesture recognition (but
+<ul>
+<li><span>Gesture recognition (but
 culture)</span></li>
-<li class="c0 c2"><span>Perception API</span></li>
-<li class="c0 c2"><span>User input model</span></li>
-<li class="c0 c2"><span>Skybox API</span></li>
-<li class="c0 c2"><span>Keep AR in mind for interaction
+<li><span>Perception API</span></li>
+<li><span>User input model</span></li>
+<li><span>Skybox API</span></li>
+<li><span>Keep AR in mind for interaction
 model</span></li>
-<li class="c0 c2"><span>transitions / flash of light</span></li>
+<li><span>transitions / flash of light</span></li>
 </ul>
-<ul class="c6 lst-kix_h81c3ljt3bmt-1 start">
-<li class="c10 c0"><span>&nbsp;preload next page/experience
+<ul>
+<li><span>preload next page/experience
 (header?)</span></li>
 </ul>
-<ul class="c6 lst-kix_h81c3ljt3bmt-0">
-<li class="c0 c2"><span>flow / simple layout (via library?) for
+<ul>
+<li><span>flow / simple layout (via library?) for
 3D</span></li>
-<li class="c0 c2"><span>collision detection / event
+<li><span>collision detection / event
 management</span></li>
-<li class="c0 c2"><span>priority zone (avoid getting
+<li><span>priority zone (avoid getting
 lost)</span></li>
 </ul>
-<ul class="c6 lst-kix_h81c3ljt3bmt-1 start">
-<li class="c10 c0"><span>how to navigate VR experiences / design
+<ul>
+<li><span>how to navigate VR experiences / design
 navigation mechanisms</span></li>
-<li class="c10 c0"><span>guiding the user: what is the standard
+<li><span>guiding the user: what is the standard
 model to get oriented</span></li>
 </ul>
-<p class="c0 c1"></p>
-<p class="c0"><span>Jason Marsh: (pre)loading/whitespace
+
+<p><span><cite>Jason Marsh</cite>: (pre)loading/whitespace
 transitions. How do we know how that feels/should work?</span></p>
-<p class="c0"><span>Chris vW: ongoing work on transitions. Going to
+<p><span><cite>Chris vW</cite>: ongoing work on transitions. Going to
 help 2D but will also help VR immensely. (@@link?)</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>James (??): simple layout, flow. Like in CSS.
+
+<p><span><cite>James</cite>: simple layout, flow. Like in CSS.
 Also need something for collision detection.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Jeff Rosenberger: need for a priority zone so
+
+<p><span><cite>Jeff Rosenberger</cite>: need for a priority zone so
 user does not get lost. I.e., a place where new apps appear “in
 front”</span></p>
-<p class="c0"><span>Casey: navigating VR environments. Need to
+<p><span><cite>Casey</cite>: navigating VR environments. Need to
 design wayfinding mechanisms.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Poch: good segue into accessibility set of
+
+<p><span><cite>Poch</cite>: good segue into accessibility set of
 lightning talks.</span></p>
-<h1 class="c0 c5" id="h.bnn5iuwv9rom"><span>Accessibility of VR
+<h1 id="h.bnn5iuwv9rom"><span>Accessibility of VR
 experiences</span></h1>
-<h3 class="c0 c5" id="h.aflgjnz25o25"><span>Accessibility Not An
+<h3 id="h.aflgjnz25o25"><span>Accessibility Not An
 After Thought (Charles LaPierre, Benetech)</span></h3>
-<p class="c0"><span class="c7 c9"><a class="c4" href=
-"https://www.google.com/url?q=https://benetech.app.box.com/s/0vgnivm0pawfti0izzs11srppp9dfn1o&amp;sa=D&amp;ust=1477062934691000&amp;usg=AFQjCNGe_Br3VhGlzzT0sTTSv8I8DuVbKQ">
+<p><span><a href=
+"https://benetech.app.box.com/s/0vgnivm0pawfti0izzs11srppp9dfn1o">
 https://benetech.app.box.com/s/0vgnivm0pawfti0izzs11srppp9dfn1o</a></span></p>
-<p class="c0"><span>Overview of accessibility at W3C: crosses a
+<p><span>Overview of accessibility at W3C: crosses a
 number of domains and disabilities. Disabilities to consider
 include auditory, cognitive, neuro;ogical, phsicial, speech,
 visual.</span></p>
-<p class="c0"><span>Needs to be part of all aspects.</span></p>
-<p class="c0"><span>Multimodal: Accessibilty is inherently
+<p><span>Needs to be part of all aspects.</span></p>
+<p><span>Multimodal: Accessibilty is inherently
 providing information from modality in another.</span></p>
-<p class="c0"><span>Both inputs and outputs need to be
+<p><span>Both inputs and outputs need to be
 accessible.</span></p>
-<p class="c0"><span>Example, an accessible shopping experience. If
+<p><span>Example, an accessible shopping experience. If
 one user uses gloves to interact with video, another visually
 impaired user might have self-voicing option. Proximity. More
 detail. Speech input,</span></p>
-<p class="c0"><span>Consider multiple disabilities, e.g.
+<p><span>Consider multiple disabilities, e.g.
 deaf-blind. May need another input or one that hasn’t yet been
 invented.</span></p>
-<p class="c0"><span>Consider all the inputs in a shopping
+<p><span>Consider all the inputs in a shopping
 experience. Sight, touch, description; how would we present the
 “shop for a dress” experience to all the senses, including for
 someone who lacks some of those senses.</span></p>
-<p class="c0"><span>Make accessibility a first-class citizen. Work
+<p><span>Make accessibility a first-class citizen. Work
 with accessibility groups.</span></p>
-<p class="c0"><span>Built accessibility use cases, look for ways
+<p><span>Built accessibility use cases, look for ways
 general interfaces support accessibility.</span></p>
-<p class="c0"><span><br>
+<p><span><br>
 VR to help the disabled, e.g. to help train with
 prosthetics…</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Consider lessons learned from making videos and
+
+<p><span>Consider lessons learned from making videos and
 images accessible.<br></span></p>
-<h3 class="c0 c5" id="h.xzim0fsnc6kl"><span>Browser UX in VR
+<h3 id="h.xzim0fsnc6kl"><span>Browser UX in VR
 (Justin Rogers, Oculus VR)</span></h3>
-<p class="c0"><span class="c7 c9"><a class="c4" href=
-"https://www.google.com/url?q=https://onedrive.live.com/view.aspx?resid%3DDB996F916EA4CF47!60653%26ithint%3Dfile%252cpptx%26app%3DPowerPoint%26authkey%3D!AAsddctAo_Xqqsc&amp;sa=D&amp;ust=1477062934694000&amp;usg=AFQjCNGYuUKbY8szzayAXVop1S1sPmJxfQ">
+<p><span><a href=
+"https://onedrive.live.com/view.aspx?resid=DB996F916EA4CF47!60653&ithint=file%252cpptx&app=PowerPoint&authkey=!AAsddctAo_Xqqsc">
 https://onedrive.live.com/view.aspx?resid=DB996F916EA4CF47!60653&amp;ithint=file%2cpptx&amp;app=PowerPoint&amp;authkey=!AAsddctAo_Xqqsc</a></span></p>
-<p class="c0"><span>I’m talking about making Web content accessible
+<p><span>I’m talking about making Web content accessible
 to all. Is 2d web accessible in VR? The web still has lots of 2d
 content. Input is limited.</span></p>
-<p class="c0"><span>What are the most used applications? Virtual
+<p><span>What are the most used applications? Virtual
 desktops and browser VR. They’re sort of uncomfortable: it’s an
 accessibility problem for all of us.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>4 key areas to look at:</span></p>
-<ul class="c6 lst-kix_tn0fw6ktugzp-0 start">
-<li class="c0 c2"><span>High quality reprojection.</span></li>
+
+<p><span>4 key areas to look at:</span></p>
+<ul>
+<li><span>High quality reprojection.</span></li>
 </ul>
-<ul class="c6 lst-kix_tn0fw6ktugzp-1 start">
-<li class="c10 c0"><span>Fix text. Cylinder surfaces.</span></li>
-<li class="c10 c0"><span>Good UI, positioned for head
+<ul>
+<li><span>Fix text. Cylinder surfaces.</span></li>
+<li><span>Good UI, positioned for head
 comfort.</span></li>
 </ul>
-<ul class="c6 lst-kix_tn0fw6ktugzp-0">
-<li class="c0 c2"><span>Nail input.</span></li>
+<ul>
+<li><span>Nail input.</span></li>
 </ul>
-<ul class="c6 lst-kix_tn0fw6ktugzp-1 start">
-<li class="c10 c0"><span>Most inputs can be resolved with
+<ul>
+<li><span>Most inputs can be resolved with
 gaze</span></li>
-<li class="c10 c0"><span>Big hit-targets, Hit-target
+<li><span>Big hit-targets, Hit-target
 attraction</span></li>
-<li class="c10 c0"><span>Link disambiguation UX</span></li>
-<li class="c10 c0"><span>Voice commands, simplified ux</span></li>
-<li class="c0 c10"><span>Limited context</span></li>
+<li><span>Link disambiguation UX</span></li>
+<li><span>Voice commands, simplified ux</span></li>
+<li><span>Limited context</span></li>
 </ul>
-<ul class="c6 lst-kix_tn0fw6ktugzp-0">
-<li class="c0 c2"><span>Design for security and
-trust&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+<ul>
+<li><span>Design for security and
+trust</span></li>
 </ul>
-<ul class="c6 lst-kix_tn0fw6ktugzp-1 start">
-<li class="c10 c0"><span>anti-spoofing</span></li>
+<ul>
+<li><span>anti-spoofing</span></li>
 </ul>
-<ul class="c6 lst-kix_tn0fw6ktugzp-0">
-<li class="c0 c2"><span>Redesign for the medium.</span></li>
+<ul>
+<li><span>Redesign for the medium.</span></li>
 </ul>
-<h3 class="c0 c5" id="h.kn3ls6wjttzc"><span>Mixed reality (Rob
+<h3 id="h.kn3ls6wjttzc"><span>Mixed reality (Rob
 Manson, awe.media)</span></h3>
-<p class="c0"><span class="c7 c9"><a class="c4" href=
-"https://www.google.com/url?q=https://docs.google.com/presentation/d/1FHbh0XrOcsPNs5pjJs9oFPU-D5p2bTZ2wVtkGFVz5wk/&amp;sa=D&amp;ust=1477062934698000&amp;usg=AFQjCNGfhxqp4AfUvImaQQGUr7jjJOG5uQ">
+<p><span><a href=
+"https://docs.google.com/presentation/d/1FHbh0XrOcsPNs5pjJs9oFPU-D5p2bTZ2wVtkGFVz5wk/">
 https://docs.google.com/presentation/d/1FHbh0XrOcsPNs5pjJs9oFPU-D5p2bTZ2wVtkGFVz5wk/</a></span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>I’m from Awe Media. Pitching development of AR
+
+<p><span>I’m from Awe Media. Pitching development of AR
 in the web browser, this is a critical time.</span></p>
-<p class="c0"><span>Mixed reality on the web. Real-world input into
+<p><span>Mixed reality on the web. Real-world input into
 virtual space. Geometry of tech shape how we use it, changes
 innovation. Consider the evolution of the camera, from camera
 obscura, brownie with viewfinder, SLR, LCD screens,
 selfies.</span></p>
-<p class="c0"><span>Geometry of spatial apps in HTML5.
-&nbsp;Objects i the real-world that exist beyond “far” How can we
+<p><span>Geometry of spatial apps in HTML5.
+Objects i the real-world that exist beyond “far” How can we
 bring depth in?</span></p>
-<p class="c0"><span>Orientation and position.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Question: what about
+<p><span>Orientation and position.</span></p>
+
+<p><span><cite>Question</cite>: what about
 color-blindness?</span></p>
-<p class="c0"><span>Charles LaPierre: We want to be able to allow
+<p><span><cite>Charles LaPierre</cite>: We want to be able to allow
 shifting of color spectrum, manipulated by APIs or by user. That’s
 possible now. We can use VR to demo what a person with
 color-blindness sees in different scenarios, and how to make it
 more accessible.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Brandon: I am red-green deficient, so this is
+
+<p><span><cite>Brandon</cite>: I am red-green deficient, so this is
 important to me. In VR today, there’s already some post-processing,
 so we could add color-shifting. Also, volumetric data.</span></p>
-<p class="c0"><span><br>
-Shannon: I worked on ARIA spec, declarative attributes on HTML DOM
+<p><span><br><cite>
+Shannon</cite>: I worked on ARIA spec, declarative attributes on HTML DOM
 tags for purposes and intents. We should look at how that can be
 adapted to WebVR.</span></p>
-<p class="c0"><span>On-click element, declarative.</span></p>
-<p class="c0"><span>LucC: Look at solutions from “real life”,
+<p><span>On-click element, declarative.</span></p>
+<p><span><cite>LucC</cite>: Look at solutions from “real life”,
 diversity of accessibility solutions, we should make it possible to
 adapt these in VR.</span></p>
-<p class="c0"><span>JamesBaicoianu: Re post-processing, look at
+<p><span><cite>JamesBaicoianu</cite>: Re post-processing, look at
 CSS, users can specify styles that override the web
 author.</span></p>
-<p class="c0"><span>Anssi: Declarative, learn from CSS. How do the
+<p><span><cite>Anssi</cite>: Declarative, learn from CSS. How do the
 existing accessibility tools for the web fit into WebVR? What
 abstraction layers?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Charles LaPierre: We need low-level APIs that
+
+<p><span><cite>Charles LaPierre</cite>: We need low-level APIs that
 can interact with existing assistive tech. That exists, e.g.
 braille display, tongue sensors for visualizing imagery. Where APIs
 exist, you should be able to interact with those in VR. Give
 developers hooks to those APIs. Personalization is a big part of
 accessibility: not every blind person can read braille, so let them
 work through the modes they do use.</span></p>
-<p class="c0"><span>Philip: HDR displays will introduce new issues.
+<p><span><cite>Philip</cite>: HDR displays will introduce new issues.
 Extended color gamut makes RGB look dull. Contrast ranges need to
 be mapped to displays.</span></p>
-<p class="c0"><span>&nbsp;</span></p>
-<p class="c0"><span>Casey: Lots of accessibility already built into
+<p> </p>
+<p><span><cite>Casey</cite>: Lots of accessibility already built into
 the browser. Use it.</span></p>
-<p class="c0"><span>There’s also machine accessibility. How search
+<p><span>There’s also machine accessibility. How search
 and links work.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Potch: I’m looking forward to VR
+
+<p><span><cite>Potch</cite>: I’m looking forward to VR
 alt-text.</span></p>
-<p class="c0"><span>Is there a need in primitives to separate
-visual from spatial? &nbsp;How do we take the interactive and
+<p><span>Is there a need in primitives to separate
+visual from spatial? How do we take the interactive and
 spatial components and not make assumptions about users’
 characteristics?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Chris: A-Frame meant to be the JQuery for VR on
+
+<p><span><cite>Chris</cite>: A-Frame meant to be the JQuery for VR on
 the Web. document query selector proved the value, then got
 standardized and implemented.</span></p>
-<p class="c0"><span>Big q: Should every entity be represented in
+<p><span>Big q: Should every entity be represented in
 the DOM?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Q from slack: klausw: accessibility:
+
+<p><span>Q from slack: <cite>klausw</cite>: accessibility:
 Roomscale/6DOF has its own challenges, think about wheelchair-bound
 users, people with only one arm, very short or tall people. Many of
 the same accessibility/ergonomics issues as for real-world
 locations. I remember having to lift up my daughter to reach the
 virtual pot in Job Simulator.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Brandon: Cool utility @@.</span></p>
-<p class="c0"><span>Possibility for extension utilities to help
+
+<p><span><cite>Brandon</cite>: Cool utility @@.</span></p>
+<p><span>Possibility for extension utilities to help
 with common tasks, e.g. “make me taller, to reach items”. As
 patterns emerge, maybe they become part of the platform.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Klaus: do we have the same expectations for all
+
+<p><span><cite>Klaus</cite>: do we have the same expectations for all
 sites? Difference between action games and shopping?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Charles: For an image, we can have a tactile
+
+<p><span><cite>Charles</cite>: For an image, we can have a tactile
 representation, but feeling it doesn’t make sense without a tour to
 describe what you’re feeling.</span></p>
-<p class="c0"><span>3D audio is great for people with visual
+<p><span>3D audio is great for people with visual
 impairments. You can create amazing 3D audio games; so games can be
 made a good experience for people with disabilities.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>@@: MSR game with no visuals.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Justin: some preferences we’ve exposed in
+
+<p><span><cite>@@</cite>: MSR game with no visuals.</span></p>
+
+<p><span><cite>Justin</cite>: some preferences we’ve exposed in
 WebVR, e.g sitting to standing pose. These keys can be valuable to
 improve the experience. Be careful about privacy considerations. As
 we tailor experience to a user in a wheelchair, are we exposing to
 fingerprinting/tracking?</span></p>
-<p class="c0"><span><br>
+<p><span><br>
 Q regarding text.</span></p>
-<p class="c0"><span>Justin; we’re looking at SDF fonts, we don’t
+<p><span><cite>Justin</cite>: we’re looking at SDF fonts, we don’t
 have a canned solution to improving 2d text.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Brian Chirls: top-down vs responsive design. If
+
+<p><span><cite>Brian Chirls</cite>: top-down vs responsive design. If
 you take accessibility into account, you get lots of great stuff
 for free. Even a person who has all the VR equipment for roomscale
 sometimes wants to sit on a couch. Can we build features you don’t
 have to “turn on”?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Anssi: list of topics. [on screen]</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>@@: API that faces up, and the API that faces
+
+<p><span><cite>Anssi</cite>: list of topics. [on screen]</span></p>
+
+<p><span><cite>@@</cite>: API that faces up, and the API that faces
 down to the hardware. Accessibility works well when device devs can
 experiment with serving user needs.</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>[lunch]</span></p>
-<p class="c0 c1"></p>
-<h1 class="c0 c5" id="h.hz1q61m40irp"><span>Multi-user VR
+
+
+<h1 id="h.hz1q61m40irp"><span>Multi-user VR
 experiences</span></h1>
-<h3 class="c0 c5" id="h.1szzsfvcdlmi"><span>Internet-scale shared
-VR &nbsp;(Philip Rosedale, High Fidelity)</span></h3>
-<p class="c0"><span>Philip: We’re working on an open source license
-that enables you to do face-to-face interaction. &nbsp; I’ll
+<h3 id="h.1szzsfvcdlmi"><span>Internet-scale shared
+VR (Philip Rosedale, High Fidelity)</span></h3>
+<p><span><cite>Philip</cite>: We’re working on an open source license
+that enables you to do face-to-face interaction.  I’ll
 present some assertions and discuss what we’re doing.</span></p>
-<p class="c0"><span>[Assertions slide]</span></p>
-<p class="c0"><span>There are two reasons that this is disruptive.
-&nbsp;The first is the order of magnitude of interactions, the 2nd
-one is face-to-face communications. &nbsp;Allowing hands and heads
+<p><span>[Assertions slide]</span></p>
+<p><span>There are two reasons that this is disruptive.
+The first is the order of magnitude of interactions, the 2nd
+one is face-to-face communications. Allowing hands and heads
 to move naturally is the general use.</span></p>
-<p class="c0"><span>Client-server model, enabling interactions,
+<p><span>Client-server model, enabling interactions,
 rather than app-store centralized</span></p>
-<p class="c0"><span>[New Technology slide]</span></p>
-<p class="c0"><span>There is a need for low latentcy -
+<p><span>[New Technology slide]</span></p>
+<p><span>There is a need for low latentcy -
 millicseconds needed</span></p>
-<p class="c0"><span>3D audio and avatar motion</span></p>
-<p class="c0"><span>Compressed scene description</span></p>
-<p class="c0"><span>Real-time scene / object</span></p>
-<p class="c0"><span>Distributed servers.</span></p>
-<p class="c0"><span>[Areas for Standards and Cooperation
+<p><span>3D audio and avatar motion</span></p>
+<p><span>Compressed scene description</span></p>
+<p><span>Real-time scene / object</span></p>
+<p><span>Distributed servers.</span></p>
+<p><span>[Areas for Standards and Cooperation
 slide]</span></p>
-<p class="c0"><span>Identity needed - bring your avatar, name and
+<p><span>Identity needed - bring your avatar, name and
 appearance</span></p>
-<p class="c0"><span>Content portability - interactive
+<p><span>Content portability - interactive
 need</span></p>
-<p class="c0"><span>Authenticity for assets - not DRM but verify
+<p><span>Authenticity for assets - not DRM but verify
 that things are what they say they are</span></p>
-<p class="c0"><span>Server discovery - something beyond
+<p><span>Server discovery - something beyond
 DNS</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<h3 class="c0 c5 c15" id="h.twzpllbzsuia"></h3>
-<h3 class="c0 c5" id="h.lxcvdx41xk6j"><span>From clickable pages to
+
+
+<h3 id="h.twzpllbzsuia"></h3>
+<h3 id="h.lxcvdx41xk6j"><span>From clickable pages to
 walkable spaces (Luc Courchesne, Society for Arts and
 Technology)</span></h3>
-<p class="c0"><span>Luc: There have been many things done on this
+<p><span><cite>Luc</cite>: There have been many things done on this
 topic including @@@</span></p>
-<p class="c0"><span>[picture of @@@]</span></p>
-<p class="c0"><span>Transitions slide</span></p>
-<p class="c0"><span>How do we move between experiences</span></p>
-<p class="c0"><span>Most people will not care - they will go
+<p><span>[picture of @@@]</span></p>
+<p><span>Transitions slide</span></p>
+<p><span>How do we move between experiences</span></p>
+<p><span>Most people will not care - they will go
 together without thinkng about it</span></p>
-<p class="c0"><span>[slides of sharing experiences]</span></p>
-<p class="c0"><span>Now with HMV immersion things can be
+<p><span>[slides of sharing experiences]</span></p>
+<p><span>Now with HMV immersion things can be
 experienced more easily</span></p>
-<p class="c0"><span>WebVR slide</span></p>
-<p class="c0"><span>This is going to transform the Web into
+<p><span>WebVR slide</span></p>
+<p><span>This is going to transform the Web into
 multiple spaces</span></p>
-<p class="c0"><span>We understand the need for Avatars to invite
+<p><span>We understand the need for Avatars to invite
 people in</span></p>
-<p class="c0"><span>The limitations are a problem</span></p>
-<p class="c0"><span>Slide of topics</span></p>
-<p class="c0"><span>Virtual “situation room”</span></p>
-<p class="c0"><span>“On site” design review</span></p>
-<p class="c0"><span>Goal is to build virtual teleportation
+<p><span>The limitations are a problem</span></p>
+<p><span>Slide of topics</span></p>
+<p><span>Virtual “situation room”</span></p>
+<p><span>“On site” design review</span></p>
+<p><span>Goal is to build virtual teleportation
 platform</span></p>
-<p class="c0"><span>I’m going to show you what we did at SAT over
+<p><span>I’m going to show you what we did at SAT over
 the past few years on that</span></p>
-<p class="c0"><span>Video of test work</span></p>
-<p class="c0"><span>In 2012 we moved to Kinect</span></p>
-<p class="c0"><span>We could extract the forward from the
+<p><span>Video of test work</span></p>
+<p><span>In 2012 we moved to Kinect</span></p>
+<p><span>We could extract the forward from the
 background</span></p>
-<p class="c0"><span>You feel the presence of someone from their
+<p><span>You feel the presence of someone from their
 natural body language</span></p>
-<p class="c0"><span>2013 The Drawing Room</span></p>
-<p class="c0"><span>By using 3 cameras we could port the system in
+<p><span>2013 The Drawing Room</span></p>
+<p><span>By using 3 cameras we could port the system in
 real time</span></p>
-<p class="c0"><span>What we’re working on now is ###
+<p><span>What we’re working on now is ###
 experiments</span></p>
-<p class="c0"><span>We need help - find us if
+<p><span>We need help - find us if
 interested.</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<h3 class="c0 c5" id="h.luuepe6nlnb"><span><br>
+
+
+<h3 id="h.luuepe6nlnb"><span><br>
 Multimedia & multi-user VR (Simon Gunkel, TNO)</span></h3>
-<p class="c0"><span>Simon: I work for TNO in the Netherlands.
-&nbsp;I’m glad to be hear and am very impressed that many of the
-topics we’re struggling are being addressed. &nbsp;</span></p>
-<p class="c0"><span>We are looking for attached experiences vs.
+<p><span><cite>Simon</cite>: I work for TNO in the Netherlands.
+I’m glad to be hear and am very impressed that many of the
+topics we’re struggling are being addressed. </span></p>
+<p><span>We are looking for attached experiences vs.
 detached experiences.</span></p>
-<p class="c0"><span>At TNO we do applied research so today I want
+<p><span>At TNO we do applied research so today I want
 to talk about my first experience and some of the problems along
 the way.</span></p>
-<p class="c0"><span>Say you’re sitting on the couch and want to
+<p><span>Say you’re sitting on the couch and want to
 have an experience.</span></p>
-<p class="c0"><span>This is a mock up as it doesn’t show a headset,
+<p><span>This is a mock up as it doesn’t show a headset,
 etc.</span></p>
-<p class="c0"><span>This shows people looking at each other and
+<p><span>This shows people looking at each other and
 feeling their presence.</span></p>
-<p class="c0"><span>People slide</span></p>
-<p class="c0"><span>How to engage people while letting them
+<p><span>People slide</span></p>
+<p><span>How to engage people while letting them
 interact in 360/3d</span></p>
-<p class="c0"><span>How to position people</span></p>
-<p class="c0"><span>Interaction with environment</span></p>
-<p class="c0"><span>Multimedia Objects slide</span></p>
-<p class="c0"><span>Synchronization</span></p>
-<p class="c0"><span>Dash streaming and tiling</span></p>
-<p class="c0"><span>Adaptation of spatial audio</span></p>
-<p class="c0"><span>Browser slide</span></p>
-<p class="c0"><span>Different browser support webvr</span></p>
-<p class="c0"><span>Different browser support of Spatial
+<p><span>How to position people</span></p>
+<p><span>Interaction with environment</span></p>
+<p><span>Multimedia Objects slide</span></p>
+<p><span>Synchronization</span></p>
+<p><span>Dash streaming and tiling</span></p>
+<p><span>Adaptation of spatial audio</span></p>
+<p><span>Browser slide</span></p>
+<p><span>Different browser support webvr</span></p>
+<p><span>Different browser support of Spatial
 audio</span></p>
-<p class="c0"><span>Performance of JavaScript and webgl</span></p>
-<p class="c0"><span>Conclusion slide</span></p>
-<p class="c0"><span>You can make a natural interaction but you have
+<p><span>Performance of JavaScript and webgl</span></p>
+<p><span>Conclusion slide</span></p>
+<p><span>You can make a natural interaction but you have
 performance concerns</span></p>
-<h3 class="c0 c5" id="h.1szzsfvcdlmi-1"><span>Mixed reality service
+<h3 id="h.1szzsfvcdlmi-1"><span>Mixed reality service
 (Tony Parisi, Wevr, on behalf of Mark Pesce)</span></h3>
-<p class="c0"><span>Tony: Mark in in Sydney. &nbsp;I’m going to
+<p><span><cite>Tony</cite>: Mark in in Sydney. I’m going to
 talk to you about his new service.</span></p>
-<p class="c0"><span>About 22.5 years ago we pulled together enough
+<p><span>About 22.5 years ago we pulled together enough
 money to send Mark to the first WWW conference in Geneva</span></p>
-<p class="c0"><span>It built the spinning banana running on a
+<p><span>It built the spinning banana running on a
 server in CERN</span></p>
-<p class="c0"><span>We’ve kind of gone full circle. &nbsp;Pokemon
+<p><span>We’ve kind of gone full circle. Pokemon
 Go delights millions but causes odd behavior</span></p>
-<p class="c0"><span>Mixed reality service provides this metalayer
+<p><span>Mixed reality service provides this metalayer
 layer, binding the real and virtual worlds</span></p>
-<p class="c0"><span>Very simple protocol showing ‘add’
+<p><span>Very simple protocol showing ‘add’
 operation</span></p>
-<p class="c0"><span>Delete is the reverse of that</span></p>
-<p class="c0"><span>And the search is going to let you find a
+<p><span>Delete is the reverse of that</span></p>
+<p><span>And the search is going to let you find a
 service set of URI’s</span></p>
-<p class="c0"><span>[demo]</span></p>
-<p class="c0"><span>We think the world needs this type of
+<p><span>[demo]</span></p>
+<p><span>We think the world needs this type of
 markup.</span></p>
-<h3 class="c0 c5" id="h.st9lw0nl2f3g"><span>Copresence in WebVR
+<h3 id="h.st9lw0nl2f3g"><span>Copresence in WebVR
 (Boris Smus, Google)</span></h3>
-<p class="c0"><span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=https://docs.google.com/presentation/d/1k1dAEKB7axIOum5OiwNTcq4vVpHjSlbQdkjeEDdVKgw/edit%23slide%3Did.g184a962562_0_71&amp;sa=D&amp;ust=1477062934724000&amp;usg=AFQjCNG4JEq75t8mPel7iGwzxw2UTfEA_g">
-https://docs.google.com/presentation/d/1k1dAEKB7axIOum5OiwNTcq4vVpHjSlbQdkjeEDdVKgw/edit#slide=id.g184a962562_0_71</a></span><span>&nbsp;
+<p><span><a href=
+"https://docs.google.com/presentation/d/1k1dAEKB7axIOum5OiwNTcq4vVpHjSlbQdkjeEDdVKgw/edit#slide=id.g184a962562_0_71">
+https://docs.google.com/presentation/d/1k1dAEKB7axIOum5OiwNTcq4vVpHjSlbQdkjeEDdVKgw/edit#slide=id.g184a962562_0_71</a></span><span>
 Co-presence in WebVR</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Boris: As we all agreed we are building an
+
+<p><span><cite>Boris</cite>: As we all agreed we are building an
 isolating technology</span></p>
-<p class="c0"><span>List of components used for demo</span></p>
-<p class="c0"><span>You enter and have an avatar you
+<p><span>List of components used for demo</span></p>
+<p><span>You enter and have an avatar you
 control</span></p>
-<p class="c0"><span>You can see other people</span></p>
-<p class="c0"><span>You can shrink or grow and sound scales
+<p><span>You can see other people</span></p>
+<p><span>You can shrink or grow and sound scales
 accordingly</span></p>
-<p class="c0"><span>3DOF Pose Audio Stream slide</span></p>
-<p class="c0"><span>Shows p2p connection</span></p>
-<p class="c0"><span>0(n2) will not scale</span></p>
-<p class="c0"><span>[slide showing streams]</span></p>
-<p class="c0"><span>Some fun features</span></p>
-<p class="c0"><span>Mouth moves</span></p>
-<p class="c0"><span>$$$$$<br>
+<p><span>3DOF Pose Audio Stream slide</span></p>
+<p><span>Shows p2p connection</span></p>
+<p><span>0(n2) will not scale</span></p>
+<p><span>[slide showing streams]</span></p>
+<p><span>Some fun features</span></p>
+<p><span>Mouth moves</span></p>
+<p><span>$$$$$<br>
 This all doable, but it’s just a demo</span></p>
-<p class="c0"><span>There is a lot to be figured out</span></p>
-<p class="c0"><span>How do we do this, what is the path to
+<p><span>There is a lot to be figured out</span></p>
+<p><span>How do we do this, what is the path to
 identity, avatars and payments</span></p>
-<p class="c0 c1"></p>
-<h3 class="c0 c5" id="h.ql979d9btuup"><span>Discussion:</span></h3>
-<p class="c0"><span>%%%%: A couple of the talks spoke of users and
-finding them in a space. &nbsp;This requires things working
-together. &nbsp;Has anyone started working on this standardization?
-&nbsp;Feels like everyone’s working on their own
+
+<h3 id="h.ql979d9btuup"><span>Discussion:</span></h3>
+<p><span><cite>%%%%</cite>: A couple of the talks spoke of users and
+finding them in a space. This requires things working
+together. Has anyone started working on this standardization?
+Feels like everyone’s working on their own
 implementations.</span></p>
-<p class="c0"><span>Tony: We’re addressing some of that and it
+<p><span><cite>Tony</cite>: We’re addressing some of that and it
 seems like a service layer that’s waiting to happen.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Potch: How do you position people in space
+
+<p><span><cite>Potch</cite>: How do you position people in space
 where Avatars aren’t near each other. There is balancing of the
 needs from many perspectives.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>#####: When we’re talking about social
-interactions we’re talking smaller numbers. &nbsp;We have
-differences in real world spaces. &nbsp;It doesn’t make sense to
+
+<p><span><cite>#####</cite>: When we’re talking about social
+interactions we’re talking smaller numbers. We have
+differences in real world spaces. It doesn’t make sense to
 have everyone in the world, just the 2 - 3 of your friends that
 want to talk.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Potch: A more practical question. &nbsp;Where
+
+<p><span><cite>Potch</cite>: A more practical question. Where
 do we see the authoritative database being hosted.
-&nbsp;</span></p>
-<p class="c0"><span>Tony: Good question, who’s the authority over a
-certain space. &nbsp;We hope as the problems become evident we work
+</span></p>
+<p><span><cite>Tony</cite>: Good question, who’s the authority over a
+certain space. We hope as the problems become evident we work
 on them together to solve them.</span></p>
-<p class="c0"><span>^^^^: There are a lot of projects to make data
-more distributed and less centralized. &nbsp;We’ll have to see how
+<p><span><cite>^^^^</cite>: There are a lot of projects to make data
+more distributed and less centralized. We’ll have to see how
 this evolves.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Nicoli: There was a session on latency.
-&nbsp;What’s the real need, is it 100 ms or less? &nbsp;If someone
+
+<p><span><cite>Nicoli</cite>: There was a session on latency.
+What’s the real need, is it 100 ms or less? If someone
 speaks to me and I don’t hear it, was it too long?</span></p>
-<p class="c0"><span>@@@: I don’t know if it’s any easier in games,
+<p><span><cite>@@@</cite>: I don’t know if it’s any easier in games,
 most have a minimal latency, I think we have a lot of work to do on
-this. &nbsp;We should look at game engines to learn about low
+this. We should look at game engines to learn about low
 latency and figure out how to scale that.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Potch: question about having a private UI and a
-public avatar. &nbsp;Is there a way to have me see things you
-can’t. &nbsp;It gets to questions of privacy.</span></p>
-<p class="c0"><span>^^^^: I think people are going to go towards
-everyone seeing the same thing. &nbsp;I think several solutions
+
+<p><span><cite>Potch</cite>: question about having a private UI and a
+public avatar. Is there a way to have me see things you
+can’t. It gets to questions of privacy.</span></p>
+<p><span><cite>^^^^</cite>: I think people are going to go towards
+everyone seeing the same thing. I think several solutions
 will be as literal as they can be.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Wendy: That conversation raises the question to
+
+<p><span><cite>Wendy</cite>: That conversation raises the question to
 me of how much do we expect the environments to be end-user
-customizable. &nbsp;How do I bring my own private annotations,
+customizable. How do I bring my own private annotations,
 accessibility tools, maybe I have things I want to share with
 friends.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Brad: If you want to record someone’s phone
-conversation you have to tell them. &nbsp;So if you were to bring
+
+<p><span><cite>Brad</cite>: If you want to record someone’s phone
+conversation you have to tell them. So if you were to bring
 something into a VR environment and record someone else’s VR would
 that be legal?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>%%%: If I try to do something in AR do I need
+
+<p><span><cite>%%%</cite>: If I try to do something in AR do I need
 to worry about copyright or do I just get pixels.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom puts up list of topics that were discussed
+
+<p><span>Dom puts up list of topics that were discussed
 in the session.</span></p>
-<p class="c0"><span>Discussion on the use of avatars and the
+<p><span>Discussion on the use of avatars and the
 security around them</span></p>
-<p class="c0"><span>/missed some of this due to hearing issue and
-that my laptop stopped working for a few minutes/</span></p>
-<p class="c0"><span>Privacy/anonymity: for some users and
+<p><span>Privacy/anonymity: for some users and
 situations, it’s dangerous to be identified, for others, it’s
 unwanted. VR needs to accommodate multiple identities and
 pseudonmys/anonymity.</span></p>
-<p class="c0"><span>The Internet is composable. It’s not uniform.
+<p><span>The Internet is composable. It’s not uniform.
 Will VR be a metaverse or an Internet?</span></p>
-<p class="c0"><span>Charles: drawing on that, if you are paralyzed
-you may not want to show that in VR. &nbsp;You may want to have an
+<p><span><cite>Charles</cite>: drawing on that, if you are paralyzed
+you may not want to show that in VR. You may want to have an
 alternative presentation.</span></p>
-<p class="c0"><span>#####: People react to your avatar and in VR we
+<p><span><cite>#####</cite>: People react to your avatar and in VR we
 need to see if people are more respectful to each other.</span></p>
-<p class="c0"><span>@@@@: A lot of stuff being discussed here was
+<p><span><cite>@@@@</cite>: A lot of stuff being discussed here was
 covered in Virtual World discussions so it will be interesting to
 see how that’s changed over time.</span></p>
-<p class="c0"><span>Potch: To what extent is the user agent going
+<p><span><cite>Potch</cite>: To what extent is the user agent going
 to impose restrictions on the character model.</span></p>
-<p class="c0"><span>%%%: The idea of smooth degradation of avatars
+<p><span><cite>%%%</cite>: The idea of smooth degradation of avatars
 needs to be considered as well.</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<h1 class="c0 c5" id="h.tmz3gnqee1vz"><span>Authoring VR
+
+
+<h1 id="h.tmz3gnqee1vz"><span>Authoring VR
 experiences on the Web</span></h1>
-<p class="c0 c1"></p>
-<p class="c0 c5 subtitle" id="h.5ohbhq5c6kwd"><span>HTML & CSS,
-(Josh Carpenter, Google)</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8">(Demo of 2D website viewed in
+
+<h3 id="h.5ohbhq5c6kwd"><span>HTML & CSS,
+(Josh Carpenter, Google)</span></h3>
+
+<p><span>(Demo of 2D website viewed in
 3D)</span></p>
-<p class="c0"><span class="c8">WebGL - steep learning curve, no
+<p><span>WebGL - steep learning curve, no
 consistency of user experience. “Recall the Web of the 90s where we
 each had to implement our own scrollbars.” Z-depth is the
 drop-shadow of VR.</span></p>
-<p class="c0"><span class="c8">Permissions model for depth, akin to
+<p><span>Permissions model for depth, akin to
 full-screen, permission to come closer.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8 c3">WebVR with Three.js (Ricardo
-Cabello, Three.js)<br></span></p>
-<p class="c0"><span class="c8">JS 3D rendering library, open
+
+<h3>WebVR with Three.js (Ricardo
+Cabello, Three.js)</h3>
+<p><span>JS 3D rendering library, open
 source</span></p>
-<p class="c0"><span class="c8">threejs.org</span></p>
-<p class="c0"><span class="c8">(Chrome) Browser extension: WebVR
+<p><span>threejs.org</span></p>
+<p><span>(Chrome) Browser extension: WebVR
 emulator, interact with 3D environment without HMD</span></p>
-<p class="c0"><span class="c8">(Slides showing JS code)</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8 c3">A-Frame (Kevin Ngo,
-Mozilla)<br></span></p>
-<p class="c0"><span class="c8">aframe.io</span></p>
-<p class="c0"><span class="c8">Web framework for building VR
+<p><span>(Slides showing JS code)</span></p>
+
+<h3><span>A-Frame (Kevin Ngo,
+Mozilla)</span></h3>
+<p><span>aframe.io</span></p>
+<p><span>Web framework for building VR
 experiences</span></p>
-<p class="c0"><span class="c8">Based on three.js</span></p>
-<p class="c0"><span class="c8">Custom HTML elements: a-scene,
+<p><span>Based on three.js</span></p>
+<p><span>Custom HTML elements: a-scene,
 a-sphere etc</span></p>
-<p class="c0"><span class="c8">Demo: Hello Metaverse</span></p>
-<p class="c0"><span class="c8">Works well with most other JS-based
+<p><span>Demo: Hello Metaverse</span></p>
+<p><span>Works well with most other JS-based
 frameworks</span></p>
-<p class="c0"><span class="c8">Entity-Component-System under the
+<p><span>Entity-Component-System under the
 hood</span></p>
-<p class="c0"><span class="c8">A number of built-in components,
+<p><span>A number of built-in components,
 easy to expand with custom components</span></p>
-<p class="c0"><span class="c8">Registry: Curated collection of
+<p><span>Registry: Curated collection of
 components</span></p>
-<p class="c0"><span class="c8">Inspector: Inspect and modify
+<p><span>Inspector: Inspect and modify
 components</span></p>
-<p class="c0"><span class="c8">A-painter: Paint in VR in the
+<p><span>A-painter: Paint in VR in the
 browser</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8 c3">React VR (Amber Roy, Oculus
-VR)</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8">ReactVR: Bridge needs of web
+
+<h3>React VR (Amber Roy, Oculus
+VR)</h3>
+
+<p><span>ReactVR: Bridge needs of web
 developers and VR developers</span></p>
-<p class="c0"><span class="c8">React: JS library for building UI
+<p><span>React: JS library for building UI
 for the web (Facebook)</span></p>
-<p class="c0"><span class="c8">ReactVR, baed on three.js, WebGL,
+<p><span>ReactVR, baed on three.js, WebGL,
 WebVR</span></p>
-<p class="c0"><span class="c8">Key features: Based on React code -
+<p><span>Key features: Based on React code -
 diffing and layout engines, code combined w/declarative UI,
 behavior/rendering in one place, optimized for one-page web
 apps</span></p>
-<p class="c0"><span class="c8">(Code example)</span></p>
-<p class="c0"><span class="c8">Code transpiled to JS</span></p>
-<p class="c0"><span class="c8">Demo: developer.oculus.com/webvr
+<p><span>(Code example)</span></p>
+<p><span>Code transpiled to JS</span></p>
+<p><span>Demo: developer.oculus.com/webvr
 (Hotel Tour)</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8 c3">XML3D (Philipp Slusallek,
-DFKI)<br></span></p>
-<p class="c0"><span class="c8">XML3D: declarative 3D framework
+
+<h3>XML3D (Philipp Slusallek,
+DFKI)</h3>
+<p><span>XML3D: declarative 3D framework
 extending HTML5</span></p>
-<p class="c0"><span class="c8">Generic data types + data flow
+<p><span>Generic data types + data flow
 programming (Xflow)</span></p>
-<p class="c0"><span class="c8">Programmable shaders</span></p>
-<p class="c0"><span class="c8">Renderer-independent: WebGL +
+<p><span>Programmable shaders</span></p>
+<p><span>Renderer-independent: WebGL +
 shade.js</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8">XML3D-NG</span></p>
-<p class="c0"><span class="c8">Uses Web Components,
+
+<p><span>XML3D-NG</span></p>
+<p><span>Uses Web Components,
 WebVR</span></p>
-<p class="c0"><span class="c8">Smaller core library,
+<p><span>Smaller core library,
 domain-specific components</span></p>
-<p class="c0"><span class="c8">Shareable web components from remote
+<p><span>Shareable web components from remote
 library</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8">Core data model: Data tables and
+
+
+<p><span>Core data model: Data tables and
 entries</span></p>
-<p class="c0"><span class="c8">Code example: Replicate
+<p><span>Code example: Replicate
 &lt;a-sphere&gt; using attribute binding and core
 elements</span></p>
-<p class="c0"><span class="c8">Demo: WebVR plugin: King’s Cross
+<p><span>Demo: WebVR plugin: King’s Cross
 Station (did not work)</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8 c3">Webizing VR content (Sangchul
-Ahn, LetSee)<br></span></p>
-<p class="c0"><span class="c8">Some experiences with current VR/AR
+
+
+<h3>Webizing VR content (Sangchul
+Ahn, LetSee)</h3>
+<p><span>Some experiences with current VR/AR
 approaches</span></p>
-<p class="c0"><span class="c8">Issues: Limited functionality, no
+<p><span>Issues: Limited functionality, no
 way to refer to real world, separated rendering context</span></p>
-<p class="c0"><span class="c8">Expectations: Mashable, dynamic,
+<p><span>Expectations: Mashable, dynamic,
 responsive to both virtual and real worlds</span></p>
-<p class="c0"><span class="c8">Demo: A mobile AR web
+<p><span>Demo: A mobile AR web
 browser</span></p>
-<p class="c0"><span class="c8">Requirements and opportunities for
+<p><span>Requirements and opportunities for
 standardization:</span></p>
-<ol class="c6 lst-kix_8opzvau5buv-0 start" start="1">
-<li class="c0 c2"><span class="c8">Evolution of HTML for
+<ol start="1">
+<li><span>Evolution of HTML for
 VR/AR</span></li>
-<li class="c0 c2"><span class="c8">“Physical things” as
+<li><span>“Physical things” as
 resource</span></li>
-<li class="c0 c2"><span class="c8">New media type for
+<li><span>New media type for
 VR/AR</span></li>
 </ol>
-<p class="c0"><span class="c8">AR demos: AR book inspector, MAR.IO
+<p><span>AR demos: AR book inspector, MAR.IO
 AR game prototype, LetseeBeer</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8 c3">gLTF (Tony Parisi, Wevr / Amanda
-Watson, Oculus VR)<br></span><span class="c9 c11"><a class="c4"
+
+
+<h3>gLTF (Tony Parisi, Wevr / Amanda
+  Watson, Oculus VR)</h3>
+<p><a
 href=
-"https://www.google.com/url?q=https://docs.google.com/presentation/d/1BRdEGqJFIWk3QOehOxJqM9dIE4kIBNQhIm7UeBaVse0/edit%23slide%3Did.g185e245559_2_28&amp;sa=D&amp;ust=1477062934749000&amp;usg=AFQjCNEhmm0znkcNEsYtoQHmRnYUdGk-1Q">https://docs.google.com/presentation/d/1BRdEGqJFIWk3QOehOxJqM9dIE4kIBNQhIm7UeBaVse0/edit#slide=id.g185e245559_2_28</a></span><span class="c8 c3">&nbsp;</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8">Real-time 3D asset
+"https://docs.google.com/presentation/d/1BRdEGqJFIWk3QOehOxJqM9dIE4kIBNQhIm7UeBaVse0/edit#slide=id.g185e245559_2_28">https://docs.google.com/presentation/d/1BRdEGqJFIWk3QOehOxJqM9dIE4kIBNQhIm7UeBaVse0/edit#slide=id.g185e245559_2_28</a></span> </p>
+
+
+<p><span>Real-time 3D asset
 delivery</span></p>
-<p class="c0"><span class="c8">No file formats specified in
+<p><span>No file formats specified in
 WebGL</span></p>
-<p class="c0"><span class="c8">Or for 3D in general</span></p>
-<p class="c0"><span class="c8">.gltf : JSON node hierarchy,
+<p><span>Or for 3D in general</span></p>
+<p><span>.gltf : JSON node hierarchy,
 materials, cameras</span></p>
-<p class="c0"><span class="c8">.bin : Geometry, …..</span></p>
-<p class="c0"><span class="c8">(and more)</span></p>
-<p class="c0"><span class="c8">Oculus: A need for a standards
+<p><span>.bin : Geometry, …..</span></p>
+<p><span>(and more)</span></p>
+<p><span>Oculus: A need for a standards
 format for 3D scenes</span></p>
-<p class="c0"><span class="c8">Spec and issues discussion on
+<p><span>Spec and issues discussion on
 github</span></p>
-<p class="c0"><span class="c8">“The JPG for 3D” !</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c8 c3">Vizor - visual authoring of VR in
-the browser (Jaakko Manninen, Pixelface)</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Publishing platform for VR content on the web
+<p><span>“The JPG for 3D” !</span></p>
+
+
+<h3>Vizor - visual authoring of VR in
+the browser (Jaakko Manninen, Pixelface)</h3>
+
+<p><span>Publishing platform for VR content on the web
 (creating, publishing, discovering)</span></p>
-<p class="c0"><span>Visual 3D compositing editor</span></p>
-<p class="c0"><span>Visual programming language / Node graph for
+<p><span>Visual 3D compositing editor</span></p>
+<p><span>Visual programming language / Node graph for
 programming</span></p>
-<p class="c0"><span>One-click publishing to the web</span></p>
-<p class="c0"><span>vizor.io : Discovery system on the
+<p><span>One-click publishing to the web</span></p>
+<p><span>vizor.io : Discovery system on the
 web</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c3">Discussion:</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Q: Relationship between gLTF and
+
+
+<h3>Discussion:</h3>
+
+<p><span><cite>Q</cite>: Relationship between gLTF and
 a-frame?</span></p>
-<p class="c0"><span>A: a-frame intended for hand-coding, gLTF for
+<p><span><cite>A</cite>: a-frame intended for hand-coding, gLTF for
 exporting from tools. A-frame is a JS framework, gLTF a file
 format.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Samsung research: Encourage browser vendors to
+
+<p><span>Samsung research: Encourage browser vendors to
 support/optimize for higher level formats. Browser should evolve
 into high-performance game engines</span></p>
-<p class="c0"><span>Also, browsers should natively support
+<p><span>Also, browsers should natively support
 gLTF</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Josh: Would like to reimplement the browser on
+
+<p><span><cite>Josh</cite>: Would like to reimplement the browser on
 top of WebGL, then solve backwards compatibility</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Q: Already lots of standards, do we need
+
+<p><span><cite>Q</cite>: Already lots of standards, do we need
 another one (gLTF)? (ref. XKCD)</span></p>
-<p class="c0"><span>Neil Trevett: Yes, we need one that addresses
+<p><span>Neil Trevett: Yes, we need one that addresses
 this use case.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Q: Is gLTS positioning itself as the baseline
+
+<p><span><cite>Q</cite>: Is gLTS positioning itself as the baseline
 spec for WebGL/WebVR?</span></p>
-<p class="c0"><span>A: “Firewall” between WebGL and gLTF spec work,
+<p><span><cite>A</cite>: “Firewall” between WebGL and gLTF spec work,
 no intention of mandating gLTF for WebGL.</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<h1 class="c0 c5" id="h.r7fj2fgnzoxr"><span>High Performance VR on
+
+
+
+<h1 id="h.r7fj2fgnzoxr"><span>High Performance VR on
 the Web</span></h1>
-<p class="c0"><span>Chrome Android learnings & pitfalls to
+<p><span>Chrome Android learnings & pitfalls to
 avoid</span></p>
-<p class="c0"><span class=
+<p><span class=
 "c7 c9">https://docs.google.com/presentation/d/e/2PACX-1vRPK_ZAC2mKNwStORRB9vFEzpac3NiDw4zPFjN44wC29FbZyaOF1N4Eyf7_rINqlrBhZYs3AechTkpG/pub?start=false&amp;loop=false&amp;delayms=60000</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Justin Rogers, Gear VR Performance Tweaks and
+
+<p><span>Justin Rogers, Gear VR Performance Tweaks and
 Pitfalls</span></p>
-<p class="c0"><span class="c7 c9"><a class="c4" href=
-"https://www.google.com/url?q=https://onedrive.live.com/view.aspx?resid%3DDB996F916EA4CF47!60659%26ithint%3Dfile%252cpptx%26app%3DPowerPoint%26authkey%3D!ABO1DWOmsUPuBec&amp;sa=D&amp;ust=1477062934759000&amp;usg=AFQjCNHjK4TjjDO-ZgU286lFop0ZgUUGAw">
+<p><span><a href=
+"https://onedrive.live.com/view.aspx?resid=DB996F916EA4CF47!60659&ithint=file%252cpptx&app=PowerPoint&authkey=!ABO1DWOmsUPuBec">
 https://onedrive.live.com/view.aspx?resid=DB996F916EA4CF47!60659&amp;ithint=file%2cpptx&amp;app=PowerPoint&amp;authkey=!ABO1DWOmsUPuBec</a></span></p>
-<p class="c0"><span>"Android & Mobile is really hard"</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Building a WebVR Content Pipeline</span></p>
-<p class="c0"><span class="c7 c9"><a class="c4" href=
-"https://www.google.com/url?q=https://onedrive.live.com/view.aspx?resid%3DDB996F916EA4CF47!60661%26ithint%3Dfile%252cpptx%26app%3DPowerPoint%26authkey%3D!AK84_AzJVjRm3qE&amp;sa=D&amp;ust=1477062934760000&amp;usg=AFQjCNGDRibXzjIiK326TUywIbsEkZJbjQ">
+<p><span>"Android & Mobile is really hard"</span></p>
+
+<p><span>Building a WebVR Content Pipeline</span></p>
+<p><span><a href=
+"https://onedrive.live.com/view.aspx?resid=DB996F916EA4CF47!60661&ithint=file%252cpptx&app=PowerPoint&authkey=!AK84_AzJVjRm3qE">
 https://onedrive.live.com/view.aspx?resid=DB996F916EA4CF47!60661&amp;ithint=file%2cpptx&amp;app=PowerPoint&amp;authkey=!AK84_AzJVjRm3qE</a></span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">WebVR Next with more
+
+<p><span>WebVR Next with more
 layers</span></p>
-<p class="c0"><span class="c7 c9"><a class="c4" href=
-"https://www.google.com/url?q=https://onedrive.live.com/view.aspx?resid%3DDB996F916EA4CF47!60663%26ithint%3Dfile%252cpptx%26app%3DPowerPoint%26authkey%3D!AJF8T-vOzNiR_ZE&amp;sa=D&amp;ust=1477062934761000&amp;usg=AFQjCNHEsfIkz4dKSzEiedIJKPSjDZHV2A">
-https://onedrive.live.com/view.aspx?resid=DB996F916EA4CF47!60663&amp;ithint=file%2cpptx&amp;app=PowerPoint&amp;authkey=!AJF8T-vOzNiR_ZE</a></span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">Posh: reading from Slack - jank
+<p><span><a href=
+"https://onedrive.live.com/view.aspx?resid=DB996F916EA4CF47!60663&ithint=file%252cpptx&app=PowerPoint&authkey=!AJF8T-vOzNiR_ZE"><cite>
+https</cite>://onedrive.live.com/view.aspx?resid=DB996F916EA4CF47!60663&amp;ithint=file%2cpptx&amp;app=PowerPoint&amp;authkey=!AJF8T-vOzNiR_ZE</a></span></p>
+
+<p><span><cite>Posh</cite>: reading from Slack - jank
 caused by GPU uploads - what can we do?</span></p>
-<p class="c0"><span class="c7">Brandon: no great answer, but for a
+<p><span><cite>Brandon</cite>: no great answer, but for a
 lot of these things (e.g. texture uploads), there are specific
 mechanisms that allow to separate out pieces in the texture upload.
 Right now, you use an image tag to load an image, and once done,
@@ -1333,116 +1330,116 @@ you ask to browser to upload it, all of that can be blocking. What
 you really need is having compressed textures all the time
 throughout the pipeline, and we should expose that as a primitive
 to the browser.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">@@@. What optimizations are
+
+<p><span>@@@. What optimizations are
 available for 360° videos?</span></p>
-<p class="c0"><span class="c7">JustinR: lots of big problems for
+<p><span><cite>JustinR</cite>: lots of big problems for
 360° videos - e.g. how to stream it. Can we do a better job of
 sending information to optimize some of these streaming concepts?
 The server could optimize which slice to prepare for the
 viewer.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">Paola: how do you measure
+
+<p><span><cite>Paola</cite>: how do you measure
 performance? What are the metrics? What are the tools?</span></p>
-<p class="c0"><span class="c7">Brandon: in Chrome, we have really
+<p><span><cite>Brandon</cite>: in Chrome, we have really
 cool dev tools, although somewhat undocumented and a bit hard to
 discover. The timelines give you beautiful graphs with very nice
 clear ideas of what takes time in your apps - we've some
 screenshots of that throughout the day.</span></p>
-<p class="c0"><span class="c7">Klaus: back to the room - to what
+<p><span><cite>Klaus</cite>: back to the room - to what
 extent the developers want this exposed to JS? What should it look
 like? What metrics would be most useful?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">@@@JanusVR: is it now possible to do
+
+<p><span><cite>@@@JanusVR</cite>: is it now possible to do
 @@@ with renderTexture?</span></p>
-<p class="c0"><span class="c7">Justin: it's one of the bug we hit
+<p><span><cite>Justin</cite>: it's one of the bug we hit
 in Chromium - I think that has been fixed in drivers</span></p>
-<p class="c0"><span class="c7">Brandon: in WebGL 1, if you want to
+<p><span><cite>Brandon</cite>: in WebGL 1, if you want to
 use renderToTexture, you can't do multi-sample @@@. Won't be fixed
 in WebGL1, but WebGL2 will fix this - but you shouldn't deal with
 that type of approach for VR. For mobile devices, you want to use
 well-tested techniques from the 90's, multi-path is not there
 yet.</span></p>
-<p class="c0"><span class="c7">Justin: for your main rendering
+<p><span><cite>Justin</cite>: for your main rendering
 process, use a simple WebGL context, especially on
 mobile</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">ChrisVW: mirroring can be important
+
+<p><span><cite>ChrisVW</cite>: mirroring can be important
 for demos esp on Desktop; what's the alternative to preserveBuffer
 in that context?</span></p>
-<p class="c0"><span class="c7">Justin: for demos, that's probably
+<p><span><cite>Justin</cite>: for demos, that's probably
 OK, although you'll find devices for which that will fail. But
 don't keep it in production. It's useful for demos or development,
 even debugging.</span></p>
-<p class="c0"><span class="c7">ChrisVW: have you investigated
+<p><span><cite>ChrisVW</cite>: have you investigated
 asm.js or WASM?</span></p>
-<p class="c0"><span class="c7">Justin: no</span></p>
-<p class="c0"><span class="c7">Brandon: mirroring is good on
+<p><span><cite>Justin</cite>: no</span></p>
+<p><span><cite>Brandon</cite>: mirroring is good on
 desktop, but never do it on mobile. You can chromecast content from
 the headset to the TV - this would be the better mechanism, with
 hardware acceleration. Don't turn preserveBuffer on on
 mobile.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">Anssi: what are the changes needed
+
+<p><span><cite>Anssi</cite>: what are the changes needed
 in Web facing APIs? What needs fixing?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">Dom:</span> <span class=
-"c7 c9"><a class="c4" href=
-"https://www.google.com/url?q=https://hillbrad.github.io/sri-addressable-caching/sri-addressable-caching.html&amp;sa=D&amp;ust=1477062934766000&amp;usg=AFQjCNE4CM5GXr_ta3LhfpNU59ad9akmLA">
+
+<p><span><cite>Dom</cite>:</span> <span class=
+"c7 c9"><a href=
+"https://hillbrad.github.io/sri-addressable-caching/sri-addressable-caching.html">
 https://hillbrad.github.io/sri-addressable-caching/sri-addressable-caching.html</a></span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">@@@: WebVR doesn't reflect any
+
+<p><span><cite>@@@</cite>: WebVR doesn't reflect any
 performance back to the app - e.g. on texture size, resolution
 scale.</span></p>
-<p class="c0"><span class="c7">Brandon: we have performance
+<p><span><cite>Brandon</cite>: we have performance
 extensions for WebGL, although there is some additional cost coming
 from the compositor (which we hope to be able to turn off e.g. on
 mobile immersive). The concepts behind the requestIdleCallback API
 of a time budget could usefully be reapplied to
 requestAnimationFrame</span></p>
-<p class="c0"><span class="c7">@@@: we need to know how much GPU
+<p><span><cite>@@@</cite>: we need to know how much GPU
 time you have left, not CPU time</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">Ricardo: what about controllers?
+
+<p><span><cite>Ricardo</cite>: what about controllers?
 Will they be integrated in the gamepad API or a different
 one?</span></p>
-<p class="c0"><span class="c7">Brandon: for one, we want to expose
+<p><span><cite>Brandon</cite>: for one, we want to expose
 some really basic fundamental interaction models, regardless of
 what you're working with; on cardboard, the one-button interaction
 should be surfaced as a touch event, which can then be replicated
 in more advanced devices.</span></p>
-<p class="c0"><span class="c7">For gamepad, we should poll all the
+<p><span>For gamepad, we should poll all the
 information at the same time.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">Justin: Another crazy idea is to
+
+<p><span><cite>Justin</cite>: Another crazy idea is to
 keep GPU cache across navigation, assuming we have the right
 conditions from a security perspective - this is critical to enable
 smooth navigation.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">Ricardo: I'm wondering if at some
+
+<p><span><cite>Ricardo</cite>: I'm wondering if at some
 point the browsers will give us the glTF model for controllers;
 right now we have to manually change this.</span></p>
-<p class="c0"><span class="c7">Brandon: OpenVR has this; I've been
+<p><span><cite>Brandon</cite>: OpenVR has this; I've been
 wondering if we should do this, not sure how to do it in a Webby
 way. It would be nice to defer to the browser and just ask for a
 representation of the controller. But I'm not sure what that API
 would look like - we could just resurface the OpenVR API, but we
 probably want something more useful.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">Potch: We have ServiceWorker that
+
+<p><span><cite>Potch</cite>: We have ServiceWorker that
 can do request caching; we could have a way to get the SW to get
 back the fully decoded ready-to-use asset as a response. Sounds
 like a logical extension to an existing API.</span></p>
-<p class="c0"><span class="c7">@@@: catching CPU resources across
+<p><span><cite>@@@</cite>: catching CPU resources across
 navigation - we have very limited GPU resources, and have no
 indication of back pressure from the GPU. WebGL doesn't easily let
 us recover from exhausted resources. Right now we have to manage
 this blindly. Regarding dynamic resolution, there is nothing in the
 WebVR that tells us the target framerate.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">Casey: how about non-graphics
+
+<p><span><cite>Casey</cite>: how about non-graphics
 optimizations: physic, spatialized audio?</span></p>
-<p class="c0"><span class="c7">Brandon: I would love to see more
+<p><span><cite>Brandon</cite>: I would love to see more
 tooling around audio and making that an easier thing for developers
 to get their head around. We have great engineers in the Chrome
 team who do amazing things e.g. the WebVR audio sample
@@ -1450,92 +1447,92 @@ demonstrating spatialized audio. I would like to see more tools
 that handle audio in a more user grokable way, with the best
 performance outcome. We have the right primitives available, but I
 find them hard to use.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">@@@: MultiView was mentioned as an
+
+<p><span><cite>@@@</cite>: MultiView was mentioned as an
 improvement for WebGL - we have a proposed breakout session for
 tomorrow. Are there other acceleration extensions we would need for
 VR?</span></p>
-<h1 class="c0 c5" id="h.kxdjcn9tywvt"><span>360° video on the
+<h1 id="h.kxdjcn9tywvt"><span>360° video on the
 Web</span></h1>
-<h2 class="c0 c5" id="h.l9ewa8rq4fwv"><span>Louay Bassbouss,
+<h2 id="h.l9ewa8rq4fwv"><span>Louay Bassbouss,
 Fraunhofer, 360° video cloud streaming and HTMLVideoElement
 extensions</span></h2>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7 c9"><a class="c4" href=
-"https://www.google.com/url?q=https://docs.google.com/presentation/d/1-stapAqJr5ICQcXEC7z-PYnTYY1T3fA3E4lgdBmy9Lc/edit?usp%3Dsharing&amp;sa=D&amp;ust=1477062934772000&amp;usg=AFQjCNGKpz8rwKN_oQt1LlEQaP6pY6Ecrg">
+
+<p><span><a href=
+"https://docs.google.com/presentation/d/1-stapAqJr5ICQcXEC7z-PYnTYY1T3fA3E4lgdBmy9Lc/edit?usp=sharing">
 https://docs.google.com/presentation/d/1-stapAqJr5ICQcXEC7z-PYnTYY1T3fA3E4lgdBmy9Lc/edit?usp=sharing</a></span></p>
-<p class="c0"><span class="c7">[Louay via remote participation,
+<p><span>[Louay via remote participation,
 audio+slides]</span></p>
-<p class="c0"><span class="c7">Slide2. 360-video on HbbTV devices.
+<p><span>Slide2. 360-video on HbbTV devices.
 One potential tech. No capability yet to render 360 video, so
 render in the cloud software and send to TVs, controlled by remote.
 Client needs only to be capable of playing livestreams. No API to
 control buffering.</span></p>
-<p class="c0"><span class="c7">Slide3. 3 different options. 1: all
+<p><span>Slide3. 3 different options. 1: all
 in the client, advantage=no dependency on network latency. Option2,
 our Hbb solution. Video buffering is a challenge, and each session
 needs server session. Scaling challenge. =&gt; Option 3a,
 pre-processing step happens once, then user input. Option 3b gets
 user-input later.</span></p>
-<p class="c0"><span class="c7">Use MSE to render 360 video in the
+<p><span>Use MSE to render 360 video in the
 browser.</span></p>
-<p class="c0"><span class="c7">Slide 5.
+<p><span>Slide 5.
 advantages/disadvantages.</span></p>
-<p class="c0"><span class="c7">[video demo] requesting different
+<p><span>[video demo] requesting different
 segments for different fields of view.</span></p>
-<p class="c0"><span class="c7">We think native video players,
+<p><span>We think native video players,
 getting URLs, can show 360 video.</span></p>
-<p class="c0"><span class="c7">Slide9,10. HTML VideoElement
+<p><span>Slide9,10. HTML VideoElement
 Extensions. Shows buffering switch between two views.</span></p>
-<p class="c0 c1"></p>
-<h2 class="c0 c5" id="h.m4qmzvj1rjcz"><span>Laszlo Gombos, Samsung,
+
+<h2 id="h.m4qmzvj1rjcz"><span>Laszlo Gombos, Samsung,
 Encode, tag, control 360° video</span></h2>
-<p class="c0"><span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=https://pres.webvr.io/video.html&amp;sa=D&amp;ust=1477062934775000&amp;usg=AFQjCNHytaZaIWbD7UX0OFlizibV57bH3w">
+<p><span><a href=
+"https://pres.webvr.io/video.html">
 https://pres.webvr.io/video.html</a></span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span class="c7">VR browser, Samsung Internet for
+
+<p><span>VR browser, Samsung Internet for
 Gear VR.</span></p>
-<p class="c0"><span class="c7">You navigate to web page with video,
+<p><span>You navigate to web page with video,
 play inline, and option to switch mode</span></p>
-<p class="c0"><span class="c7">That’s not a great user experience,
+<p><span>That’s not a great user experience,
 so we have an extension for the HTML5 video tag to describe how
 video is encoded. If browser detects that tag, it can go directly
 to the right immersive playback</span></p>
-<p class="c0"><span class="c7">[slide showing tags supported= what
+<p><span>[slide showing tags supported= what
 we found out there on the web]</span></p>
-<p class="c0"><span class="c7">This is how we’ve extended the web,
+<p><span>This is how we’ve extended the web,
 let’s discuss.</span></p>
-<p class="c0 c1"></p>
-<h2 class="c0 c5" id="h.mwfefbag9jur"><span>David Dorwin, Google,
+
+<h2 id="h.mwfefbag9jur"><span>David Dorwin, Google,
 Path to native 360° video support</span></h2>
-<p class="c0"><span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=https://docs.google.com/presentation/d/1FYbOKq_CyUjoCztLPvzk49oRc9P6zsjGDgyo1aTrXHw/&amp;sa=D&amp;ust=1477062934777000&amp;usg=AFQjCNE8Y2hY8BVugF8j1JaDWu43oBrEeA">
-https://docs.google.com/presentation/d/1FYbOKq_CyUjoCztLPvzk49oRc9P6zsjGDgyo1aTrXHw/</a></span><span>&nbsp;</span></p>
-<p class="c0"><span>Currently, non-rectangular media formats are
+<p><span><a href=
+"https://docs.google.com/presentation/d/1FYbOKq_CyUjoCztLPvzk49oRc9P6zsjGDgyo1aTrXHw/">
+https://docs.google.com/presentation/d/1FYbOKq_CyUjoCztLPvzk49oRc9P6zsjGDgyo1aTrXHw/</a></span> </p>
+<p><span>Currently, non-rectangular media formats are
 not standardized, including projections.</span></p>
-<p class="c0"><span>Current solution: video-&gt;webGL-&gt;webVR.
+<p><span>Current solution: video-&gt;webGL-&gt;webVR.
 App determines and applies projection. Libraries in the
 near-term.</span></p>
-<p class="c0"><span>[slide3] Prereq: standardized media
+<p><span>[slide3] Prereq: standardized media
 metadata.</span></p>
-<p class="c0"><span>Google proposal for ISO BMFF and WebM. includes
+<p><span>Google proposal for ISO BMFF and WebM. includes
 custom projection</span></p>
-<p class="c0"><span>Recommended: Developing VR Media Technologies
+<p><span>Recommended: Developing VR Media Technologies
 talk at Demuxed 2016</span></p>
-<p class="c0"><span>[slide5][slide6] Simplest approach, browser UX
+<p><span>[slide5][slide6] Simplest approach, browser UX
 for spherical rendering, limited video-only experience</span></p>
-<p class="c0"><span>[slide7] More complete, make the DOM
+<p><span>[slide7] More complete, make the DOM
 spherical.</span></p>
-<p class="c0"><span>[slide9] Encrypted media makes it more
+<p><span>[slide9] Encrypted media makes it more
 difficult.</span></p>
-<p class="c0"><span>[slide10] Media capabilities</span></p>
-<p class="c0"><span>Media Capabilities API on github, in
+<p><span>[slide10] Media capabilities</span></p>
+<p><span>Media Capabilities API on github, in
 WICG</span></p>
-<p class="c0 c1"></p>
-<h2 class="c0 c5" id="h.k4mpszf7yt91"><span>Q&amp;A</span></h2>
-<p class="c0"><span><br>
-Kfarr: Another question, there have been a number of creative (yet
+
+<h2 id="h.k4mpszf7yt91"><span>Q&amp;A</span></h2>
+<p><span><br>
+<cite>Kfarr</cite>: Another question, there have been a number of creative (yet
 competing) concepts for mixture of compression and projection
 optimization to reduce bandwidth. Facebook appears to be the most
 advanced in this realm so far, at least in terms of publishing
@@ -1548,144 +1545,144 @@ simple such as alternate projection styles and tile / block
 compression alternatives that offer significant bandwidth savings
 already. Instead of Brightcove re-inventing the wheel to make yet
 another proprietary implementation thereof, can we work together to
-tackle the “known good” implementations as a standard?<br>
-David: we’re stuck with codecs today, experimenting with different
+tackle the “known good” implementations as a standard?<br><cite>
+David</cite>: we’re stuck with codecs today, experimenting with different
 projections.</span></p>
-<p class="c0"><span><br>
-Kfarr: Another question, If the “new” proposed “standard” were to
+<p><span><br><cite>
+Kfarr</cite>: Another question, If the “new” proposed “standard” were to
 include projection information in the mp4 container itself, there
 is significant existing content that would not have this tag. How
 would we deal with this transition period?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>David: you can keep adding boxes to MP4<br>
+
+<p><span><cite>David</cite>: you can keep adding boxes to MP4<br>
 You can inject in JS. Ideally, we can get standardized</span></p>
-<p class="c0"><span>Container, you don’t need to re=encode, just
+<p><span>Container, you don’t need to re=encode, just
 repackage</span></p>
-<p class="c0"><span>natb@valvesoftware.com: in the interim,
+<p><span><cite>natb@valvesoftware.com</cite>: in the interim,
 Samsung’s attribute proposal is good. Mesh extensibility is
 important.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Potch: FB’s pyramid approach and the apprach we
+
+<p><span><cite>Potch</cite>: FB’s pyramid approach and the apprach we
 saw here use MSE and varying on field of view. Is that well
 specified in MSE today or do we need more?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>David: for WebVR, you need sync between what
+
+<p><span><cite>David</cite>: for WebVR, you need sync between what
 the app thinks is the FOV and the stream. A bug link I skipped
 over, if you want to change the projection during
 playback.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Brightcove: How should we put th eprojection
+
+<p><span><cite>Brightcove</cite>: How should we put th eprojection
 into the video tag? What are the literal strings that represent.
 Underscores versus dashes, how can we converge on one
 representation?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>EricCarlson: One we figure out what the strings
+
+<p><span><cite>EricCarlson</cite>: One we figure out what the strings
 are, they need to be added to RFC defining mime-type extensions.
-&nbsp;That’s not hard, we just need a proposal.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Klaus: precedence between media and
+That’s not hard, we just need a proposal.</span></p>
+
+<p><span><cite>Klaus</cite>: precedence between media and
 tag?</span></p>
-<p class="c0"><span><br>
-@@: multiview support in VP9 similar to multiview HEVC?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Spherical DOM, what needs to be changed leaving
+<p><span><br><cite>
+@@</cite>: multiview support in VP9 similar to multiview HEVC?</span></p>
+
+<p><span>Spherical DOM, what needs to be changed leaving
 cartesian space?</span></p>
-<p class="c0"><span>David: Important for W3C to figure out. New
+<p><span><cite>David</cite>: Important for W3C to figure out. New
 dimensions, CSS?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Klaus: Spherical DOM, per-element?</span></p>
-<p class="c0"><span>Potch: Circular DOM, CSS round</span></p>
-<p class="c0"><span>Casey: early in VR browser, tried to extend CSS
+
+<p><span><cite>Klaus</cite>: Spherical DOM, per-element?</span></p>
+<p><span><cite>Potch</cite>: Circular DOM, CSS round</span></p>
+<p><span><cite>Casey</cite>: early in VR browser, tried to extend CSS
 Spec. Positioning and multiple orientations becomes confusing.
 Maybe there’s another place to do that.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>BrianC: example video of Bill Clinton, camera
+
+<p><span><cite>BrianC</cite>: example video of Bill Clinton, camera
 in front of his desk, background was static. Rendering only from
 video file would make that more complicated. Also, matching of
 color between video and JPEG complicated</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Rob: Camera capture, misleading to users to
+
+<p><span><cite>Rob</cite>: Camera capture, misleading to users to
 label 4k, effective viewport. Also are these sizes relevant if we
 have to scale to powers of 2?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>cvan: eye tracking like with the FOVE, is
+
+<p><span><cite>cvan</cite>: eye tracking like with the FOVE, is
 progressive enhancement with http/2 or hinting something being
 addressed? also, is it a concern that the server could fingerprint
 with eye tracking?</span></p>
-<p class="c0"><span>natb@valvesoftware: prediction is complicated.
+<p><span><cite>natb@valvesoftware</cite>: prediction is complicated.
 It would be best to let people experiment. Decoding is complicated,
 mobile/laptop/desktop different capabilities. We’re ready for
 high-quality 360 video.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Kieran: where do we go from here? What’s the
+
+<p><span><cite>Kieran</cite>: where do we go from here? What’s the
 next step? Some complicated problems, some easy.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: that’s the landscape session at the end of
+
+<p><span><cite>Dom</cite>: that’s the landscape session at the end of
 the day. We’ll have a workshop report shortly with standardization
 next steps.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Devin: propose a video representation breakout
+
+<p><span><cite>Devin</cite>: propose a video representation breakout
 this afternoon.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Kieran: we want a standard plugin for videoJS.
+
+<p><span><cite>Kieran</cite>: we want a standard plugin for videoJS.
 How do I get gaze position? Interactive video
 overlays+projection.</span></p>
-<p class="c0"><span>David: it’s not so easy to solve
+<p><span><cite>David</cite>: it’s not so easy to solve
 short-term</span></p>
-<p class="c0"><span>Rob: Gaze position is really WebVR’s pose -
+<p><span><cite>Rob</cite>: Gaze position is really WebVR’s pose -
 seems strange to replicate this at native level.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Wendy: W3C is actively looking for what’s ready
+
+<p><span><cite>Wendy</cite>: W3C is actively looking for what’s ready
 for standards, what needs more incubation. We’ll have
 CG/mailing-list follow-up to keep you engaged .</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>David: apps can do today, jumping to a native
+
+<p><span><cite>David</cite>: apps can do today, jumping to a native
 solution may not be right before we understand the full range of
 the issues.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Justin: projection mesh means a very specific
+
+<p><span><cite>Justin</cite>: projection mesh means a very specific
 thing. Are people also interested in rendering state? E.g.
 blending, projections where pixels aren’t directly rectangles we’re
 transmitting.</span></p>
-<p class="c0"><span>David: metadata proposal not just for the web,
+<p><span><cite>David</cite>: metadata proposal not just for the web,
 cameras, etc.</span></p>
-<p class="c0"><span>Rob: If we’re adding metadata related to
+<p><span><cite>Rob</cite>: If we’re adding metadata related to
 cameras would be good to add camera intrinsics/extrinsics too (ala
 XDM)</span></p>
-<p class="c0"><span>David: custom controls vs app/default controls.
+<p><span><cite>David</cite>: custom controls vs app/default controls.
 Appeal of specifying in the dom is opportunity to
 overlay</span></p>
-<p class="c0"><span>Potch: custom controls different if I’m using
+<p><span><cite>Potch</cite>: custom controls different if I’m using
 video as a texture</span></p>
-<p class="c0"><span>A: we should be able to have controls on the
+<p><span><cite>A</cite>: we should be able to have controls on the
 second one</span></p>
-<p class="c0"><span>@@: WebVR with layer for video?</span></p>
-<p class="c0"><span>Justin: closed captioning and other
+<p><span><cite>@@</cite>: WebVR with layer for video?</span></p>
+<p><span><cite>Justin</cite>: closed captioning and other
 accessibility features.</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>In Summary:</span></p>
-<ul class="c6 lst-kix_lyiy84absswq-0 start">
-<li class="c0 c2"><span>Media type parameter for 360 videos
+
+
+
+<p><span>In Summary:</span></p>
+<ul>
+<li><span>Media type parameter for 360 videos
 (@IETF?)</span></li>
-<li class="c0 c2"><span>Container metadata for projection with
+<li><span>Container metadata for projection with
 mesh; include rendering state?</span></li>
-<li class="c0 c2"><span>Spherical DOM?</span></li>
-<li class="c0 c2"><span>MSE adapted to 360° video</span></li>
-<li class="c0 c2"><span>Expose Media Capabilities</span></li>
-<li class="c0 c2"><span>WebVR layer for video?</span></li>
-<li class="c0 c2"><span>Where to include close captioning &
+<li><span>Spherical DOM?</span></li>
+<li><span>MSE adapted to 360° video</span></li>
+<li><span>Expose Media Capabilities</span></li>
+<li><span>WebVR layer for video?</span></li>
+<li><span>Where to include close captioning &
 accessibility features?</span></li>
-<li class="c0 c2"><span>Ad XML (video ad placement)</span></li>
+<li><span>Ad XML (video ad placement)</span></li>
 </ul>
-<h1 class="c0 c5" id="h.w7rv48yo91qv"><span>Immersive
+<h1 id="h.w7rv48yo91qv"><span>Immersive
 Audio</span></h1>
-<p class="c0"><span>Moderator, Olivier Théreaux, BBC; Panelists,
+<p><span>Moderator, Olivier Théreaux, BBC; Panelists,
 Hongchan Choi, Google; Mike Assenti, Dolby; Raymond Toy,
 Google</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Olivier: I work at BBC. I'm here today to make
+
+<p><span><cite>Olivier</cite>: I work at BBC. I'm here today to make
 sure we're not missing half of the point of VR as Brandon put it
 yesterday about audio. We have a panel here to look at the status
 of audio & VR. We'll first get an update from Raymond, a lead
@@ -1697,8 +1694,8 @@ bring input on the next version of the specification. We'll have
 short presentations from each panelists, each followed by a short
 Q&amp;A, but we'll also get more time after
 presentations.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Raymond: This is a brief overview of the Web
+<h3>Web Audio API Overview</h3>
+<p><span><cite>Raymond</cite>: This is a brief overview of the Web
 Audio API. In the beginning, the Web was silent; you needed flash
 or a plugin to play audio. HTML5 added the &lt;audio&gt; tag, which
 allowed streaming and some limited functionality such as start,
@@ -1709,13 +1706,13 @@ in the browser. It gives you an audio graph with sample-accurate
 timing with low latency. It allows you to create e.g synthesizer in
 the browser. Web Midi allows you to plug your keyboard into that
 procesing.</span></p>
-<p class="c0"><span>The Web Audio API gives you a way to define
+<p><span>The Web Audio API gives you a way to define
 precisely when a source starts; in the audio graph, you get to use
 lots of different processing nodes (e.g. gain, audio effects,
 filters, spatial effects). Recently we have introduced the Audio
 Worklet that allows you to use JavaScript to do custom
 processing.</span></p>
-<p class="c0"><span>Where are we going? We have a draft spec that
+<p><span>Where are we going? We have a draft spec that
 we are working very hard to bring it to Candidate Recommendation,
 hopefully by the end of the year. We left lots of stuff on the
 table to be able to move forward. We want to make the API
@@ -1724,268 +1721,1276 @@ already provides with the panner? It seems to work pretty well
 already based on the demo I saw from Brandon, but we want to hear
 from you to make Web Audio useful for real immersive audio
 experiences.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Q&amp;A:</span></p>
-<p class="c0"><span>Brandon: indeed, the room demo, it works really
+
+<h4>Q&amp;A:</h4>
+<p><span><cite>Brandon</cite>: indeed, the room demo, it works really
 well. One issue we've found that if you turn your head fast, it
 creates discontinuity in the sound. What are your thoughts on how
 to improve this?</span></p>
-<p class="c0"><span>Raymond: that was an effect of the original
+<p><span><cite>Raymond</cite>: that was an effect of the original
 panner node, but with the new API the problem should no longer
 exist.</span></p>
-<p class="c0"><span>Don Brutzman: in X3D, we have some experience
+<p><span>Don Brutzman: in X3D, we have some experience
 in spatial audio from a content definition perspective. An</span>
-<span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=http://www.web3d.org/documents/specifications/19775-1/V3.3/Part01/components/sound.html%23f-Soundnodegeometry&amp;sa=D&amp;ust=1477062934794000&amp;usg=AFQjCNEs0T7pVUzOZCMZxUPxGu4qygPoFA">
+<span><a href=
+"http://www.web3d.org/documents/specifications/19775-1/V3.3/Part01/components/sound.html#f-Soundnodegeometry">
 ellipsoidal front/back and linear attenuation dropoff
-model</a></span><span>&nbsp;was intentionally simplistic because
-most players were implementing this in software. &nbsp;Suggestion:
+model</a></span><span>was intentionally simplistic because
+most players were implementing this in software. Suggestion:
 consider setting the bar for an initial spatial-audio specification
 based on current hardware capabilities, and consider defining an
 even-high-fidelity spatialization for hardware folks to drive
-towards. &nbsp;Potential win-win.</span></p>
-<p class="c0"><span>Raymond: it turns out a lot of the nodes are
+towards. Potential win-win.</span></p>
+<p><span><cite>Raymond</cite>: it turns out a lot of the nodes are
 based on OpenAL, but I'm not sure how to do more than
 that.</span></p>
-<p class="c0"><span>JamesB: question about codec support - Opus is
+<p><span><cite>JamesB</cite>: question about codec support - Opus is
 supported in &lt;audio&gt; but not in Web Audio.</span></p>
-<p class="c0"><span>Raymond: that's something I'm working on
+<p><span><cite>Raymond</cite>: that's something I'm working on
 fixing.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Olivier: next Hongchan Choi also part of the
+<h3>Spatial Audio Renderer</h3>
+<p><span><cite>Olivier</cite>: next Hongchan Choi also part of the
 Chrome Team and member of the Web Audio Working Group, and
 describes himself as a Web Music evangelist. You wanted to talk
 about your spatial audio renderer, Omnitone</span></p>
-<p class="c0"><span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=https://docs.google.com/presentation/d/1Rrpv9kw18eIBUcIlev84dKu94AQ9D4EeGusDEIEbg4Y/edit%23slide%3Did.p&amp;sa=D&amp;ust=1477062934796000&amp;usg=AFQjCNGRFvLn9ERG28dDZzVIY1oxTCWgiQ">
-https://docs.google.com/presentation/d/1Rrpv9kw18eIBUcIlev84dKu94AQ9D4EeGusDEIEbg4Y/edit#slide=id.p</a></span><span>&nbsp;</span></p>
-<p class="c0"><span>Hongchan Choi: this talk tries to look at what
+<p><span><a href=
+"https://docs.google.com/presentation/d/1Rrpv9kw18eIBUcIlev84dKu94AQ9D4EeGusDEIEbg4Y/edit#slide=id.p">
+https://docs.google.com/presentation/d/1Rrpv9kw18eIBUcIlev84dKu94AQ9D4EeGusDEIEbg4Y/edit#slide=id.p</a></span> </p>
+<p><span><cite>Hongchan Choi</cite>: this talk tries to look at what
 you can today with the Web Audio API for spatial audio. When we
 looked at this in Chrome, there were 2 patterns: Object-based
 spatialization - we have a basic system for this in Web Audio with
 the Panner node</span></p>
-<p class="c0"><span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=https://toji.github.io/webvr-samples/06-vr-audio.html?polyfill%3D1&amp;sa=D&amp;ust=1477062934796000&amp;usg=AFQjCNGCYOmdj2iX-YxdSMtJdCLO6QqZ6A">
+<p><span><a href=
+"https://toji.github.io/webvr-samples/06-vr-audio.html?polyfill=1">
 https://toji.github.io/webvr-samples/06-vr-audio.html?polyfill=1</a></span></p>
-<p class="c0"><span>The next proposal is to use ambisonics - a
+<p><span>The next proposal is to use ambisonics - a
 pretty portable audio format that can be played on any speaker
 setup. We project this into binaural rendering. But this was not
 part of the Web Audio feature set. We looked at how to make that
 possible.</span></p>
-<p class="c0"><span>One logical idea was to extend the
+<p><span>One logical idea was to extend the
 &lt;audio&gt; & &lt;video&gt; element with a magical blackbox - but
 that seemed too risky.</span></p>
-<p class="c0"><span>Another approach was to use a
+<p><span>Another approach was to use a
 MediaStreamSpatialAudioNode, but this had quirks as well. We'll
 probably go there at some point, e.g. in v2.</span></p>
-<p class="c0"><span>In the meantime, I started looking at doing
+<p><span>In the meantime, I started looking at doing
 this using the (now deprecated) ScriptProcessorNode - it worked but
 with issues with latency and glitches.</span></p>
-<p class="c0"><span>But I took a step back, and realized I could do
+<p><span>But I took a step back, and realized I could do
 this using native audio nodes - and we got a great review from
 TechCrunch on the result which works in any Web Audio-enabled
 browser.</span></p>
-<p class="c0"><span>See googlechrome.github.io/omnitone</span></p>
-<p class="c0"><span>Some issues we discovered in the
+<p><span>See googlechrome.github.io/omnitone</span></p>
+<p><span>Some issues we discovered in the
 process:</span></p>
-<ul class="c6 lst-kix_fmvkj3izyj78-0 start">
-<li class="c0 c2"><span>We're missing a compressed audio format for
+<ul>
+<li><span>We're missing a compressed audio format for
 FOA/HOA multichannel audio stream; I think Opus solves
 this</span></li>
-<li class="c0 c2"><span>There are alternative spatialization
+<li><span>There are alternative spatialization
 techniques ground on native implementations</span></li>
-<li class="c0 c2"><span>Right now we have a separate rendering path
+<li><span>Right now we have a separate rendering path
 for audio and video, which means there are synchronization issues
 that we need to address.</span></li>
 </ul>
-<p class="c0"><span>Olivier: we want to hear from the audience on
+<p><span><cite>Olivier</cite>: we want to hear from the audience on
 what is needed for VR (whether the abstraction of the audio native
 nodes is right for the kind of needs of VR)</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Q&amp;A</span></p>
-<p class="c0"><span>Casey: are you looking at other spatialization
+
+<h4>Q&amp;A</h4>
+<p><span><cite>Casey</cite>: are you looking at other spatialization
 techniques e.g. ray tracing?</span></p>
-<p class="c0"><span>Hongchan: not in this project; but it's a
+<p><span><cite>Hongchan</cite>: not in this project; but it's a
 different matter for the spec</span></p>
-<p class="c0"><span>Chris: is this a worker friendly
+<p><span><cite>Chris</cite>: is this a worker friendly
 spec?</span></p>
-<p class="c0"><span>Hongchan: right now the Web Audio API is not
+<p><span><cite>Hongchan</cite>: right now the Web Audio API is not
 accessible from a Worker, but we are developing this Web Audio
 Worklet</span></p>
-<p class="c0"><span>Chris: any high level library to wrap the
+<p><span><cite>Chris</cite>: any high level library to wrap the
 API?</span></p>
-<p class="c0"><span>Hongchan: tone.js is pretty popular</span></p>
-<p class="c0"><span>Thomas: many 360 video comes with 2D sound -
+<p><span><cite>Hongchan</cite>: tone.js is pretty popular</span></p>
+<p><span><cite>Thomas</cite>: many 360 video comes with 2D sound -
 any way to make it sound better nevertheless?</span></p>
-<p class="c0"><span>Hongchan: I haven't thought about
+<p><span><cite>Hongchan</cite>: I haven't thought about
 that</span></p>
-<p class="c0"><span>Philip: you mentioned orientation, position; I
+<p><span><cite>Philip</cite>: you mentioned orientation, position; I
 would have also expected velocity, also the room environment
 converted as a filter.</span></p>
-<p class="c0"><span>Hongchan: I was talking about the other
+<p><span><cite>Hongchan</cite>: I was talking about the other
 approach - what you're talking is object-based parameterized
 spatialization. Ambisonics is not for that</span></p>
-<p class="c0"><span>Potch: any support for Doppler
+<p><span><cite>Potch</cite>: any support for Doppler
 effect?</span></p>
-<p class="c0"><span>Hongchan: we had to remove it due to
+<p><span><cite>Hongchan</cite>: we had to remove it due to
 issues</span></p>
-<p class="c0"><span>Jason: I've done professional projects with Web
+<p><span><cite>Jason</cite>: I've done professional projects with Web
 Audio - great stuff. Being able to set the drop off rate would be
 useful.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Olivier: Mike Assenti from Dolby Labs will be
+<h3>Object-based Audio for VR</h3>
+<p><span><cite>Olivier</cite>: Mike Assenti from Dolby Labs will be
 looking at a different angle, on how to use object based audio for
 linear based VR experiences</span></p>
-<p class="c0"><span>Mike: I've joined the Web Audio WG recently,
+<p><span><cite>Mike</cite>: I've joined the Web Audio WG recently,
 but been at Dolby for the past 8 years. I'll offer some perspective
 on audio content creation on audio for linear based VR
 experiences.</span></p>
-<p class="c0"><span>At Dobly, we distinguish interactive vs linear
+<p><span>At Dobly, we distinguish interactive vs linear
 VR experiences. Linear is a storytelling or experential (e.g. live
 sport event).</span></p>
-<p class="c0"><span>A soundfield is a description of sound at a
+<p><span>A soundfield is a description of sound at a
 particular point in space, whereas an object model-based
 representations describes semantically which sound (represented as
 a channel) comes from where.</span></p>
-<p class="c0"><span>There are dedicated hardware for sound field
+<p><span>There are dedicated hardware for sound field
 capture, but for object-based require a more onerous but more
 flexible artistic mix.</span></p>
-<p class="c0"><span>[illustrating with the diner scene of Pulp
+<p><span>[illustrating with the diner scene of Pulp
 Fiction]</span></p>
-<p class="c0"><span>“Reality is not really what we want with
+<p><span>“Reality is not really what we want with
 virtual reality, but an artistic experience.”</span></p>
-<p class="c0"><span>Live events - one of my favorite use case, you
+<p><span>Live events - one of my favorite use case, you
 also need to mix the audio to make it pleasant. You would capture
 this with different mic points. Doing this live is pretty complex
 (which companies including Dolby are trying to help address), but
 it gives you more artistic opportunities.</span></p>
-<p class="c0"><span>In a live music show, again, you want a curated
+<p><span>In a live music show, again, you want a curated
 mix, not a soundfield capture.</span></p>
-<p class="c0"><span>For post produced VR, you get all these sources
+<p><span>For post produced VR, you get all these sources
 that you turn into channels with metadata describing the objects
 (at least the position), which can then be rendered into the
 various speakers setups. This can be exported in audio formats that
 support spatialization - one possible export is to render this as a
 simple soundfield (although then again you lost
 flexibility).</span></p>
-<p class="c0"><span>We talked about the difference between reality
+<p><span>We talked about the difference between reality
 & VR. Rendering distance is not just a matter of attenuation -
 reverb also plays a role. You need metadata to determine e.g. if
 the object is supposed to be far or near.</span></p>
-<p class="c0"><span>Professional mixers don’t want us to do the
+<p><span>Professional mixers don’t want us to do the
 attenuation for them, but to get control of the
 primitives.</span></p>
-<p class="c0"><span>You can also do head-track vs non head-track
+<p><span>You can also do head-track vs non head-track
 audio (e.g. a commentator should be fixed to the user). You can
 also increase the gain based on the gaze direction.</span></p>
-<p class="c0"><span>In a live event, you might want to do automated
+<p><span>In a live event, you might want to do automated
 panning based on the position of the artis on scene.</span></p>
-<p class="c0"><span>You could also mix VR in VR.</span></p>
-<p class="c0"><span>Speaker-rendering is also interesting to avoid
+<p><span>You could also mix VR in VR.</span></p>
+<p><span>Speaker-rendering is also interesting to avoid
 the isolation aspect of VR.</span></p>
-<p class="c0"><span>What about the Web? We need 2 components to
+<p><span>What about the Web? We need 2 components to
 play this back: decode the content and their time-synchronized
 metadata, pass it to a renderer in which we pass the orientation &
 position of the user, with playback configuration (e.g.
 binaural).</span></p>
-<p class="c0"><span>The options to do this in Web Audio: we pass
+<p><span>The options to do this in Web Audio: we pass
 the bitstream to the native decoder tightly bound to the renderer,
 to which you pass orientation & position : but that latter part you
 can't do.</span></p>
-<p class="c0"><span>Another option is to the rendering in the Web
+<p><span>Another option is to the rendering in the Web
 Audio API (e.g. a series of panner nodes with reverb) - it gives
 more flexibility, but it's heavy and might get
 consistencies.</span></p>
-<p class="c0"><span>VR audio is more than head-track spatialization
+<p><span>VR audio is more than head-track spatialization
 over headphones. Audio production is also art which need to be
 combined with ambisonics for great VR experiences.</span></p>
-<p class="c0"><span>Web Audio v1 brings us very close to linear
+<p><span>Web Audio v1 brings us very close to linear
 based VR experiences, but not quite to the end - this is a feature
 request for v2!</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Q&amp;A</span></p>
-<p class="c0"><span>Philip: you talked about the linear stuff; what
+
+<h4>Q&amp;A</h4>
+<p><span><cite>Philip</cite>: you talked about the linear stuff; what
 about the interactive stuff?</span></p>
-<p class="c0"><span>Mike: from a rendering standpoint, there is a
+<p><span><cite>Mike</cite>: from a rendering standpoint, there is a
 lot of similarities. But at Dolby, we look more at linear content
 in general. But if we get it right for linear, it should apply
 similarly for interactive.</span></p>
-<p class="c0"><span>Don: a useful direction for future work would
+<p><span><cite>Don</cite>: a useful direction for future work would
 be for the 3D & audio to inform each other in VR experiences.
-&nbsp;For example, high-fidelity audio rendering can likely be
+For example, high-fidelity audio rendering can likely be
 accomplished for this room on the order of 100 polygons.
-&nbsp;Adding audio properties for reflection/absorption etc. is
-also analogous to visual materials/appearance. &nbsp;SIGGRAPH
+Adding audio properties for reflection/absorption etc. is
+also analogous to visual materials/appearance. SIGGRAPH
 conference is a good resource for such work, e.g.</span>
-<span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=http://gamma.cs.unc.edu/Sound/RESound/&amp;sa=D&amp;ust=1477062934807000&amp;usg=AFQjCNEMYHjghXajvcvmxiGfZDn0pkm95A">
+<span><a href=
+"http://gamma.cs.unc.edu/Sound/RESound/">
 RESound: Interactive Sound Rendering for Dynamic Virtual
-Environments</a></span><span>&nbsp;by Manocha et al., UNC,
+Environments</a></span><span>by Manocha et al., UNC,
 2009.</span></p>
-<p class="c0"><span>Shannon: My dream is to have a way to adding
+<p><span><cite>Shannon</cite>: My dream is to have a way to adding
 audio-reflective properties to the scene (e.g. to distinguish wood
 from carpet), and have the browser coalesce this.</span></p>
-<p class="c0"><span>Potch: from Slack: what does it mean to duck a
+<p><span><cite>Potch</cite>: from Slack: what does it mean to duck a
 sound field?</span></p>
-<p class="c0"><span>Hongchan: we have a compressornode that would
+<p><span><cite>Hongchan</cite>: we have a compressornode that would
 enable ducking with side-chaining.</span></p>
-<p class="c0"><span>Potch: from Slack, have their been experiences
+<p><span><cite>Potch</cite>: from Slack, have their been experiences
 in configuring the surrounding audio environment (e.g. getting more
 or less sound from your friends).</span></p>
-<p class="c0"><span>MIke: it's very much an artistic choice; it's
+<p><span><cite>MIke</cite>: it's very much an artistic choice; it's
 still very early days in that regard.</span></p>
-<p class="c0"><span>Potch: is there an audio analog to
+<p><span><cite>Potch</cite>: is there an audio analog to
 photogrammetry?</span></p>
-<p class="c0"><span>Mike: there was a great paper on capturing
+<p><span><cite>Mike</cite>: there was a great paper on capturing
 multiple sound fields@@@</span></p>
-<p class="c0"><span>@@@ NFB: from an A11Y, how do we describe that
+<p><span><cite>@@@ NFB</cite>: from an A11Y, how do we describe that
 audio?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Issues / summary:</span></p>
-<p class="c0 c1"></p>
-<ul class="c6 lst-kix_aiyqqux8ame-0 start">
-<li class="c0 c2"><span>Compressed audio format for FOA/HOA
+
+<p><span>Issues / summary:</span></p>
+
+<ul>
+<li><span>Compressed audio format for FOA/HOA
 multichannel audio stream</span></li>
-<li class="c0 c2"><span>Alternative spatialisation techniques and
+<li><span>Alternative spatialisation techniques and
 native implementation</span></li>
-<li class="c0 c2"><span>Tight synchronisation between audio and
+<li><span>Tight synchronisation between audio and
 video frames (between all kinds of streams, audio/video,
 video/video)</span></li>
-<li class="c0 c2"><span>worker-friendliness and
+<li><span>worker-friendliness and
 audioworklets</span></li>
-<li class="c0 c2"><span>Object-based audio pipeline - need to pass
+<li><span>Object-based audio pipeline - need to pass
 time-sync'd metadata ; sending orientation/position down to the
 decoder</span></li>
-<li class="c0 c2"><span>Capability reporting for rendering
+<li><span>Capability reporting for rendering
 (important for graceful degradation)</span></li>
-<li class="c0 c2"><span>Speech synthesis</span></li>
-<li class="c0 c2"><span>Speech recognition</span></li>
-<li class="c0 c2"><span>Describing spatial audio for
+<li><span>Speech synthesis</span></li>
+<li><span>Speech recognition</span></li>
+<li><span>Describing spatial audio for
 A11Y</span></li>
 </ul>
-<p class="c0 c1"></p>
-<h1 class="c0 c5" id="h.lxsfcg95aa"><span>Breakouts</span></h1>
-<p class="c0"><span>￼</span><span class="c9"><a class="c4" href=
-"https://www.google.com/url?q=https://docs.google.com/document/d/1HxnxffzFvbigg_xH4180ROKH1eNNkgLWlCpw_FhH1uQ/edit%23&amp;sa=D&amp;ust=1477062934812000&amp;usg=AFQjCNEzgxq6wE8YK2ptDqwxey6ADdj4ng">https://docs.google.com/document/d/1HxnxffzFvbigg_xH4180ROKH1eNNkgLWlCpw_FhH1uQ/edit#</a></span><span>&nbsp;</span></p>
-<p class="c0 c1"></p>
-<h1 class="c0 c5" id="h.noaj6r6y94de"><span>Standardization
+
+<h1 id="h.lxsfcg95aa"><span>Breakouts</span></h1>
+<h3>Making a HMD WebVR ready</h3>
+
+<h3>Link traversal, are we there yet?</h3>
+
+<p><span>Proposer(s): Fabien Benetou</span></p>
+<p><span>Summary: Identify what is missing to enable the
+Metaverse</span></p>
+<p><span>Type of session: Open discussion (with</span>
+<span><a href=
+"https://w3c-vr.slack.com/messages/linktraversal/">
+#linktraversal</a></span><span>channel on Slack, follow up
+on</span> <span><a href=
+"https://docs.google.com/presentation/d/1V1_aXc6tZhXU7jUIQTdtBhRMxMWFR8n_PmbuIZTlCkA/edit#slide=id.g185d62d93a_0_87">
+cvan/casey’s presentation</a></span><span>, see also</span>
+<span><a href=
+"https://w3c-vr.slack.com/messages/spoofing_phishing/">
+#spoofing_phishing</a></span><span>regarding
+security</span><span>)</span></p>
+<p><span>Goals: Check existing implementations (cf Andy
+Martin’s</span> <span><a href=
+"http://vrambling-browser.blogspot.be/">
+VRambling browser</a></span> <span class=
+"c3"><a href=
+"https://github.com/aframevr/aframe/issues/403#issuecomment-248482953">A-Frame
+tests</a></span> <span><a
+href=
+"https://github.com/cvan/webvr-link-traversal">cvan’s
+webvr-link-traversal</a></span><span>), compared with current specs
+(</span><span><a href=
+"https://w3c.github.io/webvr/#vrdisplayeventreason-codes">navigation
+reason</a></span><span>, transitions cf Casey/Josh’s
+exploration</span><span>), define limitations with new needs (deep
+linking equivalents,avatar persistence across experiences, avoiding
+orientation rest, preview,</span> <span><a
+href=
+"https://onedrive.live.com/view.aspx?resid=DB996F916EA4CF47!60663&ithint=file,pptx&app=PowerPoint&authkey=!AJF8T-vOzNiR_ZE">
+pre-loading</a></span><span>, 360 as waiting previews, security,
+current WebVR diameter… of 3 links)</span></p>
+
+<p><span>What is the minimal set of
+features that</span> <span>HAVE</span><span class=
+"c21">to be in the browser in order to be able to navigate
+from one VR experience to another VR experience hosted by
+potentially different content providers without leaving
+VR?</span></p>
+<table>
+  <caption>Proposed priorities with time frame</caption>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<ol start="1">
+<li><span>Link traversal itself
+while staying in VR</span>
+<ol start="a">
+<li><span>Current state of the
+browsers</span></li>
+<li><span>Navigation
+reason</span></li>
+</ol></li>
+<li><span>Transitions</span>
+<ol start="a">
+<li><span>Coherence of style from the
+origin to the target</span></li>
+<li><span>Preloading with performance
+impact</span></li>
+<li><span>Previews</span></li>
+</ol></li>
+<li><span>Persistence across
+experience</span>
+<ol start="1">
+<li><span>Avatar</span></li>
+<li><span>Name/ID/…</span></li>
+<li><span>Other (currency, points,
+...)</span></li>
+</ol></li>
+<li><span>Reprojection</span></li>
+<li><span>Roadblocks</span>
+<ol start="1">
+<li><span>Business case (walled
+gardens)</span></li>
+<li><span>Security e.g.
+spoofing</span></li>
+</ol></li></ol>
+</td>
+<td style="vertical-align:top" colspan="1" rowspan="1">
+<ol start="1">
+<li><span>Tomorrow?</span>
+<ol start="1">
+<li><span>No major today</span></li>
+<li><span>Since WebVR 1.1?</span></li>
+</ol></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><span>Link traversal, are we there
+yet?</span></p>
+
+<p><span>Presence Firefox, Carmel, Chromium, Samsung,
+Edge</span></p>
+
+<p><span>What is out of scope</span></p>
+<p>
+<span>Transition</span></p>
+<p>
+<span>Visual
+parts</span></p>
+<p>
+<span>Not
+UX</span></p>
+<p>
+<span>Room to talk
+about UX, could be done in the declarative session</span></p>
+<p><span>What is missing from making it rock navigation
+solid</span></p>
+<p><span>What does give the browser enough information
+to make the transition</span></p>
+<p><span>Analogy with single page app</span></p>
+<p><span>Spoofing giving importance to transition and
+have to ensure trust</span></p>
+
+<p><span>Current status of the specs</span></p>
+<p>
+<span>requestPresent
+restricted requiring user gesture</span></p>
+<p>
+<span>Alt
+VRDisplayActivate using proximity sensor equivalent to user
+gesture</span></p>
+<p>
+<span>Future
+alt VRDisplayNavigate from a VR context to another</span></p>
+<p>
+<span>Close
+to OnLoad event? Treated as user gesture? (has to be called in
+context of that callback)</span></p>
+<p>
+<span>Requires
+delay so requires splash screen or some kind of visual
+transition</span></p>
+<p>
+<span>&lt;meta&gt;
+for whether site is VR capable</span></p>
+<p>
+<span>Carmel
+specific, VR only player, different restrictions</span></p>
+<p>
+<span>Usage
+of layers as preview/loading content</span></p>
+
+<p><span>Difficulty of predictability for content
+fetching, loading, rendering</span></p>
+<p><span>requestPresent/meta tag vs. HTTP-equiv vs.
+misbehaving pages</span></p>
+<p><span>Mobile as model (meta viewport)</span></p>
+<p>
+<span>Viewmode eq
+for VR</span></p>
+<p><span>Heuristic on timing</span></p>
+<p>
+<span>Problem of
+misbehaving page e.g. existing &lt;meta&gt; tag but no VR content
+provided giving 10 sec. of white</span></p>
+<p>
+<span>Alt
+providing anything</span></p>
+<p>
+<span>e.g.,
+1 frame with timewarp</span></p>
+<p>
+<span>Forces
+page to take ownership</span></p>
+<p><span>Carmel</span></p>
+<p>
+<span>Favicon.gtlf
+as rotating</span></p>
+<p><span>ServiceWorker as mean to delegate before
+content</span></p>
+<p>
+<span>Heavy weight,
+other process, expensive</span></p>
+<p>
+<span>Esp.
+when consider pages that are expected to load subsecond</span></p>
+<p><span>Meta tag still as comment, not in
+spec</span></p>
+<p><span>Web App Manifest format</span></p>
+<p><span>`href` properties/favicon loading/… should be
+stored there?</span></p>
+<p>
+<span>Solved for
+2nd+ navigations but not 1st time</span></p>
+<p><span>Security equivalent of fishing prevention with
+daily blacklist</span></p>
+<p>
+<span>Cost of gaze
+for preloading… too costly</span></p>
+<p><span>Reminder of Josh’s transition</span></p>
+<p>
+<span>Representation
+of omnibar for what is loading w/ progress bar as trusted
+UI</span></p>
+<p>
+<span>fades-in/out
+at propriete time</span></p>
+<p>
+<span>Spoofable</span></p>
+<p><span>Remarks on security for Chromium for non https
+with its persistent overlay</span></p>
+<p>
+<span>Impossible to
+overlay</span></p>
+<p>
+<span>Handled
+by the composer (treating the WebGL generate)</span></p>
+<p>
+<span>Ignoring the
+red padblock equivalent?</span></p>
+<p><span>Job simulator metaphor, not having to pop back
+up to the selection level part</span></p>
+<p>
+<span>Proposing
+Site A - Site B on same domain, some origin policy, etc.</span></p>
+<p><span>Is the omnibar equivalent of popping
+backup?</span></p>
+<p>
+<span>Content NOT
+provided by the author as distracting</span></p>
+<p><span>Link traversal is changing content, not just
+single page app equivalent</span></p>
+<p><span>Question on `&lt;iframe&gt;`
+equivalent</span></p>
+<p><span>Possibility to jump back to a safe
+place</span></p>
+<p><span>Minimizing/docking/closing abilities…
+blur/focus events</span></p>
+<p><span>Fallback to 2D</span></p>
+<p>
+<span>404 pages,
+etc.</span></p>
+<p><span>In-app to browser navigation</span></p>
+
+<p><span>Summary</span></p>
+<ul>
+<li><span>&lt;meta&gt; tag
+http-equiv</span></li>
+<li><span>Event</span></li>
+<li><span>VRDisplayNavigate (for
+single-device scenario)</span></li>
+<li><span>Transition later on with
+browser-specific backup at first at least</span></li>
+</ul>
+
+<p><span>------</span></p>
+
+<p><span>Any visual of the event timeframe?</span></p>
+
+<p><span>There are many ways to render VR. <br>
+Could be some future CSS VR…</span></p>
+<p><span>Think about WebGl assumption</span></p>
+
+<p><span>Is a transition between pages a full
+reload?</span></p>
+<p>
+<span>It does not
+have to be. Example of transitions in JanusVR.</span></p>
+<p><span>Missing concept of seamless portal,
+`&lt;iframe&gt;`s.</span></p>
+
+<h3>Halving the draw calls with WEBGL_multiview</h3>
+
+<p><span>Proposer(s): Olli Etuaho</span></p>
+<p><span>Summary: Accelerating stereo rendering with a
+WebGL multiview extension</span></p>
+<p><span>Type of session: Open discussion</span></p>
+<p><span>Goals: Resolve open questions about what a
+WebGL version of OVR_multiview should look like and how to display
+a framebuffer generated using such an extension in an efficient way
+in WebVR.</span></p>
+
+<p><span>Slides</span> <span><a
+href=
+"https://drive.google.com/file/d/0B8RMuOp5lAYSYzdRNnBMcU9KUzA/view?usp=sharing">
+https://drive.google.com/file/d/0B8RMuOp5lAYSYzdRNnBMcU9KUzA/view?usp=sharing</a></span></p>
+
+<p><span>Strawman proposal:</span> <span class=
+"c0"><a href=
+"https://github.com/Oletus/WebGL/tree/multiview-strawman">
+https://github.com/Oletus/WebGL/tree/multiview-strawman</a></span><span>&nbsp;</span><span>(</span><span><a
+href=
+"https://drive.google.com/file/d/0B8RMuOp5lAYSaE1YUUMwZ2dLRkE/view?usp=sharing">Prettier
+version</a></span><span>)</span></p>
+
+
+<p><span>Notes</span></p>
+<ul>
+<li><span>Proposed WebGL extension based on OVRmultiview
+extension. Draw calls in js and both views get
+rendered.</span></li>
+<li><span>Cost of rendering in half? Yes most of the
+browser rendering will also get reduced half</span></li>
+<li><span>What sort of reduction in processing? 40%?
+&nbsp;Hard to deduce.</span></li>
+<li><span>Directed to different layers of the
+texture</span></li>
+<li><span>Open questions? Slide 4</span></li>
+<li><span>Couple of of extensions on the
+native.</span></li>
+<li><span>Multiview and mv2</span></li>
+<li><span>Restriction.</span></li>
+<li><span>MV 2 no restriction</span></li>
+<li><span>Q: Should we have such restriction? Or no
+restriction?</span></li>
+<li><span>If you have more restriction: more
+possibilities of extensions. This will gain GPU performance. Less
+res : flexible for Apps but apps won’t get the perf
+benefits?</span></li>
+<li><span>How many mobile platforms have MV extensions?
+Any GearVR has OVR_MV. Any phone that is intended for VR should
+have them in the future.</span></li>
+<li><span>What are rester: Only change GL position on
+ViewID.</span></li>
+<li><span>What’s significant difference between
+NVIDIA?</span></li>
+<li><span>One draw calls submits 2
+geometries.</span></li>
+<li><span>Potentially? Can be done in Geometry shader?
+GS can be varying quality across platforms</span></li>
+<li><span>In Chrome: can save calls in JS and calls sent
+over command buffer architecture but in the GPU process we can
+split it to universally support the extension. GL driver may be
+doing the same.</span></li>
+<li><span>One proposal: Multiple levels of
+restrictions</span></li>
+<li><span>Q: Holographic API: Are you given a buffer and
+both render into it. Now It is 2 like texture array. DirectX
+concept of stereo.</span></li>
+<li><span>Few ways this can be handled:</span></li>
+</ul>
+<ul>
+<li><span>Option A: WebGL multi view so render side by
+side into single texture. So no change in existing specs. Means no
+native extensions or it could be a bit tricky</span></li>
+</ul>
+<ul>
+<li><span>MultiView will only beneficial for WebGL2
+due to texture array, We can back port to WebGL1 though if the
+side-by-side option is chosen.</span></li>
+</ul>
+<ul>
+<li><span>Option B: default FB that would be
+layered.</span></li>
+<li><span>Option C: Stereo canvas element itself.
+Layered texture implementation. Individual left and right. Fairly
+big changes to the canvas. Can be used for DOM inside the VR.
+Canvas elements in VR. Quad buffer stereo.</span></li>
+</ul>
+<ul>
+<li><span>Q: What happens when you do readpixels? A:
+Just as today, the read framebuffer will be just one layer of the
+texture.</span></li>
+<li><span>Scenario outside of WebVR? Yes for example
+rendering a cube map more efficiently. NV extension is explicitly 2
+views. Either way should not tie the multiview extension just to
+WebVR, but make it possible to use it more widely.</span></li>
+<li><span>Looking ahead: Timewarp/Spacewarp in WebVR. We
+don’t explicitly do it. Good reason we want to disable. Jittering
+shadow. Interesting to raise it up to the WebVR level where the
+application. Maybe good to give option to explicitly turn
+off.</span></li>
+<li><span>Takeaways:</span></li>
+</ul>
+<ul>
+<li><span>Need more discussion in general right
+mechanism into WebVR (efficiently)</span></li>
+<li><span>Probably start prototyping. Start with most
+restrictive. Proof of concept. Could be side by side so browser is
+emulating.</span></li>
+</ul>
+
+<p><span>Conclusions: Need to be careful to specify the
+extension in a way that’s compatible with all the different display
+pipelines exposed by HMDs and inside browsers - should not trade
+draw call overhead to memory bandwidth overhead (extra copies).
+Extension does have uses outside also of VR, so need to consider
+this when specifying it. WebGL 1 compatibility might be possible if
+the extension is specified in a certain way, but this might limit
+performance so it could be made WebGL 2 only. Prototyping is
+required to determine performance impact, and should inform further
+work on the specs.</span></p>
+
+
+<h3>Declarative 3D</h3>
+
+<p><span>Proposer(s): Tony Parisi</span></p>
+<p><span>Summary: Should we contemplate a 3D equivalent
+to the DOM? Aka a Scene Graph? Not low-level content like glTF but
+something more like A-frame or React, with a full object model with
+properties, baked into the browser, presumably faster, and
+interoperable between browsers.</span></p>
+<p><span>Type of session: Discussion</span></p>
+<p><span>Goals: To gauge interest in this as a set of
+built-in features to optimize performance and provide a reliable
+baseline of features across browsers… non-goal is to generate a
+proposal, though if people show up with some we can
+discuss.</span></p>
+
+<p><span>Attendees: approx 25</span></p>
+<h4 id="h.ma75lm5kwni8"><span>Scene Object Model
+Discussion</span></h4>
+
+<p><span>Overall theme - browser as 3D presentation
+engine (vs 2D presentation engine) and application platform (vs.
+Declarative breakout, where the goal is to enable the creation of
+portable/archivable content… ?)</span></p>
+
+<p><span>Resources:</span> <span><a class=
+"c11" href=
+"https://www.google.com/url?q=https://www.w3.org/community/declarative3d/&amp;sa=D&amp;ust=1478174170545000&amp;usg=AFQjCNGwcNfzwnKJ6DDzE9nADCkrspCFZA">
+https://www.w3.org/community/declarative3d/</a></span></p>
+
+<p><span>Some possible requirements</span></p>
+
+<ol start="1">
+<li><span>Declarative files</span><ol start="1">
+<li><span>New markup syntax a la A-frame, React, X3D,
+GLAM, XML3D</span></li>
+<li><span>Loading glTF, OBJ and other 3D formats
+natively - this may be a separate APIs from the scene object model
+(Model object, akin to current Image DOM object)</span></li>
+<li><span>We will cover this topic in detail in the
+second breakout session</span></li>
+</ol></li>
+<li><span>Runtime object model</span>
+<ol start="1">
+<li><span>Properties and attributes</span></li>
+</ol></li>
+<li><span>Event model</span>
+<ol start="1">
+<li><span>Picks, collisions, visibility, model load
+callbacks</span></li>
+</ol></li>
+<li><span>Host object set</span>
+<ol start="1">
+<li><span>Usual suspects like Mesh and
+Group</span></li>
+<li><span>Supporting types like Matrix Vector3
+etc…</span></li>
+<li><span>There are some existing DOM objects in
+other specs, like Rect</span></li>
+</ol></li>
+<li><span>Viewing/navigation/interaction
+models</span>
+<ol start="1">
+<li><span>Built in viewing and navigation e.g.
+inspect, walkthrough</span></li>
+<li><span>Body position, sitting standing, hands
+stuff</span></li>
+<li><span>Built in controls - the scrollbars and hand
+controllers</span></li>
+</ol></li>
+<li><span>Presentation model</span>
+<ol start="1">
+<li><span>How does this relate to existing page
+compositing model?</span></li>
+</ol></li>
+<li><span>Rendering model</span>
+<ol start="1">
+<li><span>Built-in materials
+specification?</span></li>
+<li><span>Shading and programmability</span></li>
+<li><span>Backgrounds and layers (including
+passthrough for AR)</span></li>
+</ol></li>
+<li><span>Styling - “3D CSS”</span>
+<ol start="1">
+<li><span>Separation of concerns - ability to define
+visual styles flexibly</span></li>
+<li><span>CSS also defines layout as well as colors,
+and layout engine currently causes all kinds of perf
+issues</span></li>
+</ol></li>
+<li><span>Media integration - sound and
+video</span></li>
+<li><span>Legacy web pages</span>
+<ol start="1">
+<li><span>Web pages on a texture? Supports user
+interaction?</span></li>
+</ol></li>
+<li><span>Responsive design</span>
+<ol start="1">
+<li><span>This is probably all in &lt;meta&gt; tags,
+media queries</span></li>
+</ol></li>
+<li><span>Physics</span></li>
+<li><span>Animation</span></li>
+<li><span>User preferences e.g. visibility, reduced
+motion and other browser features</span></li>
+<li><span>Text</span></li>
+<li><span>Personal information and other stuff that
+goes between WebVR sessions… e.g. showing controllers</span></li>
+<li><span>Real-time multi-user updates to object
+model? Out of scope?</span></li>
+<li><span>Link traversal animations and other
+transitions… -talk to link traversal group</span></li>
+<li><span>Extensibility</span></li>
+</ol>
+
+<p><span>What are the benefits of doing this native in a
+browser vs. at the JavaScript level?</span></p>
+<ul>
+<li><span>Optimizations per-platform - more are
+available if it’s implemented in C++/native? What are the special
+cases that we want to enable</span></li>
+<li><span>Piece-by-piece we can look at optimization
+- is that an option? Vs. a whole new declarative API e.g. optimize
+matrices</span></li>
+<li><span>Rendering- and API independent -</span>
+<span>New architectures like Vulkan and Metal and non-GL rendering
+pipelines</span></li>
+<li><span>Ability to embed pieces of DOM into the 3D
+context.</span></li>
+<li><span>Rendering quality control</span></li>
+<li><span>Consistency of interaction (picking,
+“cursor shapes” a la Boris’ ray picker), navigation (e.g. link
+traversal)</span></li>
+<li><span>Standardized feature set</span></li>
+<li><span>Security - payments, password entry etc.
+moves a lot of responsibility to browser which we think is
+better</span></li>
+</ul>
+
+<p><span>Content follow up</span></p>
+<ul>
+<li><span>Will this open things up to content
+developers? Counter argument: who cares, JS or declarative? And
+most of the quality 3D will be done in tools.</span></li>
+<li><span>Nola: even if yes tools, the content will
+be more efficient. Look at Unity</span></li>
+<li><span>Jason: people move down the stack as they
+get more comfortable, typically starting at the high level and
+moving down as they feel mastery</span></li>
+<li><span>Scott Singer: harder to write simple tools
+that deliver low level stuff than higher level stuff</span></li>
+</ul>
+
+<h5 id="h.yk3w22st20ep"><span>Survey
+Questions</span></h5>
+
+<p><span>Q: We want to build a 3D runtime into the
+browser (at some level). Is this a</span></p>
+
+<ul>
+<li><span>Good idea? 85%</span></li>
+<li><span>Bad idea? 15%</span></li>
+</ul>
+
+<p><span>Q: What do you think the biggest benefit is to
+building a 3D runtime into the browser? Pick one only:</span></p>
+
+<ul>
+<li><span>Performance: 15%</span></li>
+<li><span>Ease of authoring: 50%</span></li>
+<li><span>Consistency of implementation and user
+experience: 35%</span></li>
+</ul>
+
+
+<p><span>Diego: extensible web manifesto. Standardize
+after identifying common patterns. Ada’s flipside: if developers
+are continually bending over backwards to do something maybe that’s
+a good candidate to standardize…</span></p>
+
+<p><span>Tony says let’s do a Survey Monkey</span></p>
+
+<p><span>James B would like to combine components from
+different systems like A-frame and his own engine</span></p>
+
+<p><span>Shannon : &nbsp;if it’s built in, then it’s a
+standard. Not a random library.</span></p>
+
+<p><span>Ada: even a small library is still a
+library.</span></p>
+
+<h4 id="h.7w0n6apro5mv"><span>Declarative 3D
+Discussion</span></h4>
+
+<p><span>Don Brutzman presentation on</span>
+<span><a href=
+"http://www.web3d.org/sites/default/files/presentations/X3D%20Graphics%20and%20VR/X3dGraphicsVirtualRealityW3cWorkshop2016October18.pdf">
+VR and X3D</a></span><span>,</span> <span>the</span>
+<span>Extensible 3D Graphics international standard.</span></p>
+<ul>
+<li><span>X3D originated and extended Virtual Reality
+Modeling Language (VRML97) standard. &nbsp;We have been at this VR
+on the Web challenge for a while!</span></li>
+<li><span>Essentially “3D publishing for Web” with
+numerous players, codebases, converters etc.</span></li>
+<li><span>Device neutrality for content, rendering +
+navigation + user interaction in single scene, composability,
+aligning with Web architecture, multiple “lessons learned” of group
+value, forward-compatible evolution of capabilities through
+extensibility, and even (X3D+scripts+CSS)-inside-HTML offered as
+exemplars for how things can work. &nbsp;</span></li>
+<li><span>The Open Web Platform (OWP) already goes a
+long way - can VR become an actionable, bidirectional part of that
+ecosystem? &nbsp;Web3D community certainly thinks so. &nbsp;As
+snapshots & videos show, X3D implementations continue to
+demonstrate that, playing interactive content with HTML (and also
+in other devices - CAVES, phones, etc.)</span></li>
+<li><span>Putting on a head-mounted display (HMD) is
+an act of great personal</span> <span class=
+"c12">trust</span><span>… &nbsp;Data-centered security can go
+beyond custom device-server pairings and make VR across the Web
+trustable.</span></li>
+<li><span>Web3d participants have been working on
+some of the key technical bottlenecks in W3C. &nbsp;Authors can
+compress and gain data performance (thus reducing power
+consumption) using Efficient XML Interchange (EXI). &nbsp;EXI has
+recently been extended for JSON and CSS, also adding EXI
+Canonicalization (C14N). Authors can digitally sign (authenticate)
+and encrypt (preserve confidentiality) as well using W3C’s XML
+Security recommendations. p.s. W3C EXI group participants think
+this same tech combination can be used similarly in Internet of
+Things (IoT). &nbsp;(Gee what’s that “thing“ on your
+head?)</span></li>
+<li><span>Playing well with others in the hardware
+direction is also important to Web3D participants. &nbsp;Geometric
+compression and progressive-mesh streaming by Shape Resource
+Container (SRC) is aligning at a low level with glTF,
+standardization effort expected in early 2017.</span></li>
+<li><span>X3D version 4 efforts are aligning X3D
+closely with HTML5 evolution. &nbsp;Subsequent X3D version 4.1
+expect to align with ISO-draft Mixed Augmented Reality (MAR)
+Reference Model. &nbsp;Further support for VR Web from this group
+is expected to be a natural area of activity for us… we want to
+define, play and interact with 3D content within VR.</span></li>
+<li><span>Web3D Consortium has been a W3C Member for
+many years, with many positive benefits continuing to accrue.
+&nbsp;We’re keen to continue contributing in this great
+effort!</span></li>
+</ul>
+
+<p><span>Interesting “declarative” discussion continued,
+building on prior session for Scene Object Model.</span></p>
+
+<p><span>A-Frame, X3D, GLAM vs ReactVR</span></p>
+
+<p><span>Scott S - I can build A-Frame scenes out of
+Houdini by spitting out some python.</span></p>
+
+<h5 id="h.syoyzcqzchmm"><span>Survey
+Questions</span></h5>
+
+<p><span>Q: Which tags approach do you favor? Pick
+one:<br></span></p>
+<ul>
+<li><span>A-Frame (Pure Declarative) 60%</span></li>
+<li><span>ReactVR (Mixed imperative/declarative)
+40%</span></li>
+</ul>
+
+<p><span>Q: Would we prefer that something like A-Frame
+or a similar tag set eventually be built into a browser or remain
+in a library?</span></p>
+
+<ul>
+<li><span>Built-in: 100%</span></li>
+<li><span>Remain in a library: 0%</span></li>
+</ul>
+
+<p><span>Don votes for all of the above - but it’s all
+about Web data, this is really a publishing medium. Some candidate
+“use cases” that can help to pull us through this design
+space:</span></p>
+<ul>
+<li><span>Archival recording of a VR session should
+play both ways. &nbsp;Can someone play back yesterday’s VR session
+as an observer? &nbsp;Can they then choose to be a protagonist?
+&nbsp;Will it work next month, next year, on newer gear, etc. etc.?
+&nbsp;This means declarative.</span></li>
+<li><span>Accessibility metadata is another major
+opportunity for declarative VR. &nbsp;Multimodal experience (visual
+aural haptic etc.) for the same place/experience? &nbsp;User
+preferences or accessibility preferences become very real to the
+individual… and leverage all the other W3C web
+recommendations/capabilities to best effect.</span></li>
+</ul>
+
+<p><span>Tony says he thinks that Don’s statement
+implies the declarative side because it’s hard to do archival when
+you’re API driven.</span></p>
+
+<p><span>Path to standardization - React data binding
+doesn’t provide that.</span></p>
+
+<p><span>Another challenge associated with the
+programmatic approach is that a program can only do what it does,
+whereas content can be reused and open to
+reinterpretation.</span></p>
+
+<p><span>Postscript and RIB will still render, because
+these are descriptions rather than code.</span></p>
+
+<p><span>Shannon - Web Devs need HTML constructs to
+author stuff, that’s why we need onClick()... shouldn’t have to
+think about the programming. Prefers to be built-in, and it’s
+standardized so you know how it behaves. He doesn’t like jQuery and
+all these include libraries, React etc. depending on third
+party.</span></p>
+
+<p><span>Very interesting session(s)... Scene object
+model “versus” declarative is more yin/yang that a fork in the road
+- they are two sides of same coin. &nbsp;Benefits accrue from
+stability. &nbsp;</span></p>
+
+
+<h3>Accessibility for WebVR</h3>
+<p>Participants</p>
+<ul>
+<li>Charles LaPierre</li>
+<li>Casey Yee</li>
+<li>Dana Dansereau</li>
+<li>Wendy Seltzer</li>
+</ul>
+<p><span>Need to know about the DOM A11Y</span></p>
+<p><span>ARIA</span></p>
+<p><span>Different media types Audio / Video.</span></p>
+<p><span>Web VTT subtitles for the web be useful
+here?</span></p>
+<p><span>Lot of metadata to about an object, weight,
+center of gravity, must be attached to this content.</span></p>
+<p><span>Is saying that a waterball enough?</span></p>
+<p><span>ARIA roles semantic description is it the dev
+platform need to define this? Vs. hosted solution t</span></p>
+
+<p><span>What are the best practices, or the
+UA</span></p>
+<p><span>There is a whole accessibility DOM is a
+complete representation of the traditional DOM</span></p>
+<p><span>If we are talking about Nodes into the page
+would this scale, html import to supplement it</span></p>
+
+<p><span>Not sure how to add the ARIA but how would that
+scale.</span></p>
+<p><span>Firefox addons localize 110 lang.
+Proposed RTL stylesheet</span></p>
+<p><span>Layout and semantic are separate</span></p>
+
+<p><span>Configuring text on the VR to vertical, RtoL or
+LtoR</span></p>
+
+<p><span>SnapChat. UI is gesture base,</span></p>
+<p><span>iPhone Accessibility with VoiceOver changes the
+gestures</span></p>
+<p><span>Click on a link you assume that mouse cursor
+click on a link but access to teat link is different</span></p>
+
+<p><span>Color blindness shift the hue of the
+display</span></p>
+<p><span>One eye how do you deal with stereo</span></p>
+<p><span>Hard of hearing and freq. Shift.</span></p>
+
+<p><span>Section 508, HIPA, are there things that will
+need to be compliant in VR.</span></p>
+<p><span>Content ratings providing or permitting access
+to certain age groups.</span></p>
+<p><span>Oculus and Vibe (comfort ratings</span></p>
+
+<p><span>AFrame - add text description to their object
+models.</span></p>
+
+<p><span>Objective description of what you are seeing,
+machine access, screen readers, TTS and search.</span></p>
+<p><span>Loose that with webGL, its pivotable with helth
+of web.</span></p>
+
+<p><span>Material design, consistency, sounds like user
+patterns boilerplates should all be a11y out of the box</span></p>
+<p><span>Don’t worry about performance right away,just
+include the data and we can figure out performance
+optimization later</span></p>
+
+<p><span>How to propose to analytics or measure user
+engagement, how do I know if a Blind user can use my
+system.</span></p>
+
+<p><span>Add standardized way to get feedback from user
+and they can tell you that the site is inaccessible.</span></p>
+<p><span>Privacy issues are a concern here
+(randomization of collection)</span></p>
+
+<p><span>If you have this data it can be used to detail
+semantic and description. Delegating that to a
+trust</span></p>
+<p><span>Being able to aggregate, the metadata that
+describes that gets passed back to the system</span></p>
+
+<p><span>CSS media queries, you get pix aspect ratio,
+mouse or touch display.</span></p>
+<p><span>Some can be rendered on the client and not sent
+back to the server.</span></p>
+
+<p><span>What this difference between blind access vs.
+person who just wants to hear the site, or their Video display is
+broken.</span></p>
+
+<p><span>Web has Skip to main content accessibility link
+which skips any header boiler plate.</span></p>
+
+<p><span>Controls should shift in VR if a person has
+limited mobility</span></p>
+<p><span>Just like in Charles’s talk when the computer
+had to be raised for his presentation that VR needs to do the same
+thing.</span></p>
+<p><span>Ability to change your height by x %</span></p>
+
+<p><span>Spacial sound for a person with hard of hearing
+in one ear you turn your head with your good ear towards the sound
+source</span></p>
+<p><span>Octave difference for left/right
+audio</span></p>
+
+<p><span>Bone-conduction headphones</span></p>
+<p><span>Html-tags ARIA, alt tags, standards defined,
+you could come up with a 3rd party.</span></p>
+<p><span>DSS offices do this in schools.</span></p>
+
+<p><span>High contrast version in VR, or browsers job,
+or is it a modification of that tool. </span></p>
+<p><span>Developers job that it is tagged appropriate so
+that it could be changed.</span></p>
+
+<p><span>Buffer and could modify buffer before it goes
+to screen, with a11y hook for audio/video in order to modify
+it.</span></p>
+
+<p><span>Its standards body to there would be nothing in
+the way of stopping and the information is there it</span></p>
+
+<p><span>Text on webGL a machine reader could pull that
+out that takes it realtime</span></p>
+<p><span>It could be but OCR realtime … standards body
+must say this is a problem and there should be a way to describe
+the space or object.</span></p>
+
+<p><span>Sendero GPS - lookaround mode for POIs that you
+are passing</span></p>
+
+<p><span>Describe the env. As you are walking down the
+street describing cool features around you as y9ou walk down the
+street</span></p>
+
+<p><span>Described Video. All video in television in
+Canada and how to describe.</span></p>
+<p><span><a href=
+"http://www.crtc.gc.ca/eng/info_sht/b322.htm">
+http://www.crtc.gc.ca/eng/info_sht/b322.htm</a></span></p>
+
+<p><span>TV Access for People with Visual Impairments:
+Described Video and Audio Description</span></p>
+<p><span>Persons with visual impairments can use
+described video or audio description to access the visual portion
+of TV programs. Learn about the Accessible Channel.</span></p>
+
+<p><span>How to describe location movement.</span></p>
+
+<p><span>Poet described Images from</span> <span class=
+"c2"><a href=
+"http://diagramcenter.org/">
+http://diagramcenter.org/</a></span></p>
+
+
+<p><span>Described VR.</span></p>
+<p><span>Dynamic select and provide it when
+needed</span></p>
+
+<p><span>Kind of information that needs to
+describe</span></p>
+
+<p><span>A11Y features in browsers</span></p>
+<p><span>3d party services to solve Captchas</span></p>
+<p><span>Uber for web pages.</span></p>
+
+<h3>High-Performance Processing on the Web</h3>
+
+<h3>Depth Sensing on the web</h3>
+
+<p><span>The Preliminary Use Cases
+(pre-spec)<br></span><span><a href=
+"https://www.w3.org/wiki/Media_Capture_Depth_Stream_Extension#Use_Cases">https://www.w3.org/wiki/Media_Capture_Depth_Stream_Extension#Use_Cases</a></span></p>
+
+<p><span>Spec<br></span><span><a
+href=
+"https://github.com/w3c/mediacapture-depth">https://github.com/w3c/mediacapture-depth</a></span></p>
+
+<p><span>XDM Spec (for camera
+intrinsics/extrinsics)<br></span><span><a
+href=
+"https://software.intel.com/sites/default/files/managed/b0/bf/ExtensibleDeviceMetadataXDM.pdf">https://software.intel.com/sites/default/files/managed/b0/bf/ExtensibleDeviceMetadataXDM.pdf</a></span></p>
+
+<p><span>Experimental Scene Perception Web API
+demo:</span> <span><a href=
+"https://youtu.be/pXyDiYJO0nA">
+https://youtu.be/pXyDiYJO0nA</a></span></p>
+
+<p><span>GetUserMedia exposes raw depth capability to
+the browser. Depth camera screen.</span></p>
+<p><span>WebGL 2.0 r16 integer to upload depth map into
+shader.</span></p>
+
+<p><span>Intent to implement already approved. No widely
+adopted camera api in kernel. Need to convert int16
+pipeline.</span></p>
+<p><span>Unsure of status in Edge - there is a team
+working on this. Perhaps ask Frank or Raphael.</span></p>
+
+<p><span>USB based cameras such as kinect. Hololens
+would be a good example of a device. Also oculus is interested in
+inside out processing.</span></p>
+
+<p><span>Rob: Range of use cases</span></p>
+
+<p><span>Raw data vs surface meshes - can be
+implemented, but demand in the system is high - burns a lot of
+battery.</span></p>
+
+<p><span>Different devices are expected to have their
+own capabilities - expect that quality of “baked data” will vary
+from device to device.</span></p>
+
+<ul>
+<li><span>Security: What kind of restriction should
+we consider for ensuring privacy and security.</span></li>
+<li><span>Permission fatigue (pose data plus sensor
+data plus room memory)</span></li>
+<li><span>Likely to use full screen api (or
+requestPresent)</span></li>
+<li><span>Does it make sense to chunk components
+(permissions) into a collective group? Are eternal sensors
+different from internal?</span></li>
+<li><span>What is the user’s expectation of
+permission models? Can we provide multiple levels of permissions
+wrt AR experience?</span></li>
+</ul>
+
+<p><span>Other asks</span></p>
+<ul>
+<li><span>Relative location of sensors? Xdm exposes
+an adobe-xmp model that reveals relative locations.</span></li>
+</ul>
+<ul>
+<li><span>Field of view, focal length,
+near/far.</span></li>
+</ul>
+<ul>
+<li><span>Stream sync: depth stream and video stream
+need to be synchronized.</span></li>
+</ul>
+<ul>
+<li><span>Also need to sync with IMU/HMD?</span></li>
+<li><span>Different devices have different
+framerates.</span></li>
+<li><span>Consider providing a synced framerate
+between devices.</span></li>
+</ul>
+<ul>
+<li><span>The Chromium CL for the depth
+stream:</span> <span><a href=
+"https://codereview.chromium.org/2121043002/">
+https://codereview.chromium.org/2121043002/</a></span><span>&nbsp;</span></li>
+<li><span>On top of the raw data, what do we
+want?</span></li>
+</ul>
+<ul>
+<li><span>Buffer array of raw geometry mesh, linked
+to pose information</span></li>
+<li><span>Possibly something that can be updated to
+webgl shader</span></li>
+<li><span>Movement and points of
+interest.</span></li>
+<li><span>Simultaneous location of mapping (SLAM)
+-</span></li>
+<li><span>Coordinate systems? What do we use to map
+them from frame to frame?</span></li>
+</ul>
+<ul>
+<li><span>Next steps?</span></li>
+</ul>
+<ul>
+<li><span>Combined interest group with other
+initiatives (webGL+ GetUserMedia + webVR + permissions)</span></li>
+<li><span>Interested? Talk to</span> <span class=
+"c7"><a href=
+"mailto:girard@google.com">girard@google.com</a></span><span>&nbsp;</span><span><a
+href=
+"mailto:nell.waliczek@microsoft.com">nell.waliczek@microsoft.com</a></span><span>&nbsp;</span><span>&nbsp;</span><span><a
+href=
+"mailto:leweaver@microsoft.com">leweaver@microsoft.com</a></span><span>&nbsp;</span><span><a
+href=
+"mailto:simon.gunkel@tno.nl">simon.gunkel@tno.nl</a></span><span>&nbsp;</span><span><a
+href=
+"mailto:ningxin.hu@intel.com">ningxin.hu@intel.com</a></span><span>&nbsp;</span><span><a
+href=
+"mailto:rob.manson@awe.media">rob.manson@awe.media</a></span><span>&nbsp;</span></li>
+</ul>
+
+
+<h1 id="h.noaj6r6y94de"><span>Standardization
 Landscape</span></h1>
-<p class="c0"><span>Dom: We’ll start our last session now. A couple
+<p><span><cite>Dom</cite>: We’ll start our last session now. A couple
 announcements; a phone was found.</span></p>
-<p class="c0"><span>Another thing, we should do a group photo of
+<p><span>Another thing, we should do a group photo of
 the very first W3C Web VR Workshop.</span></p>
-<p class="c0"><span>We’ll go outside and take the photo as a memory
+<p><span>We’ll go outside and take the photo as a memory
 of the event.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Neil Trevitt: thank you W3C for organizing
+
+<p><span>Neil Trevitt: thank you W3C for organizing
 this. In July 2008 I met Bill @ at SIGGRAPH who said we should do a
 binding to Canvas and have eye glasses everywhere. We took it into
 Khronos and now we’re here eight years later. Talking about
 standards landscape. Lots of interaction between what we are doing
 and what W3C is doing. Some of other standards orgs we come in
 contact with.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>For those of you who don’t know the background,
+
+<p><span>For those of you who don’t know the background,
 we share the same ideals and processes as W3C; more common than
 different. We’re committed to open standards and royalty free. We
 are focused on silicon software part of things. We have every GPU
@@ -1993,62 +2998,62 @@ vendor. Our primary activity is to figure out how to expose
 acceleration for graphics, computation and vision process with APIs
 and enable software to use them in real applications. We have about
 120 companies.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Members keep joining each other [laughs]. How
+
+<p><span>Members keep joining each other [laughs]. How
 Khronos relates to AR and VR. We do file formats. Collada is an
 API. We talked about GLtF yesterday. Will save us all work and make
 applications more efficient and avoid siloed content.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>WebGL is all on GitHub. GLTF Work is like a W3C
+
+<p><span>WebGL is all on GitHub. GLTF Work is like a W3C
 Interest Group. We also have Working Group where people have signed
 up for RF. You can join and have a seat at the table. Core business
 is APIs for acceleration.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Timeline for where WebGL came from. Open GL in
+
+<p><span>Timeline for where WebGL came from. Open GL in
 2008 was ubiquitous. Open GL was available on all the desktops.
 OpenGL2 was becoming ubiquitous on mobile. So becoming available
 anywhere Web browser was running. Test message</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>2011 WebGL1.0 launched. Four years not so bad.
+
+
+
+
+<p><span>2011 WebGL1.0 launched. Four years not so bad.
 WebGL2 is based on ES3; four year pipeline or heartbeat.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>New stack we have been talking about. Vulcan is
+
+<p><span>New stack we have been talking about. Vulcan is
 the new.</span></p>
-<p class="c0"><span><br>
+<p><span><br>
 Why is Khronos in WebGL? So closely linked to native API, silicon
 roadmaps. Portability; need GPU guys around the table.</span></p>
-<p class="c0"><span>What other issues do we have? Lots of the
+<p><span>What other issues do we have? Lots of the
 silicon guys - my day job is video - lots of VR capability,
 asynchronous context. Probably cannot expose all of them. Spoke to
 stereo first step. Do we want to expose more VR capability to
 expose more functionality at JS level.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Cameras, in 21st century we are still running
+
+<p><span>Cameras, in 21st century we are still running
 processing on the CPU. If you can get power processing...ultimately
 orders of magnitude more. Need to get vision processing off the
 CPU.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Vision acceleration API. May not lift up to JS.
+
+<p><span>Vision acceleration API. May not lift up to JS.
 Perhaps people implementing trakcing might use native APIs like
 Open VX. PokemonGo is awesome but dispiriting to see that the power
 users must turn off the AR, because it runs better on the battery.
 Silicon has failed to enable applications for AR. Apache is
 available in the phones.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>One potential effort is to use GPGPU in GL12.
+
+<p><span>One potential effort is to use GPGPU in GL12.
 We’re talking more general and higher level language and access to
 language not just for vision but also audio and neural nets. We’ll
 want to accelerate that quickly.</span></p>
-<p class="c0"><span><br>
+<p><span><br>
 We have WebCL; lift into JS; still kernels in C. Learn it’s good
 when a standard takes off and gets adopted, be thankful. Web CL was
 one thing we tried that did not work. Perhaps a JS extension is the
 way to go.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Good that the breakouts covered so much of
+
+<p><span>Good that the breakouts covered so much of
 this. The cameras are about to become really diverse in number;
 mobile phone has four. The wide angles, depth, stereo are coming.
 Just controlling the camera is going to be a point of fragmentation
@@ -2057,155 +3062,155 @@ OpenKCam, intended to be an abstraction for how to control the
 sensor. This has not taken off yet; may not be needed. Maybe a cul
 de sac, or too early. Take a look at OpenKCam. Should we
 re-invigorate this group? Get lift into JS domain.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>This is a cheaky slide: VulkanVR: is there a
+
+<p><span>This is a cheaky slide: VulkanVR: is there a
 need? We’re in a weird situation with VR SDKs. All similar but also
 different. Have apps running differently. Native rendering API
 things will consolidate quickly around Vulkan. @ has adopted
 Vulkan. UT, Epic, are porting onto Vulkan.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Seems the differfences between these
+
+<p><span>Seems the differfences between these
 environments are not sustaining competitive advantage. Would it be
 good for that community building on all these SDKs not to have all
 that friction. Not do it all differently. If the native community
 gets its act together, that would make things easier to have more
-consistency at native level. &nbsp;Interested in
+consistency at native level. Interested in
 feedback.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Slide with big chart of SDO
+
+<p><span>Slide with big chart of SDO
 landscape</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>MPEG guys, video, audio, images. They have done
+
+<p><span>MPEG guys, video, audio, images. They have done
 work on 3D compression. They do have a declarative AR framework
 called ARAF.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Then OGC deals with anything around geospatial.
+
+<p><span>Then OGC deals with anything around geospatial.
 Tony, get Mark to look and they could help.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Here are my suggestions. We should meet like
+
+<p><span>Here are my suggestions. We should meet like
 this much more often. Discover problems that we can solve with
 standards. Some don’t need, but some do.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Figure out which SDO has closest domain
+
+<p><span>Figure out which SDO has closest domain
 expertise. Make sure they stay on track. Ensure community has a
 channel to feed requirements into the SFO. Continue regular
 meetings.</span></p>
-<p class="c0"><span>&nbsp;[Neil ends; applause]</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: I thought I would present what could be
+<p><span>[Neil ends; applause]</span></p>
+
+<p><span><cite>Dom</cite>: I thought I would present what could be
 useful to standardize soon, longer term or never in W3C.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>First is taxonomy. Most well known standards
+
+<p><span>First is taxonomy. Most well known standards
 work is in Working Groups with formal IPR. We also have W3C
 Community Groups. WG only members; CG open to anyone. VR has been
 doing work in CG for now, has limited IPR commitment. We help to
 facilitate incubation. We also have Interest Group. Has more
 limited IPR.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Present what I heard, which is up for
+
+<p><span>Present what I heard, which is up for
 discussion. What should come up soon, later or not at all. And
 summarize what I heard over the past two days.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Existing relevant standards at W3C (slide
+
+<p><span>Existing relevant standards at W3C (slide
 1)</span></p>
-<p class="c0"><span>Spatialized audio in Web audio WG</span></p>
-<p class="c0"><span>Gamepad API, Web Working in Web Platform
+<p><span>Spatialized audio in Web audio WG</span></p>
+<p><span>Gamepad API, Web Working in Web Platform
 WG</span></p>
-<p class="c0"><span>Media Streaming handling in HTML Media
+<p><span>Media Streaming handling in HTML Media
 Extension WG</span></p>
-<p class="c0"><span>Low-latency data and AV transfer, identity hook
+<p><span>Low-latency data and AV transfer, identity hook
 in WebRTC</span></p>
-<p class="c0"><span>@@</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Existing relevant standards (slide
+<p><span>@@</span></p>
+
+<p><span>Existing relevant standards (slide
 2)</span></p>
-<p class="c0"><span>Color space management in CSS WG</span></p>
-<p class="c0"><span>Performance metrics in Web Pef WG</span></p>
-<p class="c0"><span>UI Security in Web App Security WG</span></p>
-<p class="c0"><span>Payments in Web Payments WG</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>New standardization efforts soon?
+<p><span>Color space management in CSS WG</span></p>
+<p><span>Performance metrics in Web Pef WG</span></p>
+<p><span>UI Security in Web App Security WG</span></p>
+<p><span>Payments in Web Payments WG</span></p>
+
+<p><span>New standardization efforts soon?
 [slide6]</span></p>
-<p class="c0"><span>WebVR is the elephant in the room. Gamepad API
+<p><span>WebVR is the elephant in the room. Gamepad API
 extensions. Some proposals</span></p>
-<p class="c0"><span>Notion of having a VR mode in CSS Media Query.
+<p><span>Notion of having a VR mode in CSS Media Query.
 Not sure if it’s close or interesting. Broader conversation. Maybe
 something easy.</span></p>
-<p class="c0"><span>Notion of API that Samsung presented, putting
+<p><span>Notion of API that Samsung presented, putting
 context around content.</span></p>
-<p class="c0"><span>Has been a lot of work around Speech
+<p><span>Has been a lot of work around Speech
 Recognition API in a Community Group</span></p>
-<p class="c0"><span>Interest in Web timing CG for Media
+<p><span>Interest in Web timing CG for Media
 synchronization; check out</span></p>
-<p class="c0"><span>Web Assembly is a CG at W3C. Still a lot of
+<p><span>Web Assembly is a CG at W3C. Still a lot of
 churn on this. VR might be another motivation to get done sooner v
 later.</span></p>
-<p class="c0"><span>Mention of proposal in a CG on Media
+<p><span>Mention of proposal in a CG on Media
 Capabilities. May be too early and need more incubation.</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>[slide7]Longer term standardization
+
+
+<p><span>[slide7]Longer term standardization
 targets?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Lot of discussion around declaratives around
+
+<p><span>Lot of discussion around declaratives around
 mark-up. An object model. Does that impact @</span></p>
-<p class="c0"><span>360 media streaming we heard some approaches;
+<p><span>360 media streaming we heard some approaches;
 open issues there worth looking into</span></p>
-<p class="c0"><span>Navigation Transitions; notion of
+<p><span>Navigation Transitions; notion of
 metadata</span></p>
-<p class="c0"><span>Discussion around having a unified user input
+<p><span>Discussion around having a unified user input
 model for VR the way pointer events simplified touch. Maybe get
 something similar here</span></p>
-<p class="c0"><span>Gesture recognition framework may be further
+<p><span>Gesture recognition framework may be further
 away; some cultural aspects; explore some primitives</span></p>
-<p class="c0"><span>Out of my league for Web fonts for 3D
+<p><span>Out of my league for Web fonts for 3D
 context</span></p>
-<p class="c0"><span>Several conversations touched on scheduling
+<p><span>Several conversations touched on scheduling
 what happens very precisely. We have some mechanisms. Had some
 suggestions on how to inspire @</span></p>
-<p class="c0"><span>For accessibility can we imagine applying
+<p><span>For accessibility can we imagine applying
 ARIA.</span></p>
-<p class="c0"><span>Annotating VR entities; maybe touch
+<p><span>Annotating VR entities; maybe touch
 metadata</span></p>
-<p class="c0"><span>Identity and Avatar management is at the
+<p><span>Identity and Avatar management is at the
 frontier between maybe and not at all</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>[Slide 8]</span></p>
-<p class="c0"><span>Help?</span></p>
-<p class="c0"><span>Things where I am unclear</span></p>
-<p class="c0"><span>DOM to WebGL?</span></p>
-<p class="c0"><span>What would need to standardized for 2D-Web
+
+<p><span>[Slide 8]</span></p>
+<p><span>Help?</span></p>
+<p><span>Things where I am unclear</span></p>
+<p><span>DOM to WebGL?</span></p>
+<p><span>What would need to standardized for 2D-Web
 browsing in VR</span></p>
-<p class="c0"><span>We want innovation in this space but there is a
+<p><span>We want innovation in this space but there is a
 cost; not have multiple viewports. Needs some
 coordination</span></p>
-<p class="c0"><span>UI patterns. We don’t want to standardize, but
+<p><span>UI patterns. We don’t want to standardize, but
 will need to be some kind of agreement on how you interact with
 this space</span></p>
-<p class="c0"><span>Social discussion around binding of real and
+<p><span>Social discussion around binding of real and
 literal worlds in terms of authenticity, geographic control. That
 is not necessarily ready for standardization, but worth
 watching</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>My proposal is that we extend by a little bit.
+
+<p><span>My proposal is that we extend by a little bit.
 You give us feedback on the priorities, what are the gaps. Idea is
 we use this white board to more easily brainstorm.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Rob: one thing missing is the permissions,
+
+<p><span><cite>Rob</cite>: one thing missing is the permissions,
 especially in mobile. There needs to be a broader forum for
 discussion. Fusion brings APIs together. How to integrate as a
 whole.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: Any other feedback on standardization
+
+<p><span><cite>Dom</cite>: Any other feedback on standardization
 landscape? Another interesting topic is there is somewhat clear
 separation between what SDOs do. Are there specific overlaps to pay
 attention to or carefully avoid. That would be useful.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Did we call out security explicitly?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: Wendy, do you want to talk to
+
+<p><span>Did we call out security explicitly?</span></p>
+
+<p><span><cite>Dom</cite>: Wendy, do you want to talk to
 that?</span></p>
-<p class="c0"><span><br>
+<p><span><br>
 Wendy Seltzer: Thank you. Security is one of the areas W3C
 considers among our horizontal review areas along with
 accessibility, internationalization. We look at all the specs from
@@ -2213,64 +3218,64 @@ this POV. Interesting to hear ways VR and Security intersect. About
 authenticity and integrity of environments. How do we give them
 indicators. How to deal with social interactions and recogniztions.
 Great area to keep looking at.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Feature of device detection
+
+<p><span>Feature of device detection
 capability.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: there was a media capabilities proposal.
+
+<p><span><cite>Dom</cite>: there was a media capabilities proposal.
 Something broader like head sets?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Olivier: Mention of media capabilitiy. There
+
+<p><span><cite>Olivier</cite>: Mention of media capabilitiy. There
 are broader questions, is this a 3D environment ready device I am
 using. Seems to be a need for that.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: Capabilities. Any other input. What do you
+
+<p><span><cite>Dom</cite>: Capabilities. Any other input. What do you
 folks think we need to standardize tomorrow or should have
 standardized yesterday?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>David: WebGL is blocking certain things you
+
+<p><span><cite>David</cite>: WebGL is blocking certain things you
 might prototype. Do it in WebVR</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: any ongoing work?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Tony: I saw a Chrome prototype from four years
+
+<p><span><cite>Dom</cite>: any ongoing work?</span></p>
+
+<p><span><cite>Tony</cite>: I saw a Chrome prototype from four years
 ago. That’s been stuck in mud for years.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Brandon: this comes up a lot. We all need it
+
+<p><span><cite>Brandon</cite>: this comes up a lot. We all need it
 but have higher priorities to work on like WebGL 2. Hope to give
 more attention to. Would be a nice to have. Was not so much of a
 pressing need.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Tony: That TripAdvisory demo I did. Do a
+
+<p><span><cite>Tony</cite>: That TripAdvisory demo I did. Do a
 rollover and you get a divet. I had to code every pop up twice. I
 just wanted an element …</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Brandon: I have made my WebGL voice known and
+
+<p><span><cite>Brandon</cite>: I have made my WebGL voice known and
 said we need to do that now.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: Any other input?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Anssi: Either people are tired or your
+
+<p><span><cite>Dom</cite>: Any other input?</span></p>
+
+<p><span><cite>Anssi</cite>: Either people are tired or your
 proposals are near perfect</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Tony: I’d like to talk about process</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>How to best participate; tooling, etc. We can
+
+<p><span><cite>Tony</cite>: I’d like to talk about process</span></p>
+
+<p><span>How to best participate; tooling, etc. We can
 use W3C infrastructure. What would you prefer?</span></p>
-<p class="c0"><span>How many people use Slack? Pretty many. I guess
+<p><span>How many people use Slack? Pretty many. I guess
 Slack, combined with Neil’s idea that we do this again sooner v
-later. &nbsp;</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: should we do another event like this a
+later. </span></p>
+
+<p><span><cite>Dom</cite>: should we do another event like this a
 year from now? [hands go up]</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Olivier: This felt like a weird workshop.
+
+<p><span><cite>Olivier</cite>: This felt like a weird workshop.
 Usually people come with ‘I have a spec here’ and kind of seeing
 where it sticks. This workshop a lot of topics but not a lot of new
 specs. So it sounds like six months time would be good where people
 come with these specs.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Wendy, W3C: I’m thinking about our strategy. We
+
+<p><span>Wendy, W3C: I’m thinking about our strategy. We
 work well with proposals for concrete work. And we have places to
 help incubate things not yet at that phase. When we start a WG we
 draft a charter and get patent commitments. That is a great way to
@@ -2282,50 +3287,49 @@ and look for when they are ready to become more solid standards.
 We’re seeing there is lots of other activity and we aim to be good
 colleagues with other SDOs, where we can be helpful to others. I am
 excited by the energy and cooperation that we see here.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Shannon: talk about follow-up. February 27 or
+
+<p><span><cite>Shannon</cite>: talk about follow-up. February 27 or
 28 there will be a WebGL meetup on VR. I have not yet posted the
 event. We’ll have someone from W3C give us an update.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>David: Seconding incubation and use in WIGC and
+
+<p><span><cite>David</cite>: Seconding incubation and use in WIGC and
 GitHub. Start with an explainer and not go directly to
 IDL.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Phillipp: There is high performance graphics
+
+<p><span><cite>Phillipp</cite>: There is high performance graphics
 conference covering issues that we are doing here. Consider
 contributing to this. Will be be track on compiler technology. Call
 for papers will be in the next month or so, deadline in April. We
 invite not only academic but also industry. It’s a great venue for
 a lot of the stuff we have talked about here.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: Any last comments before we wrap
+
+<p><span><cite>Dom</cite>: Any last comments before we wrap
 up?</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Anssi: Progressive enhancement or mainstream to
+
+<p><span><cite>Anssi</cite>: Progressive enhancement or mainstream to
 look at? How do you apply this world?</span></p>
-<p class="c0"><span>You have a large body of web content that is
+<p><span>You have a large body of web content that is
 not VR.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Dom: Josh’s demo yesterday was a good
-direction. &nbsp;It think it’s time to stop. We have exhausted our
+
+<p><span><cite>Dom</cite>: Josh’s demo yesterday was a good
+direction. It think it’s time to stop. We have exhausted our
 brains and our energies. Thank everyone for coming. Thank the
 program committee, chairs, sponsors. Thank you Samsung for hosting.
 It would not happen without them.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>The next concrete steps will be compiled in the
+
+<p><span>The next concrete steps will be compiled in the
 report. Will be up on the website tonight or tomorrow. Let’s keep
-in touch by email and Slack. My email is</span> <span class=
-"c9"><a class="c4" href=
-"mailto:dom@w3.org">dom@w3.org</a></span><span>. &nbsp;Reply to me
+in touch by email and Slack. My email is</span> <span><a href=
+"mailto:dom@w3.org">dom@w3.org</a></span><span>. Reply to me
 to get back in touch. Opportunity for another workshop or event in
 some time.</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>[applause]</span></p>
-<p class="c0 c1"></p>
-<p class="c0"><span>Time for photo!</span></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
-<p class="c0 c1"></p>
+
+<p><span>[applause]</span></p>
+
+<p><span>Time for photo!</span></p>
+
+
+
 </body>
 </html>
     </main>
