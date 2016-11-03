@@ -212,6 +212,8 @@ a.ref {
   background: #fff;
   font-weight: bold;
   pointer-events: none;
+  border-top: solid thin #005a9c;
+  border-bottom: solid thin #005a9c;
 }
 
 ul {
@@ -624,3 +626,7 @@ details[open] summary {
     display: none;
   }
 }
+
+cite { font-weight: bold;}
+
+ol ol { margin: 1.5rem;}
