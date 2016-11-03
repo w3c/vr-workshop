@@ -212,6 +212,8 @@ a.ref {
   background: #fff;
   font-weight: bold;
   pointer-events: none;
+  border-top: solid thin #005a9c;
+  border-bottom: solid thin #005a9c;
 }
 
 ul {
